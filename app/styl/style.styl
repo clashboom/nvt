@@ -3,16 +3,22 @@
 
 edit()
 
-section
- center(960px)
-aside
- span(1/2)
-article
- span(1/2)
+header
+  text-align justify
+  letter-spacing 1px
+  height 8em
+  padding 2em 5%
+  h1,
+  nav,
+  nav li
+    display linline-block
+  ul
+    list-style-type none
+  &::after
+    content ''
+    display linline-block
+    width 100%
 
-aside,
-article
-  text-align center
 
 @font-face {
   font-family: 'Gunship';
@@ -30,6 +36,5 @@ navette = #0D4171
 h1.brand
   font-family Gunship, Impact, 'Helvetica Neue', sans-serif
   color navette
-  text-align center
   text-transform uppercase
   letter-spacing 5px
