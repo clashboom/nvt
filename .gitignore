@@ -1,0 +1,5 @@
+dist
+node_modules
+tests
+app/bower_components
+
