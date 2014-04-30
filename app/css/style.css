@@ -26,12 +26,12 @@ aside {
   float: left;
   display: inline;
   clear: none;
-  text-align: inherit;
   padding-left: 0;
   padding-right: 0;
-  width: 31.3333333333333%;
+  text-align: inherit;
+  width: 50%;
   margin-left: 0%;
-  margin-right: 3%;
+  margin-right: 0%;
 }
 aside:before,
 aside:after {
@@ -41,20 +41,17 @@ aside:after {
 aside:after {
   clear: both;
 }
-aside:last-child {
-  margin-right: 0%;
-}
 article {
   *zoom: 1;
   float: left;
   display: inline;
   clear: none;
-  text-align: inherit;
   padding-left: 0;
   padding-right: 0;
-  width: 65.6666666666667%;
+  text-align: inherit;
+  width: 50%;
   margin-left: 0%;
-  margin-right: 3%;
+  margin-right: 0%;
 }
 article:before,
 article:after {
@@ -64,8 +61,9 @@ article:after {
 article:after {
   clear: both;
 }
-article:last-child {
-  margin-right: 0%;
+aside,
+article {
+  text-align: center;
 }
 @font-face {
   font-family: 'Gunship';
@@ -74,5 +72,9 @@ article:last-child {
   font-style: normal;
 }
 h1.brand {
-  font-family: 'Gunship';
+  font-family: Gunship, Impact, 'Helvetica Neue', sans-serif;
+  color: #0d4171;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }

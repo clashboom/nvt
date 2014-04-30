@@ -1,12 +1,18 @@
 @import 'jeet'
+// @import 'typographic'
+
 edit()
 
 section
  center(960px)
 aside
- col(1/3)
+ span(1/2)
 article
- col(2/3)
+ span(1/2)
+
+aside,
+article
+  text-align center
 
 @font-face {
   font-family: 'Gunship';
@@ -18,6 +24,12 @@ article
     font-style: normal;
 }
 
+// Colorscheme
+navette = #0D4171
 
 h1.brand
-  font-family 'Gunship'
+  font-family Gunship, Impact, 'Helvetica Neue', sans-serif
+  color navette
+  text-align center
+  text-transform uppercase
+  letter-spacing 5px
