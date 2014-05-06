@@ -1,40 +1,91 @@
 @import 'jeet'
+// @import url(http://fonts.googleapis.com/css?family=Lato:400,700italic)
 // @import 'typographic'
 
-edit()
+// edit()
+
+// Colorscheme
+navette = #001528
+whitish = #f7f7f7
 
 header
+  background-color whitish
   text-align justify
   letter-spacing 1px
+  text-transform uppercase
   height 8em
   padding 2em 5%
-  h1,
-  nav,
-  nav li
-    display linline-block
+  color navette
+  > div,
+  > div::before,
+  div h1,
+  nav
+    display inline-block
+    vertical-align middle
+    text-align left
+  > div
+    width 50%
+    height 100%
+    text-align left
+    &::before
+      content ''
+      height 100%
   ul
     list-style-type none
+  h1
+    font-family Gunship, Impact, 'Helvetica Neue', sans-serif
+    letter-spacing 5px
+    font-size 3em
+  nav a
+    color navette
+    line-height 1.5
+    padding 0 0.6em
+    white-space nowrap
+    font-family 'Lato', sans-serif
+    text-decoration none
+    &:last-child
+      padding-right 0
+    &:hover
+      color whitish
+      background-color navette
   &::after
     content ''
-    display linline-block
+    display inline-block
     width 100%
 
 
-@font-face {
-  font-family: 'Gunship';
-    src:  url('/fonts/Gunship.ttf.woff') format('woff'),
-    url('/fonts/Gunship.ttf.svg#Gunship') format('svg'),
-    url('/fonts/Gunship.ttf.eot'),
-    url('/fonts/Gunship.eot?#iefix') format('embedded-opentype'); 
-    font-weight: normal;
-    font-style: normal;
-}
+@media screen and (max-width: 720px)
+  header
+    height auto
+    > div,
+    > div h1,
+    nav
+      height auto
+      width auto
+      display block
+      text-align center
+    h1
+      font-size 2em
 
-// Colorscheme
-navette = #0D4171
 
-h1.brand
-  font-family Gunship, Impact, 'Helvetica Neue', sans-serif
-  color navette
-  text-transform uppercase
-  letter-spacing 5px
+.product
+  span(1/2)
+  position relative
+  img
+    display block
+    max-width 100%
+    margin 0 auto
+  .description
+    background rgba(0,0,0,0.5)
+    position absolute
+    text-align center
+    bottom 0
+    left 0
+    right 0
+    color whitish
+    p 
+      margin-top -1em
+      margin-bottom 1em
+
+
+

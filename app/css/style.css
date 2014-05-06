@@ -1,35 +1,109 @@
-* {
-  background: #eee;
-  background: rgba(0,0,0,0.05);
-}
 header {
+  background-color: #f7f7f7;
   text-align: justify;
   letter-spacing: 1px;
+  text-transform: uppercase;
   height: 8em;
   padding: 2em 5%;
+  color: #001528;
 }
-header h1,
-header nav,
-header nav li {
-  display: linline-block;
+header > div,
+header > div::before,
+header div h1,
+header nav {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+header > div {
+  width: 50%;
+  height: 100%;
+  text-align: left;
+}
+header > div::before {
+  content: '';
+  height: 100%;
 }
 header ul {
   list-style-type: none;
 }
+header h1 {
+  font-family: Gunship, Impact, 'Helvetica Neue', sans-serif;
+  letter-spacing: 5px;
+  font-size: 3em;
+}
+header nav a {
+  color: #001528;
+  line-height: 1.5;
+  padding: 0 0.6em;
+  white-space: nowrap;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+}
+header nav a:last-child {
+  padding-right: 0;
+}
+header nav a:hover {
+  color: #f7f7f7;
+  background-color: #001528;
+}
 header::after {
   content: '';
-  display: linline-block;
+  display: inline-block;
   width: 100%;
 }
-@font-face {
-  font-family: 'Gunship';
-  src: url("/fonts/Gunship.ttf.woff") format('woff'), url("/fonts/Gunship.ttf.svg#Gunship") format('svg'), url("/fonts/Gunship.ttf.eot"), url("/fonts/Gunship.eot?#iefix") format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
+@media screen and (max-width: 720px) {
+  header {
+    height: auto;
+  }
+  header > div,
+  header > div h1,
+  header nav {
+    height: auto;
+    width: auto;
+    display: block;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 2em;
+  }
 }
-h1.brand {
-  font-family: Gunship, Impact, 'Helvetica Neue', sans-serif;
-  color: #0d4171;
-  text-transform: uppercase;
-  letter-spacing: 5px;
+.product {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: inherit;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: 0%;
+  position: relative;
+}
+.product:before,
+.product:after {
+  content: '';
+  display: table;
+}
+.product:after {
+  clear: both;
+}
+.product img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.product .description {
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #f7f7f7;
+}
+.product .description p {
+  margin-top: -1em;
+  margin-bottom: 1em;
 }
