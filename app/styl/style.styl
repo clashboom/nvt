@@ -1,12 +1,19 @@
 @import 'jeet'
-// @import url(http://fonts.googleapis.com/css?family=Lato:400,700italic)
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700italic)
 // @import 'typographic'
-
+//
 // edit()
 
 // Colorscheme
 navette = #001528
 whitish = #f7f7f7
+
+// html
+//   background url('/img/yahts.jpg') no-repeat center center fixed
+//   -webkit-background-size cover
+//   -moz-background-size cover
+//   -o-background-size cover
+//   background-size cover
 
 header
   background-color whitish
@@ -16,6 +23,8 @@ header
   height 8em
   padding 2em 5%
   color navette
+  a
+    color navette
   > div,
   > div::before,
   div h1,
@@ -35,7 +44,7 @@ header
   h1
     font-family Gunship, Impact, 'Helvetica Neue', sans-serif
     letter-spacing 5px
-    font-size 3em
+    font-size 2em
   nav a
     color navette
     line-height 1.5
@@ -54,6 +63,68 @@ header
     width 100%
 
 
+body
+    font-family 'Lato', sans-serif
+
+
+.product
+  span(1/2)
+  position relative
+  img
+    display block
+    max-width 100%
+    margin 0 auto
+    opacity 0.8
+    -o-transition opacity 0.3s
+    -webkit-transition opacity 0.3s
+    -moz-transition opacity 0.3s
+    &:hover
+      opacity 1.0
+  .description
+    background rgba(0,0,0,0.5)
+    position absolute
+    text-align center
+    bottom 0
+    left 0
+    right 0
+    color whitish
+    p
+      margin-top -1em
+      margin-bottom 1em
+
+.products
+  cf()
+
+blockquote
+  font-family "Amatic SC", cursive
+  font-size 3em
+  text-align center
+  display block
+  padding 2em 0
+  background navette
+  color whitish
+  margin 0
+  ::before
+    content "„"
+    left -10px
+    top -105px
+  ::after
+    bottom -90px
+    content "“"
+    right -10px
+
+footer
+  color whitish
+  background navette
+  display block
+  min-height 12em
+  padding 2em 5% 0
+  section
+    col(1/3)
+    ul
+      list-style-type none
+
+
 @media screen and (max-width: 720px)
   header
     height auto
@@ -66,26 +137,12 @@ header
       text-align center
     h1
       font-size 2em
-
-
-.product
-  span(1/2)
-  position relative
-  img
-    display block
-    max-width 100%
-    margin 0 auto
-  .description
-    background rgba(0,0,0,0.5)
-    position absolute
-    text-align center
-    bottom 0
-    left 0
-    right 0
-    color whitish
-    p 
-      margin-top -1em
-      margin-bottom 1em
-
-
+  .product
+    stack()
+  blockquote
+    padding 20px 20px
+  footer
+    padding 0 20px
+    section
+      stack()
 

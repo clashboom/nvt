@@ -20,6 +20,13 @@
         <!-- bower:css -->
         <!-- endbower -->
         <!-- endbuild -->
+
+        <!-- build:js js/scripts.min.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <!-- endbower -->
+        <script src="js/script.js"></script>
+        <!-- endbuild -->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -27,10 +34,9 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
           <header>
             <div>
-              <a href="/"><h1 class="brand">Navette</h1></a>
+              <h1 class="brand">Navette</h1>
             </div>
             <nav>
               <a href="">Forsiden</a>
@@ -39,34 +45,9 @@
               <a href="">Kontakt</a>
             </nav>
           </header>
-          <!-- build:js js/scripts.min.js -->
-          <!-- bower:js -->
-          <script src="bower_components/jquery/dist/jquery.js"></script>
-          <!-- endbower -->
-          <script src="js/script.js"></script>
-          <!-- endbuild -->
 
-            <section class="products">
-              <figure class="product">
-                <a href="/s565">
-                <img src="/img/s565.jpg" alt="Navette S565" />
-                <div class="description">
-                  <h2>S565</h2>
-                  <p>Rask og sikker skjærgårdsjeep med fantastiske sjøegenskaper</p>
-                </div>
-                </a>
-              </figure>
-
-              <figure class="product">
-                <a href="/s540">
-                <img src="/img/s540.jpg" alt="Navette S540" />
-                <div class="description">
-                  <h2>S540</h2>
-                  <p>Meget rask skjærgårdsjeep som er myk i sjøen og ideell for sport og fritid</p>
-                </div>
-                </a>
-              </figure>
-            </section>
+          {% block main%}
+          {% endblock %}
 
           <footer>
 
