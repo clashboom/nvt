@@ -10,6 +10,7 @@ header {
 }
 header a {
   color: #001528;
+  text-decoration: none;
 }
 header > div,
 header > div::before,
@@ -31,7 +32,7 @@ header > div::before {
 header ul {
   list-style-type: none;
 }
-header h1 {
+header h1.brand {
   font-family: Gunship, Impact, 'Helvetica Neue', sans-serif;
   letter-spacing: 5px;
   font-size: 2em;
@@ -58,8 +59,10 @@ header::after {
 }
 body {
   font-family: 'Lato', sans-serif;
+  background: #f7f7f7;
 }
-.product {
+.half {
+  position: relative;
   *zoom: 1;
   float: left;
   display: inline;
@@ -70,15 +73,22 @@ body {
   width: 50%;
   margin-left: 0%;
   margin-right: 0%;
-  position: relative;
 }
-.product:before,
-.product:after {
+.half:before,
+.half:after {
   content: '';
   display: table;
 }
-.product:after {
+.half:after {
   clear: both;
+}
+.half img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.product {
+  position: relative;
 }
 .product img {
   display: block;
@@ -105,15 +115,37 @@ body {
   margin-top: -1em;
   margin-bottom: 1em;
 }
-.products {
+.landing .description {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #f7f7f7;
+  overflow: hidden;
+}
+.landing .description h2 {
+  font-size: 5em;
+}
+.landing .description p {
+  background: rgba(0,0,0,0.5);
+  margin-top: -3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.products,
+.wrapper {
   *zoom: 1;
 }
 .products:before,
-.products:after {
+.wrapper:before,
+.products:after,
+.wrapper:after {
   content: '';
   display: table;
 }
-.products:after {
+.products:after,
+.wrapper:after {
   clear: both;
 }
 blockquote {
@@ -184,6 +216,7 @@ footer section ul {
   header h1 {
     font-size: 2em;
   }
+  .half,
   .product {
     display: block;
     clear: both;
@@ -192,17 +225,23 @@ footer section ul {
     margin-left: auto;
     margin-right: auto;
   }
+  .half:first-child,
   .product:first-child {
     margin-left: auto;
   }
+  .half:last-child,
   .product:last-child {
     margin-right: auto;
+  }
+  .half h2,
+  .product h2 {
+    font-size: 1em;
   }
   blockquote {
     padding: 20px 20px;
   }
   footer {
-    padding: 0 20px;
+    padding: 40px 20px;
   }
   footer section {
     display: block;

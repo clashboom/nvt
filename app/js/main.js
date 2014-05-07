@@ -1,1 +1,1 @@
-
+$('.post_article').scrollNav();

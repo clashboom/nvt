@@ -25,6 +25,11 @@ class Handler(webapp2.RequestHandler):
 
 class MainHandler(Handler):
     def get(self):
+        self.render('home.html')
+
+
+class BoatHandler(Handler):
+    def get(self):
         self.render('boats.html')
 
 
@@ -41,5 +46,6 @@ class S565Handler(Handler):
 app = webapp2.WSGIApplication([
     ('/s540', S540Handler),
     ('/s565', S565Handler),
+    ('/boats', BoatHandler),
     ('/.*', MainHandler),
 ], debug=True)
