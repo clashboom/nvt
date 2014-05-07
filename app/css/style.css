@@ -201,6 +201,39 @@ footer section:last-child {
 footer section ul {
   list-style-type: none;
 }
+.post__article {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: inherit;
+  width: 80%;
+  margin-left: 20%;
+  margin-right: 0%;
+}
+.post__article:before,
+.post__article:after {
+  content: '';
+  display: table;
+}
+.post__article:after {
+  clear: both;
+}
+.scroll-nav {
+  position: absolute;
+}
+.scroll-nav a {
+  color: #001528;
+  text-decoration: none;
+}
+.scroll-nav .active {
+  font-weight: bold;
+}
+.scroll-nav.fixed {
+  position: fixed;
+}
 @media screen and (max-width: 720px) {
   header {
     height: auto;

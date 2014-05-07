@@ -42,10 +42,16 @@ module.exports = function(grunt) {
                     cwd:'<%= app %>/',
                     src: ['images/**', 'fonts/**', '**/*.html', '!**/*.styl', '!bower_components/**'],
                     dest: '<%= dist %>/'
+                }, {
+                  expand: true,
+                  flatten: true,
+                  src: ['<%= app %>/bower_components/font-awesome/fonts/**'],
+                  dest: '<%= dist %>/fonts/',
+                  filter: 'isFile'
                 }]
             },
         },
-        
+
         uglify: {
             options: {
                 preserveComments: 'some',
@@ -114,7 +120,7 @@ module.exports = function(grunt) {
                 ]
             }
         }
-        
+
     });
 
     grunt.loadNpmTasks('grunt-contrib-stylus');

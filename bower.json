@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "dependencies": {
     "jquery": "~1.11.0",
-    "scrollNav": "~2.2.0"
+    "scrollNav": "~2.2.0",
+    "font-awesome": "~4.0.3"
   },
   "resolutions": {
     "jquery": "~1.11.0"
