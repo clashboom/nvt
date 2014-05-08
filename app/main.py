@@ -43,9 +43,21 @@ class S565Handler(Handler):
         self.render('s565.html')
 
 
+class ContactHandler(Handler):
+    def get(self):
+        self.render('contact.html')
+
+
+class AutoHandler(Handler):
+    def get(self):
+        self.render('automotive.html')
+
+
 app = webapp2.WSGIApplication([
     ('/s540', S540Handler),
     ('/s565', S565Handler),
     ('/boats', BoatHandler),
+    ('/auto', AutoHandler),
+    ('/contact', ContactHandler),
     ('/.*', MainHandler),
 ], debug=True)

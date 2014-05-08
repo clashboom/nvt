@@ -6,8 +6,8 @@ $('.post__article').scrollNav({
   headlineText: 'Scroll To',
   showTopLink: false,
   topLinkText: 'Top',
-  fixedMargin: 20,
-  scrollOffset: 40,
+  fixedMargin: 0,
+  scrollOffset: 20,
   animated: true,
   speed: 500,
   insertTarget: this.selector,
@@ -23,3 +23,5 @@ $.each($item, function(){
   $text = $(this).find('a').html().toLowerCase();
   $(this).addClass($text);
 });
+
+

@@ -67,6 +67,7 @@ header
 body
     font-family 'Lato', sans-serif
     background whitish
+    line-height 1.5
 
 .half
   position relative
@@ -151,24 +152,84 @@ footer
     ul
       list-style-type none
 
+
 .post__article
   span(4/5, 1/5)
+  section
+    padding-right 5%
+  img
+    display block
+    max-width 100%
+    margin 0 auto
+
+.gallery
+  img
+    display inline-block
+    padding-right 1em
+
+.equipment ul,
+.specification ol
+  span(1/2)
+
+.specification
+  dd
+    float right
+
+
+.smallprint
+  font-size 0.8em
+  color #666
+
 
 .scroll-nav
+  span(1/5)
   position absolute
+  font-size 1.5em
   a
+    line-height 1.5
     color navette
     text-decoration none
+    &:hover
+      font-weight bold
   .active
     font-weight bold
+
+.scroll-nav__list
+  padding 0
+
+.scroll-nav__wrapper
+  padding 0 0 0 25%
 
 .scroll-nav.fixed
   position fixed
 
+// Nav links
+.gallerie
+  ::before
+    font-family FontAwesome
+    content "\f03e\00a0"
 
+.beskrivelse
+  ::before
+    font-family FontAwesome
+    content "\f02d\00a0"
 
+.utstyr
+  ::before
+    font-family FontAwesome
+    content "\f0f2\00a0"
 
-@media screen and (max-width: 720px)
+.spesifikasjon
+  ::before
+    font-family FontAwesome
+    content "\f03a\00a0"
+
+article 
+  padding 20px 0 40px
+  table
+    width 100%
+
+@media screen and (max-width: 780px)
   header
     height auto
     > div,
@@ -191,4 +252,23 @@ footer
     padding 40px 20px 
     section
       stack()
+  .scroll-nav__item
+    font-size 1.5em
+    line-height 1.5em
+    margin 0 auto
+    overflow hidden
+    width 40px
+  .scroll-nav__wrapper
+    padding 0 0 0 10%
+  .equipment ul,
+  .specification ol
+      stack()
 
+@media screen and (max-width: 1250px)
+  .scroll-nav__wrapper
+    padding 0 0 0 5%
+
+@media screen and (min-width: 1600px)
+  .products
+    .product
+      span(1/2)

@@ -60,6 +60,7 @@ header::after {
 body {
   font-family: 'Lato', sans-serif;
   background: #f7f7f7;
+  line-height: 1.5;
 }
 .half {
   position: relative;
@@ -221,20 +222,114 @@ footer section ul {
 .post__article:after {
   clear: both;
 }
+.post__article section {
+  padding-right: 5%;
+}
+.post__article img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.gallery img {
+  display: inline-block;
+  padding-right: 1em;
+}
+.equipment ul,
+.specification ol {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: inherit;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.equipment ul:before,
+.specification ol:before,
+.equipment ul:after,
+.specification ol:after {
+  content: '';
+  display: table;
+}
+.equipment ul:after,
+.specification ol:after {
+  clear: both;
+}
+.specification dd {
+  float: right;
+}
+.smallprint {
+  font-size: 0.8em;
+  color: #666;
+}
 .scroll-nav {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: inherit;
+  width: 20%;
+  margin-left: 0%;
+  margin-right: 0%;
   position: absolute;
+  font-size: 1.5em;
+}
+.scroll-nav:before,
+.scroll-nav:after {
+  content: '';
+  display: table;
+}
+.scroll-nav:after {
+  clear: both;
 }
 .scroll-nav a {
+  line-height: 1.5;
   color: #001528;
   text-decoration: none;
+}
+.scroll-nav a:hover {
+  font-weight: bold;
 }
 .scroll-nav .active {
   font-weight: bold;
 }
+.scroll-nav__list {
+  padding: 0;
+}
+.scroll-nav__wrapper {
+  padding: 0 0 0 25%;
+}
 .scroll-nav.fixed {
   position: fixed;
 }
-@media screen and (max-width: 720px) {
+.gallerie ::before {
+  font-family: FontAwesome;
+  content: "\f03e\00a0";
+}
+.beskrivelse ::before {
+  font-family: FontAwesome;
+  content: "\f02d\00a0";
+}
+.utstyr ::before {
+  font-family: FontAwesome;
+  content: "\f0f2\00a0";
+}
+.spesifikasjon ::before {
+  font-family: FontAwesome;
+  content: "\f03a\00a0";
+}
+article {
+  padding: 20px 0 40px;
+}
+article table {
+  width: 100%;
+}
+@media screen and (max-width: 780px) {
   header {
     height: auto;
   }
@@ -289,5 +384,59 @@ footer section ul {
   }
   footer section:last-child {
     margin-right: auto;
+  }
+  .scroll-nav__item {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 40px;
+  }
+  .scroll-nav__wrapper {
+    padding: 0 0 0 10%;
+  }
+  .equipment ul,
+  .specification ol {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .equipment ul:first-child,
+  .specification ol:first-child {
+    margin-left: auto;
+  }
+  .equipment ul:last-child,
+  .specification ol:last-child {
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .scroll-nav__wrapper {
+    padding: 0 0 0 5%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .products .product {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: inherit;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .products .product:before,
+  .products .product:after {
+    content: '';
+    display: table;
+  }
+  .products .product:after {
+    clear: both;
   }
 }
