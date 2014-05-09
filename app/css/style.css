@@ -157,7 +157,20 @@ body a {
 .wrapper:after {
   clear: both;
 }
-footer blockquote {
+blockquote {
+  margin: 0 0 1.11111rem;
+  padding: 0.5rem 1.11111rem 0 1.05556rem;
+  border-left: 1px solid #ddd;
+  line-height: 1.6;
+}
+blockquote cite {
+  display: block;
+  font-size: 0.72222rem;
+}
+blockquote cite::before {
+  content: "\2014 \0020";
+}
+.boatline {
   font-family: "Amatic SC", cursive;
   font-size: 3em;
   text-align: center;
@@ -323,8 +336,11 @@ footer section ul {
 .spesifikasjon::before {
   content: "\f03a\00a0";
 }
+.anmeldelser::before {
+  content: "\f087\00a0";
+}
 article {
-  padding: 20px 0 40px;
+  padding: 0 0 8em;
 }
 article table {
   width: 100%;
@@ -442,6 +458,9 @@ article table {
     column-count: 3;
     column-gap: 1%;
 /* Opera 11+*/
+  }
+  .review blockquote {
+    margin: 0 10%;
   }
 }
 @media screen and (min-width: 90em) {
