@@ -1,11 +1,16 @@
 {% extends('base.html') %}
 {% block main %}
 
+<div class="contact space-wrapper">
+
+
+
 <form action="#" method="post">
-  <input type="text" name="name" id="name" placeholder="Your e-mail or mobile" required/>
-  <textarea name="msg" id=msg rows="8" cols="40" placeholder="message" required></textarea>
-  <input type="submit" name="submit" id="submit" value="Send" />
+  <input type="text" name="name" placeholder="Your e-mail or mobile" required/>
+  <textarea name="msg" rows="8" cols="40" placeholder="Your message" required></textarea>
+  <input type="submit" name="submit" class="button" value="Send" />
 </form>
+</div>
 
 {% endblock %}
 

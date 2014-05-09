@@ -5,7 +5,8 @@
 // edit()
 
 // Colorscheme
-navette = #001528
+navette = #004875
+darker = #001528
 whitish = #f7f7f7
 
 // html
@@ -68,6 +69,13 @@ body
     font-family 'Lato', sans-serif
     background whitish
     line-height 1.5
+    a
+      color navette
+      text-decoration none
+      -webkit-transition all .2s linear
+      -moz-transition all .2s linear
+      -o-transition all .2s linear
+      transition all .2s linear
 
 .half
   position relative
@@ -123,23 +131,16 @@ body
 .wrapper
   cf()
 
-blockquote
-  font-family "Amatic SC", cursive
-  font-size 3em
-  text-align center
-  display block
-  padding 2em 0
-  background navette
-  color whitish
-  margin 0
-  ::before
-    content "„"
-    left -10px
-    top -105px
-  ::after
-    bottom -90px
-    content "“"
-    right -10px
+footer
+  blockquote
+    font-family "Amatic SC", cursive
+    font-size 3em
+    text-align center
+    display block
+    padding 1em 0 0.5em
+    background navette
+    color whitish
+    margin 0
 
 footer
   color whitish
@@ -151,7 +152,6 @@ footer
     col(1/3)
     ul
       list-style-type none
-
 
 .post__article
   span(4/5, 1/5)
@@ -171,65 +171,65 @@ footer
 .specification ol
   span(1/2)
 
-.specification
-  dd
-    float right
-
 
 .smallprint
   font-size 0.8em
   color #666
 
-
 .scroll-nav
   span(1/5)
   position absolute
   font-size 1.5em
-  a
+  .scroll-nav__item
     line-height 1.5
     color navette
     text-decoration none
-    &:hover
-      font-weight bold
   .active
     font-weight bold
 
 .scroll-nav__list
   padding 0
 
-.scroll-nav__wrapper
-  padding 0 0 0 25%
-
 .scroll-nav.fixed
   position fixed
+  top 2em
+
+.scroll-nav__item::before
+  font-family FontAwesome
+  font-style normal
+  font-weight normal
+  speak none
+  display block
+  position absolute
+  pointer-events none
+  text-align center
+  width 40px
+
+.scroll-nav__item.active::before
+  font-weight bold
+
+  
+  
 
 // Nav links
-.gallerie
-  ::before
-    font-family FontAwesome
-    content "\f03e\00a0"
+.gallerie::before
+  content "\f03e\00a0"
 
-.beskrivelse
-  ::before
-    font-family FontAwesome
-    content "\f02d\00a0"
+.beskrivelse::before
+  content "\f02d\00a0"
 
-.utstyr
-  ::before
-    font-family FontAwesome
-    content "\f0f2\00a0"
+.utstyr::before
+  content "\f0f2\00a0"
 
-.spesifikasjon
-  ::before
-    font-family FontAwesome
-    content "\f03a\00a0"
+.spesifikasjon::before
+  content "\f03a\00a0"
 
 article 
   padding 20px 0 40px
   table
     width 100%
 
-@media screen and (max-width: 780px)
+@media screen and (max-width: 60em)
   header
     height auto
     > div,
@@ -258,17 +258,111 @@ article
     margin 0 auto
     overflow hidden
     width 40px
-  .scroll-nav__wrapper
-    padding 0 0 0 10%
+  .scroll-nav__link
+    display block
+    margin 0 auto
+    padding-left 42px
   .equipment ul,
   .specification ol
       stack()
+  .equipment
+    ul
+      margin-left 1em
+  .specification
+    ol,
+    ol:first-child
+      margin-left 2em
 
-@media screen and (max-width: 1250px)
+@media screen and (min-width: 60em)
+  .scroll-nav__item
+    overflow visible
+  .scroll-nav__link
+    padding-left 35px
   .scroll-nav__wrapper
-    padding 0 0 0 5%
+    margin 0 0 0 5%
+  article 
+    .description p
+      -webkit-column-count: 3;
+      -webkit-column-gap: 1%; /* Saf3, Chrome*/
+      -moz-column-count: 3;   
+      -moz-column-gap: 1%; /* FF3.5+ */
+      column-count: 3;        
+      column-gap: 1%; /* Opera 11+*/
+
+
+@media screen and (min-width: 90em)
+  .scroll-nav__wrapper
+    margin 0 0 0 25%
+
 
 @media screen and (min-width: 1600px)
   .products
     .product
       span(1/2)
+
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea 
+  -webkit-appearance none
+  background-color #fff
+  font-family inherit
+  border 1px solid #cccccc
+  box-shadow inset 0 1px 2px rgba(0, 0, 0, 0.1)
+  color rgba(0, 0, 0, 0.75)
+  display block
+  font-size 0.77778rem
+  margin 0 0 0.88889rem 0
+  padding 0.44444rem
+  height 2.05556rem
+  width 100%
+  -webkit-box-sizing border-box
+  -moz-box-sizing border-box
+  box-sizing border-box
+  transition box-shadow 0.45s border-color 0.45s ease-in-out
+
+textarea
+  height 10rem
+
+
+button,
+.button 
+  border-style solid
+  border-width 0px
+  cursor pointer
+  font-weight normal
+  line-height normal
+  margin 0 0 1.11111rem
+  position relative
+  text-decoration none
+  text-align center
+  -webkit-appearance none
+  -webkit-border-radius 0
+  display inline-block
+  padding-top 0.88889rem
+  padding-right 1.77778rem
+  padding-bottom 0.94444rem
+  padding-left 1.77778rem
+  font-size 0.88889rem
+  background-color navette
+  border-color darker
+  color whitish
+  transition background-color 300ms ease-out
+  &:hover
+    background-color darker
+
+.space-wrapper
+  padding 2em 5%
+  min-height 35em
+
