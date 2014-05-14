@@ -213,6 +213,9 @@ footer section:last-child {
 footer section ul {
   list-style-type: none;
 }
+footer a {
+  color: #f7f7f7;
+}
 .post__article {
   *zoom: 1;
   float: left;
@@ -324,19 +327,24 @@ footer section ul {
 .scroll-nav__item.active::before {
   font-weight: bold;
 }
-.gallerie::before {
+.scroll-nav__item.gallerie::before,
+.scroll-nav__item.gallery::before {
   content: "\f03e\00a0";
 }
-.beskrivelse::before {
+.scroll-nav__item.beskrivelse::before,
+.scroll-nav__item.description::before {
   content: "\f02d\00a0";
 }
-.utstyr::before {
+.scroll-nav__item.utstyr::before,
+.scroll-nav__item.equipment::before {
   content: "\f0f2\00a0";
 }
-.spesifikasjon::before {
+.scroll-nav__item.spesifikasjon::before,
+.scroll-nav__item.specification::before {
   content: "\f03a\00a0";
 }
-.anmeldelser::before {
+.scroll-nav__item.anmeldelser::before,
+.scroll-nav__item.reviews::before {
   content: "\f087\00a0";
 }
 article {
@@ -554,5 +562,7 @@ button:hover,
 }
 .space-wrapper {
   padding: 2em 5%;
-  min-height: 35em;
+}
+.translate {
+  color: #ff69b4 !important;
 }
