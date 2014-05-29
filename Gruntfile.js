@@ -11,7 +11,8 @@ module.exports = function(grunt) {
             options: {
               compress: false,
               use: [
-                require('jeet')
+                require('jeet'),
+                require('typographic')
               ]
             },
             files: {

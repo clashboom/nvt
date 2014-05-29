@@ -1,13 +1,27 @@
 @import 'jeet'
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700italic)
-// @import 'typographic'
-//
+// @import url(http://fonts.googleapis.com/css?family=Lato:400,700italic)
+
+// Typographic settings
+typo_breakpoint ?= 800px
+typo_headers ?= helvetica
+typo_header_color ?= #222
+typo_header_weight ?= 600
+typo_tagline_color ?= #aaa
+typo_body ?= helvetica
+typo_body_color ?= #444
+typo_mobile ?= major_third
+typo_desktop ?= octave
+@import 'typographic'
+
 // edit()
 
 // Colorscheme
 navette = #004875
 darker = #001528
 whitish = #f7f7f7
+background_color = navette
+text_color = navette
+link_color = whitish
 
 // html
 //   background url('/img/yahts.jpg') no-repeat center center fixed
@@ -16,13 +30,25 @@ whitish = #f7f7f7
 //   -o-background-size cover
 //   background-size cover
 
+
+body
+  font-size 1em
+  font-family 'Lato', sans-serif
+  background-color background_color
+    a
+      color link_color
+      text-decoration none
+      -webkit-transition all .2s linear
+      -moz-transition all .2s linear
+      -o-transition all .2s linear
+      transition all .2s linear
+
 header
-  background-color whitish
   text-align justify
   letter-spacing 1px
   text-transform uppercase
   height 8em
-  padding 2em 5%
+  padding 2em 10%
   color navette
   a
     color navette
@@ -46,16 +72,12 @@ header
   h1.brand
     font-family Gunship, Impact, 'Helvetica Neue', sans-serif
     letter-spacing 5px
-    font-size 2em
   nav a
-    color navette
     line-height 1.5
     padding 0 0.6em
-    white-space nowrap
-    font-family 'Lato', sans-serif
+    font-family 'Lato', Helvetica, sans-serif
     text-decoration none
-    &:last-child
-      padding-right 0
+    white-space nowrap
     &:hover
       color whitish
       background-color navette
@@ -65,25 +87,16 @@ header
     width 100%
 
 
-body
-    font-family 'Lato', sans-serif
-    background whitish
-    line-height 1.5
-    a
-      color navette
-      text-decoration none
-      -webkit-transition all .2s linear
-      -moz-transition all .2s linear
-      -o-transition all .2s linear
-      transition all .2s linear
+.page__wrapper
+  padding 0 10%
 
-.half
+
+.menu__section
   position relative
   span(1/2)
   img
     display block
     max-width 100%
-    margin 0 auto
 
 .product
   position relative
@@ -110,7 +123,7 @@ body
       margin-bottom 1em
 
 .landing
-  .description
+  .landing
     position absolute
     text-align center
     bottom 0
@@ -119,7 +132,7 @@ body
     color whitish
     overflow hidden
     h2
-      font-size 5em
+      // font-size 5em
       // text-shadow 1px 1px 0 #000
     p
       background rgba(0,0,0,0.5)
@@ -128,7 +141,7 @@ body
       padding-bottom 1em
 
 .products,
-.wrapper
+.menu
   cf()
 
 blockquote
@@ -139,7 +152,7 @@ blockquote
 
 blockquote cite
   display block
-  font-size 0.72222rem
+  // font-size 0.72222rem
   &::before
     content "\2014 \0020"
 
@@ -147,7 +160,7 @@ blockquote cite
 
 .boatline
   font-family "Amatic SC", cursive
-  font-size 3em
+  // font-size 3em
   text-align center
   display block
   padding 1em 0 0.5em
@@ -188,13 +201,13 @@ footer
 
 
 .smallprint
-  font-size 0.8em
+  // font-size 0.8em
   color #666
 
 .scroll-nav
   span(1/5)
   position absolute
-  font-size 1.5em
+  // font-size 1.5em
   .scroll-nav__item
     line-height 1.5
     color navette
@@ -223,9 +236,6 @@ footer
 .scroll-nav__item.active::before
   font-weight bold
 
-
-
-
 // Nav links
 .scroll-nav__item.gallerie::before,
 .scroll-nav__item.gallery::before
@@ -252,6 +262,16 @@ article
   table
     width 100%
 
+.section__top,
+.section__left,
+.section__right
+  img
+    center()
+
+.section
+  hr
+    margin-bottom 5em
+
 @media screen and (max-width: 60em)
   header
     height auto
@@ -263,12 +283,12 @@ article
       display block
       text-align center
     h1
-      font-size 2em
-  .half,
+      // font-size 2em
+  .landing
   .product
     stack()
     h2
-      font-size 1em
+      // font-size 1em
   blockquote
     padding 20px 20px
   footer
@@ -276,7 +296,7 @@ article
     section
       stack()
   .scroll-nav__item
-    font-size 1.5em
+    // font-size 1.5em
     line-height 1.5em
     margin 0 auto
     overflow hidden
@@ -295,6 +315,11 @@ article
     ol,
     ol:first-child
       margin-left 2em
+  .section__top,
+  .section__left,
+  .section__right
+    p
+      text-align justify
 
 @media screen and (min-width: 60em)
   .scroll-nav__item
@@ -314,6 +339,15 @@ article
   .review
     blockquote
       margin 0 10%
+    &::hover
+      background #ccc
+
+  .section__top
+    margin 5% 25%
+
+  .section__left,
+  .section__right
+    col(1/2)
 
 
 @media screen and (min-width: 90em)
@@ -348,7 +382,7 @@ textarea
   box-shadow inset 0 1px 2px rgba(0, 0, 0, 0.1)
   color rgba(0, 0, 0, 0.75)
   display block
-  font-size 0.77778rem
+  // font-size 0.77778rem
   margin 0 0 0.88889rem 0
   padding 0.44444rem
   height 2.05556rem
@@ -380,7 +414,7 @@ button,
   padding-right 1.77778rem
   padding-bottom 0.94444rem
   padding-left 1.77778rem
-  font-size 0.88889rem
+  // font-size 0.88889rem
   background-color navette
   border-color darker
   color whitish
@@ -391,6 +425,6 @@ button,
 .space-wrapper
   padding 2em 5%
 
-
 .translate
   color hotpink !important
+

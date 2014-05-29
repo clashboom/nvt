@@ -25,5 +25,9 @@
     "jeet": "~5.2.7",
     "grunt-contrib-stylus": "~0.15.0",
     "grunt-usemin": "~2.1.1"
+  },
+  "dependencies": {
+    "typographic": "0.0.4",
+    "rupture": "^0.1.0"
   }
 }

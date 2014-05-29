@@ -17,6 +17,9 @@ handlers:
   - url: /fonts
     static_dir: fonts
 
+  - url: /files
+    static_dir: files
+
   - url: /bower_components
     static_dir: bower_components
 
