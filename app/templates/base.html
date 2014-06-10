@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/html5bp.css">
         <link rel="stylesheet" href="/css/style.css">
-        <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Asmatic+SC:700|Oswald:700|Lato:400,700italic" rel="stylesheet" type="text/css" />
         <!-- bower:css -->
         <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css">
         <!-- endbower -->
@@ -35,7 +35,7 @@
 
           <header>
             <div>
-              <a href="/"><h1 class="brand">Navette</h1></a>
+              <a href="/"><h1 class="brand"><span class="fa fa-th-large brand__logo"></span>Navette</h1></a>
             </div>
             <nav>
               <a href="/auto">Automotive</a>
@@ -45,13 +45,51 @@
             </nav>
           </header>
 
+          <div class="main">
           {% block main%}
           {% endblock %}
+          </div>
+
+          <div class="cta">
+
+            <div class="cta__description">
+              <h1>Request a quote</h2>
+              <span>Interested in pricing? Let us know, please! </span>
+            </div>
+
+            <div class="cta__form">
+              <form action="" method="post">
+                <label for="email">Your email?
+                  <input type="email" name="email" id="email" placeholder="Your e-mail address" />
+                </label>
+
+                <label for="email">Where are you? 
+                  <input type="text" name="country" id="country" placeholder="Country" />
+                </label>
+
+                <label for="msg">Which product?
+                  <textarea name="msg" id=msg rows="8" cols="40" placeholder="Which product interests you? Where are you located?"></textarea>
+                </label>
+
+                <input type="submit" name="submit" id="submit" value="Send" />
+              </form>
+            </div>
+
+            <div class="cta__note">
+
+            <hr />
+
+            <p>Need a quote for a custom project? Have questions about our products? Or just want to just say "Hi!"? Go to <a href="/contact">our contact page</a>.</p>
+            </div>
+            
+          </div>
 
           <footer>
 
             <section>
               <ul>
+                <li class="list__title">Contact</li>
+                <li><hr /></li>
                 <li>Navette AS</li>
                 <li>Adresse: Kongensgate 5, 6002 Ålesund, Norway </li>
                 <li>Telefon: +47 70 12 18 03</li>
@@ -62,16 +100,26 @@
 
             <section>
               <ul>
-                <li>Rune Nilsen, Manager</li>
-                <li> Mob. +47 90 12 32 05 </li>
-                <li> E-post: rune@navette.no </li>
+                <li class="list__title">Navigation</li>
+                <li><hr /></li>
+                <li><a href="/auto">Automotive</a></li>
+                <li><a href="/water">Watercraft</a></li>
+                <li><a href="/about">About us</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/sitemap">Sitemap</a></li>
               </ul>
             </section>
 
             <section>
               <ul>
-                <li> &copy; Navette 2014 </li>
-                <li> <a href="/locale/en" rel="nofollow">English</a></li>
+                <li class="list__title">Social</li>
+                <li><hr /></li>
+                <a href=""><li class="fa fa-twitter"></li><a>
+                <a href=""><li class="fa fa-google-plus"></li></a>
+                <a href=""><li class="fa fa-flickr"></li></a>
+                <a href=""><li class="fa fa-facebook"></li></a>
+                <li> &copy; <span class="brand">Navette</span> 2014 </li>
+                <li><a href="/locale/en" rel="nofollow">English</a></li>
                 <li><a href="/locale/no" rel="nofollow">Norsk</a></li>
               </ul>
             </section>

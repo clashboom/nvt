@@ -1,15 +1,14 @@
 @import 'jeet'
-// @import url(http://fonts.googleapis.com/css?family=Lato:400,700italic)
 
-// Typographic settings
+// Typograpic
 typo_breakpoint ?= 800px
-typo_headers ?= helvetica
+typo_headers ?= oswald
 typo_header_color ?= #222
 typo_header_weight ?= 600
 typo_tagline_color ?= #aaa
-typo_body ?= helvetica
+typo_body ?= lato
 typo_body_color ?= #444
-typo_mobile ?= major_third
+typo_mobile ?= minor_sixth
 typo_desktop ?= octave
 @import 'typographic'
 
@@ -23,6 +22,18 @@ background_color = navette
 text_color = navette
 link_color = whitish
 
+h1 
+  font-weight 700
+  text-transform uppercase
+
+
+header
+  background #bbb
+.cta
+  background #aaa
+.main
+  background #eee
+
 // html
 //   background url('/img/yahts.jpg') no-repeat center center fixed
 //   -webkit-background-size cover
@@ -30,11 +41,14 @@ link_color = whitish
 //   -o-background-size cover
 //   background-size cover
 
+html
+  -webkit-text-size-adjust 100%
+  -ms-text-size-adjust 100%
+  font-size 100%
 
 body
-  font-size 1em
-  font-family 'Lato', sans-serif
-  background-color background_color
+  font-size 16px
+  background-color whitish
     a
       color link_color
       text-decoration none
@@ -50,6 +64,8 @@ header
   height 8em
   padding 2em 10%
   color navette
+  h1
+    font-size ms(25)
   a
     color navette
     text-decoration none
@@ -69,13 +85,15 @@ header
       height 100%
   ul
     list-style-type none
-  h1.brand
+  .brand
     font-family Gunship, Impact, 'Helvetica Neue', sans-serif
     letter-spacing 5px
+    color navette
+  .brand__logo
+    margin-right 20px
   nav a
     line-height 1.5
     padding 0 0.6em
-    font-family 'Lato', Helvetica, sans-serif
     text-decoration none
     white-space nowrap
     &:hover
@@ -86,10 +104,18 @@ header
     display inline-block
     width 100%
 
+.menu
+  text-align center
 
-.page__wrapper
-  padding 0 10%
+.menu__title
+  display block
+  text-transform uppercase
 
+.menu__subtitle
+  display block
+  font-weight 700
+  font-style italic
+  margin-bottom 5em
 
 .menu__section
   position relative
@@ -97,6 +123,22 @@ header
   img
     display block
     max-width 100%
+
+.menu__section__description
+  display block
+  width 100%
+  position absolute
+  bottom ms(20)
+  text-align center
+  color whitish
+  h2
+    font-family lato
+    font-weight 700
+    font-style italic
+    font-size ms(30)
+  p
+    font-style italic
+
 
 .product
   position relative
@@ -122,23 +164,38 @@ header
       margin-top -1em
       margin-bottom 1em
 
+.main
+  display block
+  min-height 40em
+  padding 2em 10%
+
+.cta
+  padding 5em 10%
+  cf()
+
+.cta__description,
+.cta__form
+  span(1/2)
+
+.cta__note
+  span(1)
+
 .landing
-  .landing
-    position absolute
-    text-align center
-    bottom 0
-    left 0
-    right 0
-    color whitish
-    overflow hidden
-    h2
-      // font-size 5em
-      // text-shadow 1px 1px 0 #000
-    p
-      background rgba(0,0,0,0.5)
-      margin-top -3em
-      padding-top 1em
-      padding-bottom 1em
+  position absolute
+  text-align center
+  bottom 0
+  left 0
+  right 0
+  color whitish
+  overflow hidden
+  h2
+    // font-size 5em
+    // text-shadow 1px 1px 0 #000
+  p
+    background rgba(0,0,0,0.5)
+    margin-top -3em
+    padding-top 1em
+    padding-bottom 1em
 
 .products,
 .menu
@@ -173,13 +230,23 @@ footer
   background navette
   display block
   min-height 12em
-  padding 2em 5% 0
+  height 100%
+  padding 5em 5% 2em
+  cf()
   section
     col(1/3)
     ul
       list-style-type none
   a
     color whitish
+    text-decoration none
+  li.list__title
+    font-weight 700
+    font-style italic
+  li.fa
+    display inline-block
+    margin-right 20px
+    font-size 1.5em
 
 .post__article
   span(4/5, 1/5)
@@ -282,19 +349,18 @@ article
       width auto
       display block
       text-align center
-    h1
-      // font-size 2em
-  .landing
-  .product
+  .product,
+  .menu__section,
+  .cta__description,
+  .cta__form
     stack()
-    h2
-      // font-size 1em
   blockquote
     padding 20px 20px
   footer
     padding 40px 20px
     section
       stack()
+      margin-top 2em
   .scroll-nav__item
     // font-size 1.5em
     line-height 1.5em
@@ -421,9 +487,6 @@ button,
   transition background-color 300ms ease-out
   &:hover
     background-color darker
-
-.space-wrapper
-  padding 2em 5%
 
 .translate
   color hotpink !important

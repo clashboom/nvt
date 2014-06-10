@@ -22,7 +22,7 @@ JINJA_ENV = jinja2.Environment(loader=jinja2.FileSystemLoader(TEMPLATE_DIR),
 # Webapp2 Sessions config
 config = {}
 config['webapp2_extras.sessions'] = {
-    'secret_key': 'my-super-secret-key',
+    'secret_key': 'navettes-super-secret-key',
     'name': 'navette_session',
 }
 
