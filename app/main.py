@@ -22,7 +22,7 @@ JINJA_ENV = jinja2.Environment(loader=jinja2.FileSystemLoader(TEMPLATE_DIR),
 # Webapp2 Sessions config
 config = {}
 config['webapp2_extras.sessions'] = {
-    'secret_key': 'navettes-super-secret-key',
+    'secret_key': 'navettes-not-so-secret-key',
     'name': 'navette_session',
 }
 
@@ -63,15 +63,16 @@ def parseAcceptLanguage(acceptLanguage):
 
 
 def detectLocale(acceptLanguage):
-    defaultLocale = 'en_US'
-    supportedLocales = ['no', 'en']
+    # defaultLocale = 'en_US'
+    defaultLocale = 'no'
+    # supportedLocales = ['no', 'en']
 
-    locale_q_pairs = parseAcceptLanguage(acceptLanguage)
-    for pair in locale_q_pairs:
-        for locale in supportedLocales:
-            # pair[0] is locale, pair[1] is q value
-            if pair[0].replace('-', '_').lower().startswith(locale.lower()):
-                return locale
+    # locale_q_pairs = parseAcceptLanguage(acceptLanguage)
+    # for pair in locale_q_pairs:
+    #     for locale in supportedLocales:
+    #         # pair[0] is locale, pair[1] is q value
+    #         if pair[0].replace('-', '_').lower().startswith(locale.lower()):
+    #             return locale
 
     return defaultLocale
 

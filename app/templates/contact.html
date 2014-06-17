@@ -1,14 +1,28 @@
 {% extends('base.html') %}
+{% set active_page="contact" %}
 {% block main %}
 
 <div class="contact space-wrapper">
 
+<h1>Get in touch</h1>
+<span class="subtitle"> Drop us a line. We'd be delighted.</span>
 
 <form action="#" method="post">
-  <input type="text" name="name" placeholder="Your e-mail or mobile" required/>
+
+  <label for="name">Name:</label>
+  <input type="text" name="name" placeholder="Your name" required/>
+
+  <label for="email">Email:</label>
+  <input type="text" name="email" placeholder="Your e-mail" required/>
+
+  <label for="msg">Message:</label>
   <textarea name="msg" rows="8" cols="40" placeholder="Your message" required></textarea>
+
   <input type="submit" name="submit" class="button" value="Send" />
 </form>
+
+
+
 </div>
 
 {% endblock %}
