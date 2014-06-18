@@ -177,6 +177,10 @@ header
   padding 5em 10%
   cf()
 
+.scroll-nav__section
+  padding-top 2em
+  cf()
+
 .cta__description,
 .cta__form
   span(1/2)
@@ -252,6 +256,7 @@ footer
     margin-right 20px
     font-size 1.5em
 
+
 .post__article
   section
     padding-right 5%
@@ -260,14 +265,27 @@ footer
     max-width 100%
     margin 0 auto
 
+
 .gallery
   img
     display inline-block
     padding-right 1em
 
+
+.half,
 .equipment ul,
 .specification ol
   span(1/2)
+
+
+.title
+  color #666
+  font-style italic
+
+
+.contact
+  li
+    list-style-type none
 
 
 .smallprint
@@ -342,6 +360,7 @@ article
   hr
     margin-bottom 5em
 
+
 @media screen and (max-width: 64em)
   .main
     padding 0 5%
@@ -368,6 +387,7 @@ article
       margin-top 2em
   .scroll-nav
     span(1/5)
+    margin-left -10px
   .post__article
     span(4/5, 1/5)
   .scroll-nav__item
@@ -396,6 +416,7 @@ article
     p
       text-align justify
 
+
 @media screen and (min-width: 64em)
   .scroll-nav
     span(1/5)
@@ -408,7 +429,7 @@ article
   .scroll-nav__wrapper
     margin 0 0 0 5%
   article
-    .description p
+    .columns
       -webkit-column-count: 3;
       -webkit-column-gap: 1%; /* Saf3, Chrome*/
       -moz-column-count: 3;
@@ -432,9 +453,10 @@ article
 @media screen and (min-width: 90em)
   .scroll-nav__wrapper
     margin 0 0 0 25%
-  .scroll-nav__item
-    font-size ms(16)
 
+@media screen and (min-width: 120em)
+  .scroll-nav__item
+    font-size ms(14)
 
 @media screen and (min-width: 1600px)
   .products

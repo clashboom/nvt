@@ -157,9 +157,21 @@ class AutoHandler(Handler):
         self.render('automotive.html')
 
 
+class AmarokHandler(Handler):
+    def get(self):
+        self.render("amarok.html")
+
+
+class HiluxHandler(Handler):
+    def get(self):
+        self.render("hilux.html")
+
+
 app = webapp2.WSGIApplication([
     ('/s540', S540Handler),
     ('/s565', S565Handler),
+    ('/amarok', AmarokHandler),
+    ('/hilux', HiluxHandler),
     ('/boats', BoatHandler),
     ('/auto', AutoHandler),
     ('/contact', ContactHandler),

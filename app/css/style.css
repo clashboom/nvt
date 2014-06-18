@@ -318,6 +318,18 @@ header::after {
 .cta:after {
   clear: both;
 }
+.scroll-nav__section {
+  padding-top: 2em;
+  *zoom: 1;
+}
+.scroll-nav__section:before,
+.scroll-nav__section:after {
+  content: '';
+  display: table;
+}
+.scroll-nav__section:after {
+  clear: both;
+}
 .cta__description,
 .cta__form {
   *zoom: 1;
@@ -481,6 +493,7 @@ footer li.fa {
   display: inline-block;
   padding-right: 1em;
 }
+.half,
 .equipment ul,
 .specification ol {
   *zoom: 1;
@@ -494,16 +507,26 @@ footer li.fa {
   margin-left: 0%;
   margin-right: 0%;
 }
+.half:before,
 .equipment ul:before,
 .specification ol:before,
+.half:after,
 .equipment ul:after,
 .specification ol:after {
   content: '';
   display: table;
 }
+.half:after,
 .equipment ul:after,
 .specification ol:after {
   clear: both;
+}
+.title {
+  color: #666;
+  font-style: italic;
+}
+.contact li {
+  list-style-type: none;
 }
 .smallprint {
   color: #666;
@@ -669,6 +692,7 @@ article table {
     width: 20%;
     margin-left: 0%;
     margin-right: 0%;
+    margin-left: -10px;
   }
   .scroll-nav:before,
   .scroll-nav:after {
@@ -790,7 +814,7 @@ article table {
   .scroll-nav__wrapper {
     margin: 0 0 0 5%;
   }
-  article .description p {
+  article .columns {
     -webkit-column-count: 3;
     -webkit-column-gap: 1%;
 /* Saf3, Chrome*/
@@ -843,8 +867,10 @@ article table {
   .scroll-nav__wrapper {
     margin: 0 0 0 25%;
   }
+}
+@media screen and (min-width: 120em) {
   .scroll-nav__item {
-    font-size: 25.6px;
+    font-size: 22.400000000000002px;
   }
 }
 @media screen and (min-width: 1600px) {
