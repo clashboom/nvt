@@ -32,9 +32,11 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+          <div class="topbar">
+          </div>
           <header>
             <div>
-              <a href="/"><h1 class="brand"><span class="fa brand__logo"></span>Navette</h1></a>
+              <a href="/"><h1 class="brand"></span>Navette</h1></a>
             </div>
 
             {% set navigation_bar = [
@@ -49,7 +51,7 @@
                 <a {% if id == active_page %} class="active"{% endif
                 %} href="{{ href|e }}">{{ caption|e }}</a>
               {% endfor %}
-            </nav>  
+            </nav>
           </header>
 
           <div class="main">
@@ -73,7 +75,7 @@
                   <input type="email" name="email" id="email" placeholder="Your e-mail address" />
                 </label>
 
-                <label for="email">Where are you located? 
+                <label for="email">Where are you located?
                   <input type="text" name="country" id="country" placeholder="Country" />
                 </label>
 
@@ -81,7 +83,7 @@
                   <textarea name="msg" id=msg rows="8" cols="40" placeholder="What interests you?"></textarea>
                 </label>
 
-                <input type="submit" name="submit" id="submit" value="Send" />
+                <input class="button" type="submit" name="submit" id="submit" value="Send" />
               </form>
             </div>
 
@@ -91,7 +93,7 @@
 
             <p>Need a quote for a custom project? Have any questions about our products? Or just want to just say "Hi!"? Go to <a href="/contact">our contact page</a>.</p>
             </div>
-            
+
           </div>
           {% endif %}
 
@@ -123,15 +125,13 @@
 
             <section>
               <ul>
-                <li class="list__title">Social</li>
+                <li class="list__title">Site</li>
                 <li><hr /></li>
-                <a href=""><li class="fa fa-twitter"></li><a>
-                <a href=""><li class="fa fa-google-plus"></li></a>
-                <a href=""><li class="fa fa-flickr"></li></a>
-                <a href=""><li class="fa fa-facebook"></li></a>
-                <li> &copy; <span class="brand">Navette</span> 2014 </li>
                 <li><a href="/locale/en" rel="nofollow">English</a></li>
                 <li><a href="/locale/no" rel="nofollow">Norsk</a></li>
+                <li><a href="/locale/en" rel="nofollow">Privacy policy</a></li>
+                <li><a href="/locale/en" rel="nofollow">Terms & Conditions</a></li>
+                <li> &copy; <span class="brand">Navette</span> 2014 </li>
               </ul>
             </section>
 

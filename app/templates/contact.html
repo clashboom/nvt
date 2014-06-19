@@ -1,61 +1,65 @@
 {% extends('base.html') %}
 {% set active_page="contact" %}
 {% block main %}
-
 <div class="contact space-wrapper">
 
-<div>
-<ul>
-<li><strong>Headquarters</strong></li>
-<li>Navette AS</li>
-<li>Adresse: Kongensgate 5, 6002 Ålesund, Norway </li>
-<li>+47 70 12 18 03</li>
-<li>+47 70 10 44 61</li>
-<li>post@navette.no</li>
-</ul>
-<img src="http://placehold.it/250x250&text=Google+Maps" alt="">
+  <div class="contact__list">
+    <div class="contact__entry">
+      <div class="contact__details">
+        <ul>
+          <li><strong>Headquarters</strong></li>
+          <li>Navette AS</li>
+          <li>Kongensgate 5, 6002 Ålesund, Norway </li>
+          <li>+47 70 12 18 03</li>
+          <li>+47 70 10 44 61</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="contact__entry">
+      <div class="contact__details">
+        <ul>
+          <li><strong>Production operations</strong></li>
+          <li>PLAST-TECH SIA</li>
+          <li>"Enkuri", Saldus nov., Kurzeme, Latvia, LV-3801</li>
+          <li>+371 1245678</li>
+          <li>edgars@plasttech.lv</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="contact__entry">
+      <div class="contact__details">
+        <ul>
+          <li><strong>Manager</strong></li>
+          <li>Rune Nilsen</li>
+          <li>+47 90 12 32 05</li>
+          <li>rune@navette.no</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact__form">
+    <h2>Send a message</h2>
+    <span class="subtitle"> Drop us a line. We'd be delighted.</span>
+
+    <form action="#" method="post">
+
+      <label for="name">Name:</label>
+      <input type="text" name="name" placeholder="Your name" required/>
+
+      <label for="email">Email:</label>
+      <input type="text" name="email" placeholder="Your e-mail" required/>
+
+      <label for="msg">Message:</label>
+      <textarea name="msg" rows="8" cols="40" placeholder="Your message" required></textarea>
+
+      <input type="submit" name="submit" class="button" value="Send" />
+    </form>
+  </div>
+
 </div>
-
-<div>
-  <ul>
-    <li><strong>Rune Nilsen</strong></li>
-    <li><span class="title">Manager</span></li>
-    <li>+47 90 12 32 05</li>
-    <li>rune@navette.no</li>
-  </ul>
-</div>
-
-<div>
-<ul>
-<li><strong>Production operations</strong></li>
-<li>PLAST-TECH SIA</li>
-<li>"Enkuri", Saldus nov., Kurzeme, Latvia, LV-3801</li>
-<li>+47 70 12 18 03</li>
-<li>+47 70 10 44 61</li>
-<li>edgars@plasttech.lv</li>
-</ul>
-<img src="http://placehold.it/250x250&text=Google+Maps" alt="">
-</div>
-
-<h2>Get in touch</h2>
-<span class="subtitle"> Drop us a line. We'd be delighted.</span>
-
-<form action="#" method="post">
-
-  <label for="name">Name:</label>
-  <input type="text" name="name" placeholder="Your name" required/>
-
-  <label for="email">Email:</label>
-  <input type="text" name="email" placeholder="Your e-mail" required/>
-
-  <label for="msg">Message:</label>
-  <textarea name="msg" rows="8" cols="40" placeholder="Your message" required></textarea>
-
-  <input type="submit" name="submit" class="button" value="Send" />
-</form>
-
-</div>
-
 {% endblock %}
 
 
