@@ -5,14 +5,19 @@ import jinja2
 import os
 import webapp2
 
-from google.appengine.api import memcache
+from functools import wraps
 
+from google.appengine.api import images
+# from google.appengine.api import mail
+from google.appengine.api import memcache
+from google.appengine.api import urlfetch
 from google.appengine.ext import ndb
+from google.appengine.ext import blobstore
+from google.appengine.ext.webapp import blobstore_handlers
+# from google.appengine.runtime import apiproxy_errors
 
 from webapp2_extras import sessions
 from webapp2_extras import sessions_memcache
-
-from functools import wraps
 
 TEMPLATE_DIR = os.path.join(os.path.dirname(__file__), 'templates')
 JINJA_ENV = jinja2.Environment(loader=jinja2.FileSystemLoader(TEMPLATE_DIR),
@@ -122,6 +127,48 @@ class ChangeLocale(Handler):
         self.redirect(self.request.referer)
 
 
+class EditProductHandler(Handler):
+    def get(self):
+        upload_url = blobstore.create_upload_url('/upload')
+        self.render('edit_product.html', upload_url=upload_url)
+
+
+class ServeHandler(blobstore_handlers.BlobstoreDownloadHandler):
+    def get(self, resource):
+        image = (images.get_serving_url(resource, 32))
+        if image:
+            self.response.out.write("%s" % image)
+
+
+class UploadHandler(blobstore_handlers.BlobstoreUploadHandler):
+    def post(self):
+        upload_files = self.get_uploads('file')
+        blob_info = upload_files[0]
+        self.redirect('/serve/%s' % blob_info.key())
+
+
+class ThumbnailHandler(blobstore_handlers.BlobstoreDownloadHandler):
+    def get(self, resource):
+        resource = str(urllib.unquote(resource))
+        blob_info = blobstore.BlobInfo.get(resource)
+
+        size = self.request.get('size')
+        size = int(size) if size else 100
+
+        if blob_info:
+            img = images.Image(blob_key=resource)
+            img.resize(width=size, height=size)
+            thumbnail = img.execute_transforms(output_encoding=images.JPG)
+
+            self.response.headers['Content-Type'] = 'image/jpg'
+            self.response.out.write(thumbnail)
+            return
+
+        # Either the blob key was not provided or there was no value with that
+        # ID in the Blobstore
+        self.error(404)
+
+
 class MainHandler(Handler):
     def get(self):
         self.render('home.html')
@@ -167,6 +214,30 @@ class HiluxHandler(Handler):
         self.render("hilux.html")
 
 
+class Product(ndb.Model):
+    name = ndb.StringProperty(required=True)
+    template = ndb.StringProperty()
+
+    @property
+    def pictures(self):
+        return Gallery.query(Gallery.product==self.name)
+
+
+class Gallery(ndb.Model):
+    product = ndb.StringProperty(required=True)
+    pictures = ndb.BlobKeyProperty(repeated=True)
+
+
+class ProductHandler(Handler):
+    def get(self, product):
+        product = Product.query(Product.name==product).get()
+
+        if product:
+            self.render(product.template)
+
+        self.error(404)
+
+
 app = webapp2.WSGIApplication([
     ('/s540', S540Handler),
     ('/s565', S565Handler),
@@ -177,5 +248,9 @@ app = webapp2.WSGIApplication([
     ('/contact', ContactHandler),
     ('/about', AboutHandler),
     ('/locale(?:/)?(.*)?', ChangeLocale),
+    # ('/edit', EditProductHandler),
+    ('/upload', UploadHandler),
+    ('/serve/([^/]+)?', ServeHandler),
+    ('/product/([^/]+)?', ProductHandler),
     ('/.*', MainHandler),
 ], config=config, debug=True)
