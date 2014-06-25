@@ -122,6 +122,12 @@ header
   font-style italic
   margin-bottom 5em
 
+.about__img
+    -webkit-box-shadow 0px 6px 5px rgba(0, 0, 0, 0.1)
+    -moz-box-shadow 0px 6px 5px rgba(0, 0, 0, 0.1)
+    box-shadow 0px 6px 5px rgba(0, 0, 0, 0.1)
+
+
 .menu__section,
 .product
   position relative
@@ -132,18 +138,10 @@ header
   background-size cover
   background-position center top
   margin-bottom ms(40)
-  col(1/2)
+  col(12/25)
   img
     display block
     max-width 100%
-    margin 0 auto
-    opacity 1.0
-    -o-transition opacity 0.3s
-    -webkit-transition opacity 0.3s
-    -moz-transition opacity 0.3s
-  &:hover
-    img
-      opacity 1.0
   .product__description,
   .menu__section__description
     text-align center
@@ -165,19 +163,15 @@ header
   display block
   padding ms(20) 10% ms(40)
 
-.cta
-  padding ms(40) 10%
-
-.scroll-nav__section
-  padding-top ms(20)
-  h2
-    padding ms(20) 0 ms(10)
+.about,
+article
+  p
+    text-align justify
 
 .cta__description
   span(2/6)
 .cta__form
   span(4/6)
-
 .cta__note
   span(1)
 
@@ -185,8 +179,9 @@ header
 .menu,
 .main,
 .cta,
-.scroll-nav__section,
-.contact__form
+.contact__form,
+article > div,
+.about > div
   cf()
 
 blockquote
@@ -224,6 +219,8 @@ footer
   a
     color whitish
     text-decoration none
+    &:hover
+      color ocean
   li.list__title
     font-weight 700
     font-style italic
@@ -232,15 +229,11 @@ footer
     // margin-right 20px
     font-size 1.5em
 
-
-.post__article
-  section
-    padding-right 5%
+article
   img
     display block
     max-width 100%
     margin 0 auto
-
 
 .gallery
   .gallery__img
@@ -261,17 +254,26 @@ footer
     &:focus
       box-shadow: 0 0 6px 1px rgba(0, 140, 186, 0.5);
 
+
+.about__section
+  margin-bottom ms(30)
+  .about__img
+    max-height ms(100)
+    margin-bottom ms(10)
+    overflow hidden
+  img
+    max-width 100%
+
 .half,
 .equipment ul,
 .specification ol
-  span(1/2)
+  col(1/2)
 
 .specification
-  ol
-    margin-top ms(20)
+  img
+    margin-bottom ms(20)
   hr
     clear both
-
 
 .contact
   .contact__list
@@ -285,63 +287,9 @@ footer
       display block
       margin-bottom ms(10)
 
-
 .smallprint
   font-size ms(8)
   color #666
-
-.scroll-nav
-  position absolute
-  .scroll-nav__item
-    line-height 1.5
-    color navette
-  .active
-    font-weight bold
-  .scroll-nav__link
-    color navette
-    text-decoration none
-
-.scroll-nav__list
-  padding 0
-
-.scroll-nav.fixed
-  position fixed
-  top 2em
-
-.scroll-nav__item::before
-  font-family FontAwesome
-  font-style normal
-  font-weight normal
-  speak none
-  display block
-  position absolute
-  pointer-events none
-  text-align center
-  width 40px
-
-.scroll-nav__item.active::before
-  font-weight bold
-
-// Nav links
-.scroll-nav__item.gallerie::before,
-.scroll-nav__item.gallery::before
-  content "\f03e\00a0"
-
-.scroll-nav__item.beskrivelse::before,
-.scroll-nav__item.description::before
-  content "\f02d\00a0"
-
-.scroll-nav__item.utstyr::before,
-.scroll-nav__item.equipment::before
-  content "\f0f2\00a0"
-
-.scroll-nav__item.spesifikasjon::before,
-.scroll-nav__item.specification::before
-  content "\f03a\00a0"
-
-.scroll-nav__item.anmeldelser::before
-.scroll-nav__item.reviews::before
-  content "\f087\00a0"
 
 article
   table
@@ -350,7 +298,6 @@ article
 tbody
   tr:nth-child(odd)
     background-color #ebebeb
-
 
 @media screen and (max-width: 64em)
   .main
@@ -364,6 +311,7 @@ tbody
       width auto
       display block
       text-align center
+  .half,
   .product,
   .menu__section,
   .cta__description,
@@ -379,55 +327,30 @@ tbody
     section
       stack()
       margin-top ms(20)
-  .scroll-nav
-    span(1/5)
-    margin-left -10px
-  .post__article
-    span(4/5, 1/5)
-  .scroll-nav__item
-    font-size ms(25)
-    line-height 1.5em
-    margin 0 auto
-    overflow hidden
-    width 40px
-  .scroll-nav__link
-    display block
-    margin 0 auto
-    padding-left 45px
-  .equipment ul,
-  .specification ol
-      stack()
+  .equipment ul
+    stack()
   .equipment
     ul
       margin-left 1em
   .specification
     ol,
     ol:first-child
-      margin-left 2em
-  .section__top,
-  .section__left,
-  .section__right
-    p
-      text-align justify
+      margin-left 1em
   .gallery__img
-    margin-right ms(5)
+    margin-right ms(3)
+  article > div
+    margin-bottom ms(20)
+  .cta 
+    margin-top ms(20)
 
 
 @media screen and (min-width: 64em)
   .main
     padding ms(20) 10% ms(40)
+  .cta 
+    margin-top ms(60)
   footer
     padding ms(50) 5% ms(20)
-  .scroll-nav
-    span(1/5)
-  .post__article
-    span(4/5, 1/5)
-  .scroll-nav__item
-    font-size ms(12)
-  .scroll-nav__link
-    padding-left 35px
-  .scroll-nav__wrapper
-    margin 0 0 0 5%
   article
     .columns
       -webkit-column-count: 3;
@@ -436,6 +359,8 @@ tbody
       -moz-column-gap: 1%; /* FF3.5+ */
       column-count: 3;
       column-gap: 1%; /* Opera 11+*/
+  article > div
+    margin-bottom ms(40)
   .review
     blockquote
       margin 0 10%
@@ -444,10 +369,6 @@ tbody
   .gallery__img
     margin-right ms(15)
 
-
-@media screen and (min-width: 120em)
-  .scroll-nav__item
-    font-size ms(14)
 
 @media screen and (min-width: 125em)
   .main

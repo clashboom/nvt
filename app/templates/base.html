@@ -8,7 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0;">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
@@ -60,43 +60,6 @@
           {% block main%}
           {% endblock %}
           </div>
-
-
-          {% if active_page=="boats" %}
-          <div class="cta">
-
-            <div class="cta__description">
-              <h1>Request a quote</h2>
-              <span>Interested in pricing? Let us know, please! </span>
-            </div>
-
-            <div class="cta__form">
-              <form action="" method="post">
-                <label for="email">Your email?
-                  <input type="email" name="email" id="email" placeholder="Your e-mail address" />
-                </label>
-
-                <label for="email">Where are you located?
-                  <input type="text" name="country" id="country" placeholder="Country" />
-                </label>
-
-                <label for="msg">Which product?
-                  <textarea name="msg" id=msg rows="8" cols="40" placeholder="What interests you?"></textarea>
-                </label>
-
-                <input class="button" type="submit" name="submit" id="submit" value="Send" />
-              </form>
-            </div>
-
-            <div class="cta__note">
-
-            <hr />
-
-            <p>Need a quote for a custom project? Have any questions about our products? Or just want to just say "Hi!"? Go to <a href="/contact">our contact page</a>.</p>
-            </div>
-
-          </div>
-          {% endif %}
 
           <footer>
 

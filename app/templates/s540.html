@@ -1,23 +1,23 @@
 {% extends('base.html') %}
 {% block main %}
 
-
 <article class="post__article">
   <div class="post__header">
     <h1 class="post__heading">S 540</h1>
+    <img src="/img/s540m.jpg" alt="Navette S 540" />
   </div>
 
-  <img src="/img/s540m.jpg" alt="Navette S 540" />
-
   <div class="gallery">
-    <h2>Gallerie</h2>
-    <img src="http://placehold.it/250x250" alt="1" />
-    <img src="http://placehold.it/250x250" alt="1" />
-    <img src="http://placehold.it/250x250" alt="1" />
-    <img src="http://placehold.it/250x250" alt="1" />
+    <a class="gallery__img th" href="http://lorempixel.com/600/600"><img src="http://lorempixel.com/250/350" alt=""></a>
+    <a class="gallery__img th" href="http://lorempixel.com/700/700"><img src="http://lorempixel.com/100/100" alt=""></a>
+    <a class="gallery__img th" href="http://lorempixel.com/1920/1080"><img src="http://lorempixel.com/180/200" alt=""></a>
+    <a class="gallery__img th" href="http://lorempixel.com/900/400"><img src="http://lorempixel.com/170/190" alt=""></a>
+    <a class="gallery__img th" href="http://lorempixel.com/1000/500"><img src="http://lorempixel.com/300/200" alt=""></a>
+    <a class="gallery__img th" href="img/amarok.jpg"><img src="http://lorempixel.com/250/250" alt=""></a>
   </div>
 
   <div class="description">
+    <div>
     <h2>Beskrivelse</h2>
     <p class="columns">
       S540 er en sportslig styrekonsollbåt med sportslige og sikre sjøegenskaper. Under utviklingen av båten er det lagt særlig vekt på ergonometri. Det er enkelt å bevege seg i båten og sitteplassene er behagelige. Førerplassen er blant markedets desidert beste. Føreren kan sitte, halvt stå eller stå og likevel ha god oversikt over instrumenter og farvann. Ratt og gass/trim sitter akkurat der de skal være. Der er god plass til beina under styrekonsollen og knær kommer ikke i konflikt med noen kanter. Cocpitdybden er 62 cm på det laveste.
@@ -25,17 +25,18 @@
       Alt utstyr ombord er av beste kvalitet. Alle beslag er i rustfritt syrefast materiale.
       Under styrekonsollen er der et romslig stuerom. Under akterbenken er batterikasse, tankinspeksjon, samt stort stuverom.
     </p>
-
-    <strong>Kvalitet - Sikkerhet</strong> <br />
+    </div>
+    <div class="half">
+    <h6>Kvalitet - Sikkerhet</h6>
     <p>Det er brukt førsteklasses GRP materialer i støpen. Gelcoaten er av en type som har den beste lysekthet og det er minimal vanninntrenging i den. Dette hindrer osmose.  Både i skrog og overbygg er det brukt sydd triaksial glassfibermatte. Dette gir et bedre styrk/vekt forhold. Alle beslag og skruer er i syrefast materiale. </p>
+    </div>
   </div>
 
   <div class="equipment">
     <h2>Utstyr</h2>
 
-
-    <strong>Standardutstyr S 540</strong> <br />
     <ul>
+      <h6>Standardutstyr S 540</h6>
       <li>Polstret sete med vippefront og gassdemper</li>
       <li>Fastmontert, nedfellbar badestig</li>
       <li>Stuverom for anker/tauverk</li>
@@ -51,9 +52,8 @@
       <li>Konsolltrekk</li>
     </ul>
 
-
-    <strong>Ekstrautstyr S 540</strong><br />
     <ul>
+      <h6>Ekstrautstyr S 540</h6>
       <li>Blått/hvitt skrog</li>
       <li>Flexiteek dørk</li>
       <li>Kalesje</li>
@@ -68,12 +68,10 @@
 
   </div>
 
-
   <div class="specification">
 
     <h2>Spesifikasjon</h2>
     <img src="/img/s540t.jpg" alt="S540 Spesifikasjon" />
-
 
     <ol>
       <li>Drenering</li>
@@ -90,9 +88,7 @@
       <li>Hanskerom</li>
     </ol>
 
-
     <hr />
-
 
     <table>
       <tbody>
@@ -126,7 +122,7 @@
       </tr>
       <tr>
         <td>Bæreevne personer</td>
-        <td>7</td>
+        <td>6</td>
       </tr>
       <tr>
         <td>Stammelengde</td>
@@ -147,10 +143,6 @@
       <tr>
         <td>Styrewire lengde fot</td>
         <td>14"</td>
-      </tr>
-      <tr>
-        <td>Hydrauliske slanger cm</td>
-        <td></td>
       </tr>
       <tr>
         <td>Konstruksjonskategori</td>
@@ -179,11 +171,10 @@
 
       <tr>
         <td>
-          <strong>Fartsprøver</strong>
+          <h6>Fartsprøver</h6>
         </td>
         <td>&nbsp;</td>
       </tr>
-
 
       <tr>
         <td>Motor</td>
@@ -193,7 +184,6 @@
         <td>Hastighet knop 2 pers </td>
         <td>38,0</td>
       </tr>
-
 
       <tr>
         <td>Motor</td>
@@ -206,8 +196,6 @@
     </tbody>
     </table>
 
-
-
     <hr />
 
     <p>
@@ -216,6 +204,35 @@
   </div>
 
 </article>
+
+<div class="cta">
+  <div class="cta__description">
+    <h1>Request a quote</h2>
+    <span>Interested in pricing? Let us know, please! </span>
+  </div>
+  <div class="cta__form">
+    <form action="" method="post">
+      <label for="email">Your email?
+        <input type="email" name="email" id="email" placeholder="Your e-mail address" />
+      </label>
+
+      <label for="email">Where are you located?
+        <input type="text" name="country" id="country" placeholder="Country" />
+      </label>
+
+      <label for="msg">Product
+        <textarea name="msg" id=msg rows="8" cols="40" placeholder="Which product? What package? When you need it?"></textarea>
+      </label>
+
+      <input class="button" type="submit" name="submit" id="submit" value="Send" />
+    </form>
+  </div>
+  <div class="cta__note">
+    <hr />
+    <p>Need a quote for a custom project? Have any questions about our products? Or just want to just say "Hi!"? Go to <a href="/contact">our contact page</a>.</p>
+  </div>
+</div>
+
 
 {% endblock %}
 
