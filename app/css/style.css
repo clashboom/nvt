@@ -496,8 +496,26 @@ footer li.fa {
   max-width: 100%;
   margin: 0 auto;
 }
-.gallery img {
+.gallery .gallery__img {
   display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+.gallery img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.gallery .th {
+  line-height: 0;
+  display: inline-block;
+  border: solid 4px #fff;
+  max-width: 100%;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+  transition: all 200ms ease-out;
+}
+.gallery .th:hover,
+.gallery .th:focus {
+  box-shadow: 0 0 6px 1px rgba(0,140,186,0.5);
 }
 .half,
 .equipment ul,
@@ -776,6 +794,9 @@ tbody tr:nth-child(odd) {
   .section__right p {
     text-align: justify;
   }
+  .gallery__img {
+    margin-right: 8px;
+  }
 }
 @media screen and (min-width: 64em) {
   .main {
@@ -866,6 +887,9 @@ tbody tr:nth-child(odd) {
   }
   .contact__entry:after {
     clear: both;
+  }
+  .gallery__img {
+    margin-right: 24px;
   }
 }
 @media screen and (min-width: 120em) {

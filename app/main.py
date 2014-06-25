@@ -4,17 +4,18 @@
 import jinja2
 import os
 import webapp2
+import logging
 
 from functools import wraps
 
 from google.appengine.api import images
-# from google.appengine.api import mail
+from google.appengine.api import mail
 from google.appengine.api import memcache
 from google.appengine.api import urlfetch
 from google.appengine.ext import ndb
 from google.appengine.ext import blobstore
 from google.appengine.ext.webapp import blobstore_handlers
-# from google.appengine.runtime import apiproxy_errors
+from google.appengine.runtime import apiproxy_errors
 
 from webapp2_extras import sessions
 from webapp2_extras import sessions_memcache
@@ -147,26 +148,26 @@ class UploadHandler(blobstore_handlers.BlobstoreUploadHandler):
         self.redirect('/serve/%s' % blob_info.key())
 
 
-class ThumbnailHandler(blobstore_handlers.BlobstoreDownloadHandler):
-    def get(self, resource):
-        resource = str(urllib.unquote(resource))
-        blob_info = blobstore.BlobInfo.get(resource)
-
-        size = self.request.get('size')
-        size = int(size) if size else 100
-
-        if blob_info:
-            img = images.Image(blob_key=resource)
-            img.resize(width=size, height=size)
-            thumbnail = img.execute_transforms(output_encoding=images.JPG)
-
-            self.response.headers['Content-Type'] = 'image/jpg'
-            self.response.out.write(thumbnail)
-            return
-
-        # Either the blob key was not provided or there was no value with that
-        # ID in the Blobstore
-        self.error(404)
+# class ThumbnailHandler(blobstore_handlers.BlobstoreDownloadHandler):
+#     def get(self, resource):
+#         resource = str(urllib.unquote(resource))
+#         blob_info = blobstore.BlobInfo.get(resource)
+#
+#         size = self.request.get('size')
+#         size = int(size) if size else 100
+#
+#         if blob_info:
+#             img = images.Image(blob_key=resource)
+#             img.resize(width=size, height=size)
+#             thumbnail = img.execute_transforms(output_encoding=images.JPG)
+#
+#             self.response.headers['Content-Type'] = 'image/jpg'
+#             self.response.out.write(thumbnail)
+#             return
+#
+#         # Either the blob key was not provided or there was no value with that
+#         # ID in the Blobstore
+#         self.error(404)
 
 
 class MainHandler(Handler):
@@ -220,7 +221,7 @@ class Product(ndb.Model):
 
     @property
     def pictures(self):
-        return Gallery.query(Gallery.product==self.name)
+        return Gallery.query(Gallery.product == self.name)
 
 
 class Gallery(ndb.Model):
@@ -230,12 +231,32 @@ class Gallery(ndb.Model):
 
 class ProductHandler(Handler):
     def get(self, product):
-        product = Product.query(Product.name==product).get()
+        product = Product.query(Product.name == product).get()
 
         if product:
             self.render(product.template)
 
         self.error(404)
+
+
+class MailHandler(Handler):
+    @rate_limit(seconds_per_request=15)
+    def post(self):
+        user_email = self.request.get('email')
+        message = self.request.get('msg')
+        from_addr = "info@saldusgaisma.lv"
+        to_addr = "nejeega@gmail.com"
+
+        try:
+            msg = mail.EmailMessage()
+            msg.sender = from_addr
+            msg.to = to_addr
+            msg.subject = "Sent from page by user %s" % user_email
+            msg.html = message
+
+            msg.send()
+        except apiproxy_errors.OverQuotaError, message:
+            logging.error(message)
 
 
 app = webapp2.WSGIApplication([

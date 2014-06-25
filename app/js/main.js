@@ -25,3 +25,5 @@ $.each($item, function(){
 });
 
 
+$('.gallery__img').magnificPopup({type: 'image',
+                                  gallery: { enabled: true }});
