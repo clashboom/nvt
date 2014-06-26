@@ -3,12 +3,64 @@
 
 <div class="contact space-wrapper">
 
+  <div class="contact__list">
+    <div class="contact__entry">
+      <div class="contact__details">
+        <ul>
+          <li><strong>Headquarters</strong></li>
+          <li><hr /></li>
+          <li>Navette AS</li>
+          <li>Kongensgate 5, 6002 Ålesund, Norway </li>
+          <li><a href="tel:+4770121803">+47 70 12 18 03</a></li>
+          <li><a href="tel:+4770121803">+47 70 10 44 61</a></li>
+          <li><a href="mailto:post@navette.no">post@navette.no</a></li>
+        </ul>
+      </div>
+    </div>
 
-<form action="#" method="post">
-  <input type="text" name="name" placeholder="Your e-mail or mobile" required/>
-  <textarea name="msg" rows="8" cols="40" placeholder="Your message" required></textarea>
-  <input type="submit" name="submit" class="button" value="Send" />
-</form>
+    <div class="contact__entry">
+      <div class="contact__details">
+        <ul>
+          <li><strong>Production operations</strong></li>
+          <li><hr /></li>
+          <li>PLAST-TECH SIA</li>
+          <li>"Enkuri", Saldus nov., Kurzeme, Latvia, LV-3801</li>
+          <li><a href="tel:+37129368587">+371 29368587</a></li>
+          <li><a href="mailto:edgars@plasttech.lv">edgars@plasttech.lv</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="contact__entry">
+      <div class="contact__details">
+        <ul>
+          <li><strong>Managing director</strong></li>
+          <li><hr /></li>
+          <li>Rune Nilsen</li>
+          <li><a href="tel:+4790123205">+47 90 12 32 05</a></li>
+          <li><a href="mailto:rune@navette.no">rune@navette.no</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact__form">
+    <h2>Send a message</h2>
+    <span class="subtitle"> Drop us a line. We'd be delighted.</span>
+
+    <form action="#" method="post">
+
+      <label for="email">Email:</label>
+      <input type="text" name="email" placeholder="Your e-mail" required/>
+
+      <label for="msg">Message:</label>
+      <textarea name="msg" rows="8" cols="40" placeholder="Your message" required></textarea>
+
+      <input type="submit" name="submit" class="button" value="Send" />
+    </form>
+  </div>
+
+
 </div>
 
 {% endblock %}

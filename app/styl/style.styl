@@ -1,25 +1,60 @@
 @import 'jeet'
 
-// Colorscheme
+// Palette
+
+// Blue Gray
+bg50 = #eceff1
+
+a100 = #80d8ff
+a200 = #40c4ff
+bg700 = #455a64
+bg100 = #cfd8dc
+a400 = #00b0ff
+bg900 = #263238
 navette = #293b47
 ocean = #001528
-darker = ocean
-whitish = #f7f7f7
-background_color = navette
-text_color = navette
+
+// Alpha values -
+dividers = rgba(0,0,0,.12)
+hints = rgba(0,0,0,.26)
+secondary = rgba(0,0,0,.54)
+primary = rgba(0,0,0,.87)
+
+tagline_color = #212121
+
+body_color = bg900
+body_bg = bg50
+
 link_color = ocean
-link_hover_color = #222
+link_hover_color = bg100
+link_hover_bg = bg900
+link_active_color = bg50
+link_active_bg = bg900
+
+button_bg = bg700
+button_color = bg50
+button_hover_color = bg50
+button_hover_bg = bg900
+button_border_color = bg100
+
+footer_color = bg100
+footer_bg = bg900
+footer_link_color = bg100
+footer_link_hover_color = bg400
+
+zebra_stripe_color = bg50
+
 
 // Typograpic
 typo_breakpoint ?= 800px
 typo_headers ?= oswald
-typo_header_color ?= navette
 typo_header_weight ?= 600
-typo_tagline_color ?= #aaa
 typo_body ?= lato
-typo_body_color ?= text_color
 typo_mobile ?= minor_sixth
 typo_desktop ?= octave
+typo_tagline_color ?= tagline_color
+typo_body_color ?= body_color
+typo_header_color ?= navette
 @import 'typographic'
 
 // edit()
@@ -52,17 +87,19 @@ html
 
 body
   font-size 16px
-  background-color whitish
   a
     color link_color
     text-decoration none
+    -moz-transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
     -webkit-transition all .2s linear
     -moz-transition all .2s linear
     -o-transition all .2s linear
     transition all .2s linear
     &:hover
-      color link_hover_color
+      color link_color
 
+    
 header
   text-align justify
   letter-spacing 1px
@@ -99,11 +136,11 @@ header
     text-decoration none
     white-space nowrap
     &:hover
-      color whitish
-      background-color navette
+      color link_hover_color
+      background-color link_hover_bg
   .active
-    color whitish
-    background-color navette
+    color link_active_color
+    background-color link_active_bg
   &::after
     content ''
     display inline-block
@@ -123,31 +160,36 @@ header
   margin-bottom 5em
 
 .about__img
-    -webkit-box-shadow 0px 6px 5px rgba(0, 0, 0, 0.1)
-    -moz-box-shadow 0px 6px 5px rgba(0, 0, 0, 0.1)
-    box-shadow 0px 6px 5px rgba(0, 0, 0, 0.1)
-
+  -webkit-box-shadow 0px 3px 2px rgba(0, 0, 0, 0.2)
+  -moz-box-shadow 0px 3px 2px rgba(0, 0, 0, 0.2)
+  box-shadow 0px 3px 2px rgba(0, 0, 0, 0.2)
 
 .menu__section,
 .product
   position relative
   box-sizing border-box
-  -webkit-box-shadow 0px 6px 5px rgba(0, 0, 0, 0.2)
-  -moz-box-shadow 0px 6px 5px rgba(0, 0, 0, 0.2)
-  box-shadow 0px 6px 5px rgba(0, 0, 0, 0.2)
+  -webkit-box-shadow 0px 3px 2px rgba(0, 0, 0, 0.2)
+  -moz-box-shadow 0px 3px 2px rgba(0, 0, 0, 0.2)
+  box-shadow 0px 3px 2px rgba(0, 0, 0, 0.2)
   background-size cover
   background-position center top
-  margin-bottom ms(40)
+  -moz-transform translate3d(0,0,0)
+  -webkit-transform translate3d(0,0,0)
+  transform translate3d(0,0,0)
+  -moz-transition all .2s cubic-bezier(.4,0,.2,1)
+  -webkit-transition all .2s cubic-bezier(.4,0,.2,1)
+  transition all .2s cubic-bezier(.4,0,.2,1)
   col(12/25)
+  &:hover
+    -webkit-box-shadow 0px 8px 17px rgba(0, 0, 0, 0.2)
+    -moz-box-shadow 0px 8px 17px rgba(0, 0, 0, 0.2)
+    box-shadow 0px 8px 17px rgba(0, 0, 0, 0.2)
   img
     display block
     max-width 100%
   .product__description,
   .menu__section__description
     text-align center
-    -webkit-box-shadow 0px 3px 25px rgba(255, 255, 255, 0.9)
-    -moz-box-shadow 0px 3px 25px rgba(255, 255, 255, 0.9)
-    box-shadow 0px 3px 25px rgba(255, 255, 255, 0.9)
     border-top 1px solid #fff
     background-color #ebebeb
     width 100%
@@ -158,6 +200,13 @@ header
   a
     text-decoration none
     color link_color
+    -webkit-transition all .2s
+    transition all .2s
+    -moz-transform translate3d(0,0,0)
+    -webkit-transform translate3d(0,0,0)
+    transform translate3d(0,0,0)
+
+
 
 .main
   display block
@@ -202,12 +251,12 @@ blockquote cite
   text-align center
   display block
   padding 1em 0 0.5em
-  background navette
-  color whitish
+  background footer_bg
+  color footer_color
   margin 0
 
 footer
-  color whitish
+  color footer_color
   display block
   min-height 12em
   height 100%
@@ -217,10 +266,10 @@ footer
     ul
       list-style-type none
   a
-    color whitish
+    color footer_link_color
     text-decoration none
     &:hover
-      color ocean
+      color footer_link_hover_color
   li.list__title
     font-weight 700
     font-style italic
@@ -237,7 +286,6 @@ article
 
 .gallery
   .gallery__img
-    display inline-block
     width 100px
     height 100px
   img
@@ -252,7 +300,7 @@ article
     transition all 200ms ease-out
     &:hover,
     &:focus
-      box-shadow: 0 0 6px 1px rgba(0, 140, 186, 0.5);
+      box-shadow: 0 0 6px 1px rgba(50, 100, 96, 0.5);
 
 
 .about__section
@@ -286,6 +334,9 @@ article
     .subtitle
       display block
       margin-bottom ms(10)
+  ul,
+  ol
+    padding-left 0
 
 .smallprint
   font-size ms(8)
@@ -297,7 +348,7 @@ article
 
 tbody
   tr:nth-child(odd)
-    background-color #ebebeb
+    background-color zebra_stripe_color
 
 @media screen and (max-width: 64em)
   .main
@@ -342,6 +393,9 @@ tbody
     margin-bottom ms(20)
   .cta 
     margin-top ms(20)
+  .menu__section,
+  .product
+    margin-bottom ms(10)
 
 
 @media screen and (min-width: 64em)
@@ -360,14 +414,19 @@ tbody
       column-count: 3;
       column-gap: 1%; /* Opera 11+*/
   article > div
-    margin-bottom ms(40)
+    margin-bottom ms(20)
   .review
     blockquote
       margin 0 10%
   .contact__entry
-    span(1/3)
+    col(1/3)
   .gallery__img
-    margin-right ms(15)
+    margin-right ms(10)
+  .menu__section,
+  .product
+    margin-bottom ms(30)
+  .gallery
+    center()
 
 
 @media screen and (min-width: 125em)
@@ -425,13 +484,21 @@ button,
   padding-right 1.77778rem
   padding-bottom 0.94444rem
   padding-left 1.77778rem
-  font-size 0.88889rem
-  background-color navette
-  border-color darker
-  color whitish
+  font-size ms(8)
+  text-transform uppercase
+  background button_bg
+  color button_color
+  border-color button_border_color
   transition background-color 300ms ease-out
   &:hover
-    background-color darker
+    background-color button_hover_bg
+    color button_hover_color
+
+.right
+  float right
+
+.left
+  float left
 
 .translate
   color maroon !important

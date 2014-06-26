@@ -1,26 +1,35 @@
 {% extends 'base_en.html' %}
 {% block main %}
 
-<div class="wrapper">
-<section class="landing half">
-  <a href="/auto">
-  <img src="/img/automotive.jpg" alt="Automotive" />
-  <div class="description">
-    <h2>Automotive</h2>
-    <p>GRP solutions for automotive industry</p>
-  </div>
-  </a>
-</section>
 
-<section class="landing half">
-  <a href="/boats">
-  <img src="/img/watercraft.jpg" alt="Watercraft" />
-  <div class="description">
-    <h2>Watercraft</h2>
-    <p>Multi-purpose boats with emphasis on quality and ergonomics</p>
-</div>
-  </a>
-</section>
+<div class="page__wrapper page__wrapper--home">
+  <div class="menu">
+
+    <section class="menu__section">
+      <a href="/boats">
+        <img src="/img/automotive.jpg" alt="Automotive" />
+        <div class="menu__section__description">
+          <div class="inner">
+          <h2>Automotive</h2>
+          <p>Composite solutions for automotive industry</p>
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <section class="menu__section">
+      <a href="/boats">
+        <img src="/img/watercraft.jpg" alt="Watercraft" />
+        <div class="menu__section__description">
+          <div class="inner">
+          <h2>Watercraft</h2>
+          <p>Multi-purpose boats with special emphasis on ergonomics</p>
+          </div>
+        </div>
+      </a>
+    </section>
+
+  </div>
 </div>
 
 {% endblock %}

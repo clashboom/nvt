@@ -42,9 +42,9 @@
 
             {% set navigation_bar = [
                 ('/auto', 'auto', 'Automotive'),
-                ('/boats', 'watercraft', 'Watercraft'),
-                ('/about', 'about', 'About'),
-                ('/contact', 'contact', 'Contact')
+                ('/boats', 'watercraft', 'Båter'),
+                ('/about', 'about', 'Om oss'),
+                ('/contact', 'contact', 'Kontakt')
             ] -%}
             {% set active_page = active_page|default('index') -%}
             <nav>
@@ -65,36 +65,36 @@
 
             <section>
               <ul>
-                <li class="list__title">Contact</li>
+                <li class="list__title">Kontakt</li>
                 <li><hr /></li>
                 <li>Navette AS</li>
-                <li>Adresse: Kongensgate 5, 6002 Ålesund, Norway </li>
-                <li>Telefon: +47 70 12 18 03</li>
-                <li>Fax: +47 70 10 44 61</li>
-                <li>E-post: post@navette.no</li>
+                <li>Kongensgate 5, 6002 Ålesund, Norway </li>
+                <li><a href="tel:+4770121803">+47 70 12 18 03</a></li>
+                <li><a href="tel:+4770121803">+47 70 10 44 61</a></li>
+                <li><a href="mailto:post@navette.no">post@navette.no</a></li>
               </ul>
             </section>
 
             <section>
               <ul>
-                <li class="list__title">Navigation</li>
+                <li class="list__title">Navigasjon</li>
                 <li><hr /></li>
                 <li><a href="/auto">Automotive</a></li>
-                <li><a href="/water">Watercraft</a></li>
-                <li><a href="/about">About us</a></li>
-                <li><a href="/contact">Contact</a></li>
-                <li><a href="/sitemap">Sitemap</a></li>
+                <li><a href="/water">Båter</a></li>
+                <li><a href="/about">Om oss</a></li>
+                <li><a href="/contact">Kontakt</a></li>
+                <li><a href="/sitemap">Nettstedskart</a></li>
               </ul>
             </section>
 
             <section>
               <ul>
-                <li class="list__title">Site</li>
+                <li class="list__title">Siden</li>
                 <li><hr /></li>
                 <li><a href="/locale/en" rel="nofollow">English</a></li>
                 <li><a href="/locale/no" rel="nofollow">Norsk</a></li>
-                <li><a href="/locale/en" rel="nofollow">Privacy policy</a></li>
-                <li><a href="/locale/en" rel="nofollow">Terms & Conditions</a></li>
+                <li><a href="/terms" rel="nofollow">Vilkår</a></li>
+                <li><a href="/privacy" rel="nofollow">Privatslivspolitikk</a></li>
                 <li> &copy; <span class="brand">Navette</span> 2014 </li>
               </ul>
             </section>

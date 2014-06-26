@@ -8,7 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0;">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
@@ -16,9 +16,10 @@
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/html5bp.css">
         <link rel="stylesheet" href="/css/style.css">
-        <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Asmatic+SC:700|Oswald:700|Lato:400,700italic" rel="stylesheet" type="text/css" />
         <!-- bower:css -->
         <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="/bower_components/magnific-popup/dist/magnific-popup.css">
         <!-- endbower -->
         <!-- endbuild -->
         <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
@@ -28,52 +29,73 @@
         </script>
         <script src="/bower_components/picturefill/dist/picturefill.js" async></script>
     </head>
-    <body>
+    <body class="page">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
+          <div class="topbar">
+          </div>
           <header>
             <div>
-              <a href="/"><h1 class="brand">Navette</h1></a>
+              <a href="/"><h1 class="brand"></span>Navette</h1></a>
             </div>
+
+            {% set navigation_bar = [
+                ('/auto', 'auto', 'Automotive'),
+                ('/boats', 'watercraft', 'Watercraft'),
+                ('/about', 'about', 'About'),
+                ('/contact', 'contact', 'Contact')
+            ] -%}
+            {% set active_page = active_page|default('index') -%}
             <nav>
-              <a href="/auto">Automotive</a>
-              <a href="/boats">Watercraft</a>
-              <a href="/about">About</a>
-              <a href="/contact">Contacts</a>
+              {% for href, id, caption in navigation_bar %}
+                <a {% if id == active_page %} class="active"{% endif
+                %} href="{{ href|e }}">{{ caption|e }}</a>
+              {% endfor %}
             </nav>
           </header>
 
-
+          <div class="main">
+          {{ request }}
           {% block main%}
           {% endblock %}
+          </div>
 
           <footer>
 
             <section>
               <ul>
+                <li class="list__title">Contact</li>
+                <li><hr /></li>
                 <li>Navette AS</li>
-                <li>Address: Kongensgate 5, 6002 Ålesund, Norway </li>
-                <li>Phone: +47 70 12 18 03</li>
-                <li>Fax: +47 70 10 44 61</li>
-                <li>E-mail: post@navette.no</li>
+                <li>Kongensgate 5, 6002 Ålesund, Norway </li>
+                <li><a href="tel:+4770121803">+47 70 12 18 03</a></li>
+                <li><a href="tel:+4770121803">+47 70 10 44 61</a></li>
+                <li><a href="mailto:post@navette.no">post@navette.no</a></li>
               </ul>
             </section>
 
             <section>
               <ul>
-                <li>Rune Nilsen, Manager</li>
-                <li>Mob. +47 90 12 32 05 </li>
-                <li>E-mail: rune@navette.no </li>
+                <li class="list__title">Navigation</li>
+                <li><hr /></li>
+                <li><a href="/auto">Automotive</a></li>
+                <li><a href="/water">Watercraft</a></li>
+                <li><a href="/about">About us</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/sitemap">Sitemap</a></li>
               </ul>
             </section>
 
             <section>
               <ul>
-                <li> &copy; Navette 2014 </li>
-                <li> <a href="/locale/en" rel="nofollow">English</a></li>
+                <li class="list__title">Site</li>
+                <li><hr /></li>
+                <li><a href="/locale/en" rel="nofollow">English</a></li>
                 <li><a href="/locale/no" rel="nofollow">Norsk</a></li>
+                <li><a href="/locale/en" rel="nofollow">Privacy Policy</a></li>
+                <li><a href="/locale/en" rel="nofollow">Terms & Conditions</a></li>
+                <li> &copy; <span class="brand">Navette</span> 2014 </li>
               </ul>
             </section>
 
@@ -85,6 +107,7 @@
         <!-- build:js js/scripts.min.js -->
         <!-- bower:js -->
         <script src="/bower_components/scrollNav/dist/jquery.scrollNav.js"></script>
+        <script src="/bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
         <!-- endbower -->
         <script src="/js/plugins.js"></script>
         <script src="/js/main.js"></script>
