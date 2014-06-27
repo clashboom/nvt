@@ -154,7 +154,7 @@ body {
   font-size: 16px;
 }
 body a {
-  color: #001528;
+  color: #293b47;
   text-decoration: none;
   -moz-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
@@ -313,7 +313,7 @@ header::after {
 .menu__section a,
 .product a {
   text-decoration: none;
-  color: #001528;
+  color: #293b47;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   -moz-transform: translate3d(0, 0, 0);
@@ -431,9 +431,13 @@ blockquote {
 }
 blockquote cite {
   display: block;
+  font-weight: normal;
 }
 blockquote cite::before {
   content: "\2014 \0020";
+}
+blockquote cite a {
+  color: #293b47;
 }
 .boatline {
   font-family: "Amatic SC", cursive;

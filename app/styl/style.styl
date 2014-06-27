@@ -25,7 +25,7 @@ tagline_color = #212121
 body_color = bg900
 body_bg = bg50
 
-link_color = ocean
+link_color = navette
 link_hover_color = bg100
 link_hover_bg = bg900
 link_active_color = bg50
@@ -97,9 +97,9 @@ body
     -o-transition all .2s linear
     transition all .2s linear
     &:hover
-      color link_color
+      color ocean
 
-    
+
 header
   text-align justify
   letter-spacing 1px
@@ -241,9 +241,11 @@ blockquote
 
 blockquote cite
   display block
-  // font-size 0.72222rem
+  font-weight normal
   &::before
     content "\2014 \0020"
+  a
+    color navette
 
 .boatline
   font-family "Amatic SC", cursive
@@ -391,7 +393,7 @@ tbody
     margin-right ms(3)
   article > div
     margin-bottom ms(20)
-  .cta 
+  .cta
     margin-top ms(20)
   .menu__section,
   .product
@@ -401,7 +403,7 @@ tbody
 @media screen and (min-width: 64em)
   .main
     padding ms(20) 10% ms(40)
-  .cta 
+  .cta
     margin-top ms(60)
   footer
     padding ms(50) 5% ms(20)

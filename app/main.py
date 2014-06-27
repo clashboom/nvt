@@ -11,7 +11,7 @@ from functools import wraps
 from google.appengine.api import images
 from google.appengine.api import mail
 from google.appengine.api import memcache
-from google.appengine.api import urlfetch
+# from google.appengine.api import urlfetch
 from google.appengine.ext import ndb
 from google.appengine.ext import blobstore
 from google.appengine.ext.webapp import blobstore_handlers
@@ -69,16 +69,15 @@ def parseAcceptLanguage(acceptLanguage):
 
 
 def detectLocale(acceptLanguage):
-    # defaultLocale = 'en_US'
-    defaultLocale = 'no'
-    # supportedLocales = ['no', 'en']
+    defaultLocale = 'en_US'
+    supportedLocales = ['no', 'en']
 
-    # locale_q_pairs = parseAcceptLanguage(acceptLanguage)
-    # for pair in locale_q_pairs:
-    #     for locale in supportedLocales:
-    #         # pair[0] is locale, pair[1] is q value
-    #         if pair[0].replace('-', '_').lower().startswith(locale.lower()):
-    #             return locale
+    locale_q_pairs = parseAcceptLanguage(acceptLanguage)
+    for pair in locale_q_pairs:
+        for locale in supportedLocales:
+            # pair[0] is locale, pair[1] is q value
+            if pair[0].replace('-', '_').lower().startswith(locale.lower()):
+                return locale
 
     return defaultLocale
 
@@ -165,7 +164,7 @@ class UploadHandler(blobstore_handlers.BlobstoreUploadHandler):
 #             self.response.out.write(thumbnail)
 #             return
 #
-#         # Either the blob key was not provided or there was no value with that
+#         # Either the blob key was not provided or there was no value with
 #         # ID in the Blobstore
 #         self.error(404)
 

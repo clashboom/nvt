@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "dependencies": {
     "jquery": "~1.11.0",
-    "font-awesome": "~4.0.3",
+    "font-awesome": "~4.1.0",
     "scrollNav": "~2.2.0",
     "picturefill": "~2.0.0",
     "magnific-popup": "~0.9.9"
