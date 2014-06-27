@@ -41,7 +41,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd:'<%= app %>/',
-                    src: ['images/**', 'fonts/**', '**/*.html', '!**/*.styl', '!bower_components/**'],
+                    src: ['css/**', 'js/**', 'images/**', 'fonts/**', 'img/**', 'templates/**', 'files/**', '**/*.py', '**/*.yaml', '!**/*.styl', '!bower_components/**'],
                     dest: '<%= dist %>/'
                 }, {
                   expand: true,
@@ -141,6 +141,6 @@ module.exports = function(grunt) {
     grunt.registerTask('default', ['compile-stylus', 'bower-install', 'connect:app', 'watch']);
     grunt.registerTask('validate-js', ['jshint']);
     grunt.registerTask('server-dist', ['connect:dist']);
-    grunt.registerTask('publish', ['compile-stylus', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'concat', 'cssmin', 'uglify', 'usemin']);
+    grunt.registerTask('publish', ['compile-stylus', 'clean:dist', 'useminPrepare', 'copy:dist', 'cssmin', 'usemin']);
 
 };

@@ -6,9 +6,9 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Navette Composite Solutions</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
@@ -16,18 +16,13 @@
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/html5bp.css">
         <link rel="stylesheet" href="/css/style.css">
-        <link href="http://fonts.googleapis.com/css?family=Asmatic+SC:700|Oswald:700|Lato:400,700italic" rel="stylesheet" type="text/css" />
         <!-- bower:css -->
-        <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css">
-        <link rel="stylesheet" href="/bower_components/magnific-popup/dist/magnific-popup.css">
         <!-- endbower -->
         <!-- endbuild -->
+        <link rel="stylesheet" href="/css/magnific-popup.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link href="http://fonts.googleapis.com/css?family=Asmatic+SC:700|Oswald:700|Lato:400,700italic" rel="stylesheet" type="text/css" />
         <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
-        <script>
-          // Picture element HTML5 shiv
-          document.createElement( "picture" );
-        </script>
-        <script src="/bower_components/picturefill/dist/picturefill.js" async></script>
     </head>
     <body class="page">
         <!--[if lt IE 7]>
@@ -56,9 +51,11 @@
           </header>
 
           <div class="main">
+
           {{ request }}
           {% block main%}
           {% endblock %}
+
           </div>
 
           <footer>
@@ -106,12 +103,11 @@
 
         <!-- build:js js/scripts.min.js -->
         <!-- bower:js -->
-        <script src="/bower_components/scrollNav/dist/jquery.scrollNav.js"></script>
-        <script src="/bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
         <!-- endbower -->
+        <!-- endbuild -->
+        <script src="/js/vendor/jquery.magnific-popup.min.js"></script>
         <script src="/js/plugins.js"></script>
         <script src="/js/main.js"></script>
-        <!-- endbuild -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
