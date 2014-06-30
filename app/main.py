@@ -69,8 +69,8 @@ def parseAcceptLanguage(acceptLanguage):
 
 
 def detectLocale(acceptLanguage):
-    defaultLocale = 'en_US'
-    supportedLocales = ['no', 'en']
+    defaultLocale = 'en'
+    supportedLocales = ['no', 'nb', 'nn', 'en']
 
     locale_q_pairs = parseAcceptLanguage(acceptLanguage)
     for pair in locale_q_pairs:
@@ -93,11 +93,15 @@ class Handler(webapp2.RequestHandler):
 
     def render(self, template, *a, **params):
         locale = self.session.get('locale')
+        # norsk = ['no', 'nb', 'nn']
         if not locale:
             locale = detectLocale(self.request.headers.get('accept_language'))
             self.session['locale'] = locale
-        elif locale != 'no':
+            path = self.request.referer
+            self.redirect(path if path else '/')
+        elif locale == 'en':
             template = template[:-5] + '_' + 'en' + '.html'
+        locale = self.request.headers.get('accept_language')
         self.write(self.render_str(template,
                                    locale=locale,
                                    *a, **params))
@@ -238,6 +242,11 @@ class ProductHandler(Handler):
         self.error(404)
 
 
+class SiteMapHandler(Handler):
+    def get(self):
+        self.render('sitemap.html')
+
+
 class MailHandler(Handler):
     @rate_limit(seconds_per_request=15)
     def post(self):
@@ -259,10 +268,11 @@ class MailHandler(Handler):
 
 
 app = webapp2.WSGIApplication([
-    ('/s540', S540Handler),
-    ('/s565', S565Handler),
+    ('(?:/maritim.?)?/s540', S540Handler),
+    ('(?:/maritim.?)?/s565', S565Handler),
     ('/amarok', AmarokHandler),
     ('/hilux', HiluxHandler),
+    ('/maritim.?', BoatHandler),
     ('/boats', BoatHandler),
     ('/auto', AutoHandler),
     ('/contact', ContactHandler),
@@ -272,5 +282,6 @@ app = webapp2.WSGIApplication([
     ('/upload', UploadHandler),
     ('/serve/([^/]+)?', ServeHandler),
     ('/product/([^/]+)?', ProductHandler),
+    ('/sitemap', SiteMapHandler),
     ('/.*', MainHandler),
 ], config=config, debug=True)

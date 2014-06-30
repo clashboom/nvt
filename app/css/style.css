@@ -2,8 +2,8 @@ html {
   font-family: "Lato", Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
   font-weight: 200;
   color: #263238;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 16.18px;
+  line-height: 24.270000000000003px;
 }
 a {
   color: #00f;
@@ -37,33 +37,33 @@ dt {
   color: #293b47;
 }
 h1 {
-  font-size: 44.800000000000004px;
-  line-height: 48px;
-  margin-bottom: 16px;
+  font-size: 45.304px;
+  line-height: 48.540000000000006px;
+  margin-bottom: 16.18px;
 }
 h2 {
-  font-size: 40px;
-  line-height: 44.800000000000004px;
-  margin-bottom: 12.8px;
+  font-size: 40.45px;
+  line-height: 45.304px;
+  margin-bottom: 12.944px;
 }
 h3 {
-  font-size: 35.2px;
-  line-height: 41.6px;
-  margin-bottom: 9.600000000000001px;
+  font-size: 35.596000000000004px;
+  line-height: 42.068000000000005px;
+  margin-bottom: 9.708px;
 }
 h4 {
-  font-size: 32px;
-  line-height: 38.400000000000006px;
-  margin-bottom: 6.4px;
+  font-size: 32.36px;
+  line-height: 38.832px;
+  margin-bottom: 6.472px;
 }
 h5 {
-  font-size: 25.6px;
-  line-height: 35.2px;
-  margin-bottom: 3.2px;
+  font-size: 25.888px;
+  line-height: 35.596000000000004px;
+  margin-bottom: 3.236px;
 }
 h6 {
-  font-size: 20.8px;
-  line-height: 32px;
+  font-size: 21.034000000000002px;
+  line-height: 32.36px;
   margin-bottom: 0px;
 }
 p,
@@ -71,7 +71,7 @@ ul,
 ol,
 pre,
 dl {
-  margin-bottom: 16px;
+  margin-bottom: 16.18px;
 }
 ul,
 ol {
@@ -79,31 +79,31 @@ ol {
 }
 li,
 dd {
-  margin-bottom: 8px;
+  margin-bottom: 8.09px;
 }
 pre {
-  font-size: 12.8px;
+  font-size: 12.944px;
 }
 header p {
   color: #212121;
 }
 header h1 ~ p {
-  margin-top: -8px;
+  margin-top: -8.09px;
 }
 header h2 ~ p {
-  margin-top: -6.4px;
+  margin-top: -6.472px;
 }
 header h3 ~ p {
-  margin-top: -4.800000000000001px;
+  margin-top: -4.854px;
 }
 header h4 ~ p {
-  margin-top: -3.2px;
+  margin-top: -3.236px;
 }
 header h5 ~ p {
-  margin-top: -1.6px;
+  margin-top: -1.618px;
 }
 header h6 ~ p {
-  margin-top: -1.6px;
+  margin-top: -1.618px;
 }
 code {
   padding: 3px 4px;
@@ -133,7 +133,7 @@ h1 {
 }
 .topbar {
   display: block;
-  min-height: 8px;
+  min-height: 8.09px;
   background: #293b47;
 }
 header {
@@ -171,10 +171,10 @@ header {
   letter-spacing: 1px;
   text-transform: uppercase;
   height: 8em;
-  padding: 16px 10% 16px;
+  padding: 16.18px 10% 16.18px;
 }
 header h1 {
-  font-size: 32px;
+  font-size: 32.36px;
 }
 header a {
   text-decoration: none;
@@ -205,8 +205,8 @@ header .brand {
 }
 header nav a {
   line-height: 1.5;
-  padding: 4.800000000000001px 8px;
-  margin-top: 24px;
+  padding: 4.854px 8.09px;
+  margin-top: 24.270000000000003px;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -244,18 +244,6 @@ header::after {
 .menu__section,
 .product {
   position: relative;
-  box-sizing: border-box;
-  -webkit-box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
-  -moz-box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
-  box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
-  background-size: cover;
-  background-position: center top;
-  -moz-transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -moz-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   *zoom: 1;
   float: left;
   display: inline;
@@ -266,6 +254,15 @@ header::after {
   width: 46.44%;
   margin-left: 0%;
   margin-right: 3%;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
+  box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
+  background-size: cover;
+  background-position: center top;
+  -moz-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu__section:before,
 .product:before,
@@ -298,17 +295,10 @@ header::after {
 .menu__section .menu__section__description,
 .product .menu__section__description {
   text-align: center;
-  border-top: 1px solid #fff;
+  border-top: 1px solid #eceff1;
   background-color: #ebebeb;
   width: 100%;
   z-index: 2;
-}
-.menu__section .product__description .inner,
-.product .product__description .inner,
-.menu__section .menu__section__description .inner,
-.product .menu__section__description .inner {
-  min-height: 96px;
-  padding: 32px 40px;
 }
 .menu__section a,
 .product a {
@@ -322,7 +312,7 @@ header::after {
 }
 .main {
   display: block;
-  padding: 32px 10% 64px;
+  padding: 32.36px 10% 64.72px;
 }
 .about p,
 article p {
@@ -527,14 +517,14 @@ article img {
 }
 .gallery .th:hover,
 .gallery .th:focus {
-  box-shadow: 0 0 6px 1px rgba(50,100,96,0.5);
+  box-shadow: 0 0 6px 1px rgba(40,40,50,0.5);
 }
 .about__section {
-  margin-bottom: 48px;
+  margin-bottom: 48.540000000000006px;
 }
 .about__section .about__img {
-  max-height: 160px;
-  margin-bottom: 16px;
+  max-height: 161.8px;
+  margin-bottom: 16.18px;
   overflow: hidden;
 }
 .about__section img {
@@ -574,7 +564,7 @@ article img {
   margin-right: 0%;
 }
 .specification img {
-  margin-bottom: 32px;
+  margin-bottom: 32.36px;
 }
 .specification hr {
   clear: both;
@@ -590,7 +580,7 @@ article img {
   width: 100%;
   margin-left: 0%;
   margin-right: 0%;
-  margin-bottom: 64px;
+  margin-bottom: 64.72px;
 }
 .contact .contact__list:before,
 .contact .contact__list:after {
@@ -604,18 +594,18 @@ article img {
   list-style-type: none;
 }
 .contact .contact__form {
-  padding-top: 16px;
+  padding-top: 16.18px;
 }
 .contact .contact__form .subtitle {
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 16.18px;
 }
 .contact ul,
 .contact ol {
   padding-left: 0;
 }
 .smallprint {
-  font-size: 12.8px;
+  font-size: 12.944px;
   color: #666;
 }
 article table {
@@ -626,7 +616,7 @@ tbody tr:nth-child(odd) {
 }
 @media screen and (max-width: 64em) {
   .main {
-    padding: 0 5% 32px;
+    padding: 0 5% 32.36px;
   }
   header {
     height: auto;
@@ -669,13 +659,13 @@ tbody tr:nth-child(odd) {
     margin-right: auto;
   }
   .contact__entry {
-    padding-top: 32px;
+    padding-top: 32.36px;
   }
   blockquote {
     padding: 20px 20px;
   }
   footer {
-    padding: 32px 5%;
+    padding: 32.36px 5%;
   }
   footer section {
     display: block;
@@ -684,7 +674,7 @@ tbody tr:nth-child(odd) {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 32px;
+    margin-top: 32.36px;
   }
   footer section:first-child {
     margin-left: auto;
@@ -714,28 +704,33 @@ tbody tr:nth-child(odd) {
     margin-left: 1em;
   }
   .gallery__img {
-    margin-right: 4.800000000000001px;
+    margin-right: 4.854px;
   }
   article > div {
-    margin-bottom: 32px;
+    margin-bottom: 32.36px;
   }
   .cta {
-    margin-top: 32px;
+    margin-top: 32.36px;
   }
   .menu__section,
   .product {
-    margin-bottom: 16px;
+    margin-bottom: 16.18px;
+  }
+  .product__description .inner,
+  .menu__section__description .inner {
+    min-height: 64.72px;
+    padding: 24.270000000000003px 32.36px 32.36px;
   }
 }
 @media screen and (min-width: 64em) {
   .main {
-    padding: 32px 10% 64px;
+    padding: 32.36px 10% 64.72px;
   }
   .cta {
-    margin-top: 96px;
+    margin-top: 97.08000000000001px;
   }
   footer {
-    padding: 80px 5% 32px;
+    padding: 80.9px 5% 32.36px;
   }
   article .columns {
     -webkit-column-count: 3;
@@ -749,7 +744,7 @@ tbody tr:nth-child(odd) {
 /* Opera 11+*/
   }
   article > div {
-    margin-bottom: 32px;
+    margin-bottom: 32.36px;
   }
   .review blockquote {
     margin: 0 10%;
@@ -778,11 +773,11 @@ tbody tr:nth-child(odd) {
     margin-right: 0%;
   }
   .gallery__img {
-    margin-right: 16px;
+    margin-right: 16.18px;
   }
   .menu__section,
   .product {
-    margin-bottom: 48px;
+    margin-bottom: 48.540000000000006px;
   }
   .gallery {
     *zoom: 1;
@@ -802,6 +797,11 @@ tbody tr:nth-child(odd) {
   }
   .gallery:after {
     clear: both;
+  }
+  .product__description .inner,
+  .menu__section__description .inner {
+    min-height: 97.08000000000001px;
+    padding: 32.36px 40.45px;
   }
 }
 @media screen and (min-width: 125em) {
@@ -860,7 +860,7 @@ button,
   padding-right: 1.77778rem;
   padding-bottom: 0.94444rem;
   padding-left: 1.77778rem;
-  font-size: 12.8px;
+  font-size: 12.944px;
   text-transform: uppercase;
   background: #455a64;
   color: #eceff1;
