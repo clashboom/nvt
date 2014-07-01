@@ -1,12 +1,12 @@
 {% extends 'base_en.html' %}
 {% block main %}
 
-
 <div class="page__wrapper page__wrapper--home">
   <div class="menu">
 
     <section class="menu__section">
       <a href="/auto">
+
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
           <source srcset="http://placehold.it/1600x1000" media="(min-width: 1000px)">
@@ -15,6 +15,7 @@
           <!--[if IE 9]></video><![endif]-->
           <img srcset="http://placehold.it/800x500" alt="Automotive">
         </picture>
+
         <div class="menu__section__description">
           <div class="inner">
           <h2>Automotive</h2>
@@ -28,11 +29,12 @@
       <a href="/boats">
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
-          <source srcset="http://placehold.it/1600x1000" media="(min-width: 1000px)">
-          <source srcset="http://placehold.it/1200x800" media="(min-width: 800px)">
-          <source srcset="http://placehold.it/800x500">
+          <source srcset="/img/watercraft_xl.jpg" media="(min-width: 2000px)">
+          <source srcset="/img/watercraft.jpg" media="(min-width: 1000px)">
+          <source srcset="/img/watercraft_med.jpg" media="(min-width: 480px)">
+          <source srcset="/img/watercraft_small.jpg">
           <!--[if IE 9]></video><![endif]-->
-          <img srcset="http://placehold.it/800x500" alt="Maritime">
+          <img srcset="/img/watercraft_small.jpg" alt="Maritime">
         </picture>
         <div class="menu__section__description">
           <div class="inner">

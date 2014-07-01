@@ -23,6 +23,7 @@
         <link rel="stylesheet" href="/css/font-awesome.min.css">
         <link href="http://fonts.googleapis.com/css?family=Asmatic+SC:700|Oswald:700|Lato:400,700italic" rel="stylesheet" type="text/css" />
         <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="/js/vendor/picturefill.min.js"></script>
     </head>
     <body class="page">
         <!--[if lt IE 9]>
@@ -52,7 +53,6 @@
 
           <div class="main">
 
-          {{ request }}
           {% block main%}
           {% endblock %}
 
@@ -77,7 +77,7 @@
                 <li class="list__title">Navigation</li>
                 <li><hr /></li>
                 <li><a href="/auto">Automotive</a></li>
-                <li><a href="/water">Watercraft</a></li>
+                <li><a href="/boats">Watercraft</a></li>
                 <li><a href="/about">About us</a></li>
                 <li><a href="/contact">Contact</a></li>
                 <li><a href="/sitemap">Sitemap</a></li>

@@ -537,12 +537,12 @@ article img {
   float: left;
   display: inline;
   clear: none;
-  text-align: inherit;
   padding-left: 0;
   padding-right: 0;
-  width: 48.5%;
+  text-align: inherit;
+  width: 50%;
   margin-left: 0%;
-  margin-right: 3%;
+  margin-right: 0%;
 }
 .half:before,
 .equipment ul:before,
@@ -557,11 +557,6 @@ article img {
 .equipment ul:after,
 .specification ol:after {
   clear: both;
-}
-.half:last-child,
-.equipment ul:last-child,
-.specification ol:last-child {
-  margin-right: 0%;
 }
 .specification img {
   margin-bottom: 32.36px;
