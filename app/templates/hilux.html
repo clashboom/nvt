@@ -6,63 +6,51 @@
 <article class="post__article">
 
 <div class="post__header">
-  <h1 class="post__heading">Toyota Hilux Hardtop</h1>
+  <h1 class="post__heading">Toyota Hilux SR5 Cargo Hardtop</h1>
+    <img src="http://placehold.it/800x494&text=VW+Amarok" alt="Amarok Hardtop" />
 </div>
 
-<img src="http://placehold.it/800x490&text=Toyota+Hilux" alt="Hilux Hardtop" />
-
-<div class="gallery">
-  <h2>Gallerie</h2>
-  <img src="http://placehold.it/250x250" alt="1" />
-  <img src="http://placehold.it/250x250" alt="1" />
-  <img src="http://placehold.it/250x250" alt="1" />
-</div>
+  <div class="gallery">
+    <a class="gallery__img th" href="http://lorempixel.com/600/600"><img src="http://lorempixel.com/250/350" alt=""></a>
+    <a class="gallery__img th" href="http://lorempixel.com/700/700"><img src="http://lorempixel.com/100/100" alt=""></a>
+    <a class="gallery__img th" href="http://lorempixel.com/1920/1080"><img src="http://lorempixel.com/180/200" alt=""></a>
+    <a class="gallery__img th" href="http://lorempixel.com/900/400"><img src="http://lorempixel.com/170/190" alt=""></a>
+    <a class="gallery__img th" href="http://lorempixel.com/1000/500"><img src="http://lorempixel.com/300/200" alt=""></a>
+    <a class="gallery__img th" href="img/amarok.jpg"><img src="http://lorempixel.com/250/250" alt=""></a>
+  </div>
 
 <div class="description">
-  <h2>Description</h2>
-We have designed a hardtop for the Amarok which uses the excact design elements from the car. This makes the car look more like a station wagon.(??)
-
-Design elements
-Bottomof hardtop followslightline in car.
-Side panels in same shape as oncar
-Integrated spoiler
-Roofshape is the same as car
-Rather straigt aft profile to undermine the purpose of the car.
-Same width of hardtop as car
-Side hatch opens with built ir handles
-
-
-  Benefits (?)
-The hardtop makes noextrawind-noise
-Largervolume
-Brings Larger volume
-Side hatchlarger and lower
-No extrakeys for sidehatches.
-
-Navette hardtops are constructed using multi- layer laminated glass fiber mats. The UV-resistant surface is made of durable, very robust Gelcoat.
-The painting process uses the most modern knowledge of surface treatment and the latest European regulations.
+    <h2>Description</h2>
+  <div class="half-col">
+    <p>
+    We are proud to have been given an opportunity by Loyds Industri to take part in manufacturing of this exclusive hardtop. This Toyota Hilux SR5 hardtop is available exclusively in Norway.
+  </div>
+  <div class="half-col">
+    <p>
+    For manufacturing process we use top quality multi-layered laminated fiberglass mats. The UV-resistant surface is made of durable, very robust Gelcoat. The painting process uses the most modern knowledge of surface treatment and confirms to the latest European regulations.
+    </p>
+  </div>
 </div>
 
 <div class="equipment">
-  <h2>Equipment</h2>
+  <h2>Features</h2>
 
 <ul>
-<h5>Standard equipment</h5>
+<h5>Standard features</h5>
+  <li>Inside sprayed with durable PVC</li>
+  <li>Integrated spoler</li>
+  <li>Ready for Thule roof bars</li>
   <li>Solid sides</li>
-  <li>Afthatch double sidedwithoutwindow. Including gas springs.</li>
-  <li>Inside sprayedwith durable PVC.</li>
-  <li>Prepared for Thule roof bar</li>
+  <li>Solid rear hatch with gas struts</li>
+  <li>Complete fitting instructions</li>
 </ul>
 
 <ul>
-<h5>Extra equipment</h5>
-  <li>Central locking onafthatch. (Only for cars with central locking on fuel hatch.)</li>
-  <li>Side hatches with opening from handle insideaft.  That means no extrak eys.</li>
-  <li>Slidingsindow in front, fixedwindowafthatch, tinted</li>
-  <li>Slidingsindow in front, fixedwindowafthatch, tinted</li>
-  <li>Rear breaklight</li>
-  <li>Side window tint</li>
+<h5>Extra features</h5>
+  <li>Tinted side windows</li>
   <li>LED interior lighting</li>
+  <li>Rear breaklight</li>
+  <li>Central locking on rear hatch. <span class="smallprint">(Only for cars with central locking on fuel hatch.)</span></li>
   <li>Roof bars from Thule</li>
 </ul>
 
@@ -74,39 +62,39 @@ The painting process uses the most modern knowledge of surface treatment and the
 
 <table>
   <tr>
-    <td>Width/mm</td>
+    <td>Width mm</td>
     <td>1760</td>
   </tr>
   <tr>
-    <td>Length/mm</td>
+    <td>Length mm</td>
     <td>1590</td>
   </tr>
   <tr>
-    <td>Height/mm</td>
+    <td>Height mm</td>
     <td>640</td>
   </tr>
   <tr>
-    <td>Loading height/mm</td>
+    <td>Loading height mm</td>
     <td>1040</td>
   </tr>
   <tr>
-    <td>Loading width/mm</td>
+    <td>Loading width mm</td>
     <td>1350</td>
   </tr>
   <tr>
-    <td>Weight/kg standard</td>
+    <td>Weight kg</td>
     <td>60 kg</td>
   </tr>
   <tr>
-    <td>Maximum roof load/kg</td>
+    <td>Maximum roof load kg</td>
     <td>50 kg</td>
   </tr>
   <tr>
-    <td>Width of the side door/mm</td>
+    <td>Width of the side hatch mm</td>
     <td>1200 - 1000</td>
   </tr>
   <tr>
-    <td>Height of the side door/mm</td>
+    <td>Height of the side hatch mm</td>
     <td>760 - 720</td>
   </tr>
   <tr>
@@ -122,5 +110,8 @@ The painting process uses the most modern knowledge of surface treatment and the
 
 </article>
 </div>
+
+{% import 'macros.html' as macros %}
+{{ macros.product_cta_en() }}
 
 {% endblock %}
