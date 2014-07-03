@@ -34,7 +34,7 @@ h6,
 dt {
   font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
-  color: #293b47;
+  color: #303e49;
 }
 h1 {
   font-size: 45.304px;
@@ -154,7 +154,7 @@ body {
   font-size: 16px;
 }
 body a {
-  color: #293b47;
+  color: #303e49;
   text-decoration: none;
   -moz-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
@@ -324,7 +324,7 @@ header::after {
 .menu__section a,
 .product a {
   text-decoration: none;
-  color: #293b47;
+  color: #303e49;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   -moz-transform: translate3d(0, 0, 0);
@@ -337,7 +337,7 @@ header::after {
 }
 .about p,
 article p {
-  text-align: justify;
+  text-align: left;
 }
 .cta__description {
   *zoom: 1;
@@ -448,14 +448,14 @@ blockquote cite::before {
   content: "\2014 \0020";
 }
 blockquote cite a {
-  color: #293b47;
+  color: #303e49;
 }
 .boatline {
   font-family: "Amatic SC", cursive;
   text-align: center;
   display: block;
   padding: 1em 0 0.5em;
-  background: #263238;
+  background: #293b47;
   color: #cfd8dc;
   margin: 0;
 }
@@ -761,8 +761,7 @@ tbody tr:nth-child(odd) {
   }
   .product__description .inner,
   .menu__section__description .inner {
-    min-height: 64.72px;
-    padding: 24.270000000000003px 32.36px 32.36px;
+    padding: 24.270000000000003px 16.18px 16.18px;
   }
 }
 @media screen and (min-width: 64em) {

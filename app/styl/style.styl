@@ -3,16 +3,18 @@
 // Palette
 
 // Blue Gray
+whitish = #f7f7f7
 bg50 = #eceff1
-
 a100 = #80d8ff
 a200 = #40c4ff
 bg700 = #455a64
 bg100 = #cfd8dc
 a400 = #00b0ff
 bg900 = #263238
-navette = #293b47
+navette2 = #293b47
+babyblue = #d7e4ed
 ocean = #001528
+navette = #303e49
 
 // Alpha values -
 dividers = rgba(0,0,0,.12)
@@ -23,7 +25,7 @@ primary = rgba(0,0,0,.87)
 tagline_color = #212121
 
 body_color = bg900
-body_bg = bg50
+body_bg = babyblue
 
 link_color = navette
 link_hover_color = bg100
@@ -38,7 +40,7 @@ button_hover_bg = bg900
 button_border_color = bg100
 
 footer_color = bg100
-footer_bg = bg900
+footer_bg = navette2
 footer_link_color = bg100
 footer_link_hover_color = bg400
 
@@ -66,18 +68,18 @@ h1
 .topbar
   display block
   min-height ms(5)
-  background #293b47
+  background footer_bg
 
 
 header
-  background #f7f7f7
+  background whitish
 // .cta
-//   background #aaa
+//   background babyblue
 .main
-  background #f7f7f7
+  background whitish
 
 footer
-  background #293b47
+  background footer_bg
 
 
 html
@@ -222,7 +224,7 @@ header
 .about,
 article
   p
-    text-align justify
+    text-align left
 
 .cta__description
   span(2/6)
@@ -413,8 +415,7 @@ tbody
   .product__description,
   .menu__section__description
     .inner
-      min-height ms(40)
-      padding ms(15) ms(20) ms(20)
+      padding ms(15) ms(10) ms(10)
 
 
 @media screen and (min-width: 64em)
