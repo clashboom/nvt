@@ -192,6 +192,10 @@ textarea {
     visibility: hidden;
 }
 
+.visible {
+    visibility: visible;
+}
+
 /*
  * Clearfix: contain floats
  *
