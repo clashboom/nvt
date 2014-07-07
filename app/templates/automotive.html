@@ -3,9 +3,39 @@
 {% block main %}
 
             <section class="products">
+
+              <figure class="product">
+                <a href="/amarok">
+                <picture>
+                  <!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source srcset="/img/amarok/1_XL.jpg" media="(min-width: 2000px)">
+                  <source srcset="/img/amarok/1_L.jpg" media="(min-width: 600px)">
+                  <source srcset="/img/amarok/1_M.jpg" media="(min-width: 400px)">
+                  <source srcset="/img/amarok/1_S.jpg">
+                  <!--[if IE 9]></video><![endif]-->
+                  <img srcset="/img/amarok/1_S.jpg" alt="Automotive">
+                </picture>
+                <div class="product__description">
+                  <div class="inner">
+                    <h2>Hardtop til VW Amarok </h2>
+                    <p>
+                      <span class="translate">Light and durable hardtop</span>
+                    </p>
+                  </div>
+                </div>
+                </a>
+              </figure>
+              
               <figure class="product">
                 <a href="/hilux">
-                <img src="/img/hilux.jpg" alt="Hardtop til Toyota Hilux" />
+                <picture>
+                  <!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source srcset="/img/hilux/1_L.jpg" media="(min-width: 600px)">
+                  <source srcset="/img/hilux/1_M.jpg" media="(min-width: 400px)">
+                  <source srcset="/img/hilux/1_S.jpg">
+                  <!--[if IE 9]></video><![endif]-->
+                  <img srcset="/img/hilux/1_S.jpg" alt="Automotive">
+                </picture>
                 <div class="product__description">
                   <div class="inner">
                     <h2>Hardtop til Toyota Hilux</h2>
@@ -15,17 +45,6 @@
                 </a>
               </figure>
 
-              <figure class="product">
-                <a href="/amarok">
-                <img src="/img/amarok.jpg" alt="Hardtop til VW Amarok" />
-                <div class="product__description">
-                  <div class="inner">
-                    <h2>Hardtop til VW Amarok </h2>
-                    <span class="translate">Light and durable hardtop that complements the design of the car</span>
-                  </div>
-                </div>
-                </a>
-              </figure>
             </section>
 
 {% endblock %}

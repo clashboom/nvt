@@ -141,6 +141,7 @@ module.exports = function(grunt) {
     grunt.registerTask('default', ['compile-stylus', 'bower-install', 'connect:app', 'watch']);
     grunt.registerTask('validate-js', ['jshint']);
     grunt.registerTask('server-dist', ['connect:dist']);
-    grunt.registerTask('publish', ['compile-stylus', 'clean:dist', 'useminPrepare', 'copy:dist', 'cssmin', 'usemin']);
+    grunt.registerTask('publish', ['compile-stylus', 'clean:dist', 'copy:dist' ]);
+    // grunt.registerTask('publish', ['compile-stylus', 'clean:dist', 'useminPrepare', 'copy:dist', 'cssmin', 'usemin']);
 
 };

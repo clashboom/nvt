@@ -3,29 +3,46 @@
 {% block main %}
 
             <section class="products">
+
               <figure class="product">
-                <a href="/hilux">
-                <img src="/img/hilux.jpg" alt="Toyota Hilux Hardtop" />
+                <a href="/amarok">
+                <picture>
+                  <!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source srcset="/img/amarok/1_XL.jpg" media="(min-width: 2000px)">
+                  <source srcset="/img/amarok/1_L.jpg" media="(min-width: 600px)">
+                  <source srcset="/img/amarok/1_M.jpg" media="(min-width: 400px)">
+                  <source srcset="/img/amarok/1_S.jpg">
+                  <!--[if IE 9]></video><![endif]-->
+                  <img srcset="/img/amarok/1_S.jpg" alt="Automotive">
+                </picture>
                 <div class="product__description">
                   <div class="inner">
-                    <h2>Hardtop for Toyota Hilux</h2>
-                    <p>Exclusive hardtop for the true crafstman</p>
+                    <h2>Hardtop for VW Amarok </h2>
+                    <p>Light and durable hardtop</p>
                   </div>
                 </div>
                 </a>
               </figure>
 
               <figure class="product">
-                <a href="/amarok">
-                <img src="/img/amarok.jpg" alt="VW Amarok Hardtop" />
+                <a href="/hilux">
+                <picture>
+                  <!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source srcset="/img/hilux/1_L.jpg" media="(min-width: 600px)">
+                  <source srcset="/img/hilux/1_M.jpg" media="(min-width: 400px)">
+                  <source srcset="/img/hilux/1_S.jpg">
+                  <!--[if IE 9]></video><![endif]-->
+                  <img srcset="/img/hilux/1_S.jpg" alt="Automotive">
+                </picture>
                 <div class="product__description">
                   <div class="inner">
-                    <h2>Hardtop for VW Amarok </h2>
-                    <p>Light and durable hardtop that complements the design of the car</p>
+                    <h2>Hardtop for Toyota Hilux</h2>
+                    <p>Exclusive hardtop for sale only in Norway</p>
                   </div>
                 </div>
                 </a>
               </figure>
+
             </section>
 {% endblock %}
 

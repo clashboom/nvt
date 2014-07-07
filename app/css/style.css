@@ -241,11 +241,12 @@ header::after {
   display: block;
   text-transform: uppercase;
 }
-.menu__subtitle {
+.about__subtitle {
   display: block;
   font-weight: 700;
-  font-style: italic;
-  margin-bottom: 5em;
+  font-size: 24.270000000000003px;
+  padding-bottom: 24.270000000000003px;
+  color: #cfd8dc;
 }
 .menu__section,
 .product {
@@ -305,6 +306,7 @@ header::after {
 .menu__section img,
 .product img {
   display: block;
+  width: 100%;
   max-width: 100%;
 }
 .menu__section .product__description,
@@ -760,7 +762,7 @@ tbody tr:nth-child(odd) {
   }
   .product__description .inner,
   .menu__section__description .inner {
-    padding: 24.270000000000003px 16.18px 16.18px;
+    padding: 24.270000000000003px 32.36px 16.18px;
   }
   .cd-top {
     right: 20px;
@@ -875,7 +877,7 @@ tbody tr:nth-child(odd) {
   }
   .product__description .inner,
   .menu__section__description .inner {
-    min-height: 97.08000000000001px;
+    min-height: 48.540000000000006px;
     padding: 32.36px 40.45px;
   }
   .cd-top {
@@ -909,19 +911,6 @@ tbody tr:nth-child(odd) {
     margin-left: -30px;
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
-  }
-  .cssanimations .timeline__img--hidden {
-    visibility: hidden;
-  }
-  .cssanimations .timeline__img.bounce-in {
-    -webkit-animation: cd-bounce-1 0.6s;
-    -moz-animation: cd-bounce-1 0.6s;
-    animation: cd-bounce-1 0.6s;
-  }
-  .cssanimations .timeline__wrapper:nth-child(even) .timeline__content.bounce-in {
-    -webkit-animation: cd-bounce-2-inverse 0.6s;
-    -moz-animation: cd-bounce-2-inverse 0.6s;
-    animation: cd-bounce-2 inverse 0.6s;
   }
   .timeline .timeline__content {
     margin-left: 0;
@@ -963,9 +952,25 @@ tbody tr:nth-child(odd) {
     right: 122%;
     text-align: right;
   }
-  .cssanimations .timeline__content.bounce-in {
-    visibility: visible;
-  }
+}
+.cssanimations .timeline__img {
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+.cssanimations .timeline__img--hidden {
+  visibility: hidden;
+}
+.cssanimations .timeline__img.bounce-in {
+  -webkit-animation: cd-bounce-1 0.6s;
+  -moz-animation: cd-bounce-1 0.6s;
+  animation: cd-bounce-1 0.6s;
+  visibility: visible;
+}
+.cssanimations .timeline__wrapper:nth-child(even) .timeline__content.bounce-in {
+  -webkit-animation: cd-bounce-2-inverse 0.6s;
+  -moz-animation: cd-bounce-2-inverse 0.6s;
+  animation: cd-bounce-2 inverse 0.6s;
+  visibility: visible;
 }
 @media screen and (min-width: 125em) {
   .main {
