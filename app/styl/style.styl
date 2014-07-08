@@ -176,7 +176,7 @@ header
 .about__subtitle
   display block
   font-weight 700
-  font-size ms(15)
+  font-size ms(18)
   padding-bottom ms(15)
   color bg100
 
@@ -332,6 +332,8 @@ article
   margin-bottom ms(30)
   img
     max-width 100%
+    display block
+    margin ms(15) auto ms(20)
 
 .half,
 .equipment ul,
@@ -340,6 +342,13 @@ article
 
 .half-col
   col(1/2)
+
+.third
+  col(42/132)
+
+.circular
+  -webkit-border-radius 50%
+  border-radius 50%
 
 .specification
   img
@@ -388,7 +397,8 @@ tbody
       display block
       text-align center
   .half,
-  .half-col
+  .half-col,
+  .third,
   .product,
   .menu__section,
   .cta__description,

@@ -244,7 +244,7 @@ header::after {
 .about__subtitle {
   display: block;
   font-weight: 700;
-  font-size: 24.270000000000003px;
+  font-size: 29.124000000000002px;
   padding-bottom: 24.270000000000003px;
   color: #cfd8dc;
 }
@@ -551,6 +551,8 @@ article img {
 }
 .about__section img {
   max-width: 100%;
+  display: block;
+  margin: 24.270000000000003px auto 32.36px;
 }
 .half,
 .equipment ul,
@@ -602,6 +604,33 @@ article img {
 }
 .half-col:last-child {
   margin-right: 0%;
+}
+.third {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 29.772727272727256%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+.third:before,
+.third:after {
+  content: '';
+  display: table;
+}
+.third:after {
+  clear: both;
+}
+.third:last-child {
+  margin-right: 0%;
+}
+.circular {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
 }
 .specification img {
   margin-bottom: 32.36px;
@@ -672,6 +701,7 @@ tbody tr:nth-child(odd) {
   }
   .half,
   .half-col,
+  .third,
   .product,
   .menu__section,
   .cta__description,
@@ -686,6 +716,7 @@ tbody tr:nth-child(odd) {
   }
   .half:first-child,
   .half-col:first-child,
+  .third:first-child,
   .product:first-child,
   .menu__section:first-child,
   .cta__description:first-child,
@@ -695,6 +726,7 @@ tbody tr:nth-child(odd) {
   }
   .half:last-child,
   .half-col:last-child,
+  .third:last-child,
   .product:last-child,
   .menu__section:last-child,
   .cta__description:last-child,
