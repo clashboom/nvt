@@ -1,0 +1,61 @@
+{% extends(locale + '/' + 'base.html') %}
+{% set active_page="auto" %}
+{% block main %}
+
+<div class="page__wrapper">
+<article class="post__article">
+
+  <div class="post__header">
+    <h1 class="post__heading">{{ product_title}}</h1>
+      <picture>
+        <!--[if IE 9]><video style="display: none;"><![endif]-->
+        <source srcset="/img/hilux/1_L.jpg" media="(min-width: 600px)">
+        <source srcset="/img/hilux/1_M.jpg" media="(min-width: 400px)">
+        <source srcset="/img/hilux/1_S.jpg">
+        <!--[if IE 9]></video><![endif]-->
+        <img srcset="/img/hilux/1_S.jpg" alt="Automotive">
+      </picture>
+  </div>
+
+  <div class="gallery">
+    <a class="gallery__img th" href="/img/hilux/1_L.jpg"><img src="/img/hilux/th/1.jpg" alt=""></a>
+    <a class="gallery__img th" href="/img/hilux/2.jpg"><img src="/img/hilux/th/2.jpg" alt=""></a>
+  </div>
+
+  <div class="description">
+    <div class="half-col">
+      <p>
+      {% block description_text_one %}
+      {% endblock %}
+      </p>
+
+    </div>
+    <div class="half-col">
+      <p>
+        {% block description_text_two %}
+        {% endblock %}
+      </p>
+    </div>
+  </div>
+
+
+  <div class="specification">
+
+    <h2>{{ specification_title }}</h2>
+
+    <table>
+      <tbody>
+          {% for property, value in specification %}
+          <tr>
+            <td>{{ property }}</td>
+            <td>{{ value }}</td>
+          </tr>
+          {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+</article>
+</div>
+
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends(locale + '/' + 'base.html') %}
+{% set active_page="auto" %}
+{% block main %}
+
+            <section class="products">
+
+              <figure class="product">
+                <a href="/amarok">
+                <picture>
+                  <!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source srcset="/img/amarok/1_XL.jpg" media="(min-width: 2000px)">
+                  <source srcset="/img/amarok/1_L.jpg" media="(min-width: 600px)">
+                  <source srcset="/img/amarok/1_M.jpg" media="(min-width: 400px)">
+                  <source srcset="/img/amarok/1_S.jpg">
+                  <!--[if IE 9]></video><![endif]-->
+                  <img srcset="/img/amarok/1_S.jpg" alt="Automotive">
+                </picture>
+                <div class="product__description">
+                  <div class="inner">
+                    <h2>{{ amarok_title }}</h2>
+                    <p>
+                      {{ amarok_subtitle }}
+                    </p>
+                  </div>
+                </div>
+                </a>
+              </figure>
+
+              <figure class="product">
+                <a href="/hilux">
+                <picture>
+                  <!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source srcset="/img/hilux/1_L.jpg" media="(min-width: 600px)">
+                  <source srcset="/img/hilux/1_M.jpg" media="(min-width: 400px)">
+                  <source srcset="/img/hilux/1_S.jpg">
+                  <!--[if IE 9]></video><![endif]-->
+                  <img srcset="/img/hilux/1_S.jpg" alt="Automotive">
+                </picture>
+                <div class="product__description">
+                  <div class="inner">
+                    <h2>{{ hilux_title }}</h2>
+                    <p>{{ hilux_subtitle }}</p>
+                  </div>
+                </div>
+                </a>
+              </figure>
+
+            </section>
+
+{% endblock %}
+
+

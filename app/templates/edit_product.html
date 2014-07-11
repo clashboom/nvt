@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends(locale + '/' + 'base.html') %}
 {% block main %}
 
 <form action="{{ upload_url }}" method="post" enctype="multipart/form-data">

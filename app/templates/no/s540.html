@@ -1,0 +1,124 @@
+{% extends('s540_template.html') %}
+{% set page_title = 'Navette S 540 - ypperlig båt til sport og fritid' %}
+
+{% block description_text_one %}
+S540 er en sportslig styrekonsollbåt med sportslige og sikre sjøegenskaper. Under utviklingen av båten er det lagt særlig vekt på ergonometri. Det er enkelt å bevege seg i båten og sitteplassene er behagelige. Førerplassen er blant markedets desidert beste. Føreren kan sitte, halvt stå eller stå og likevel ha god oversikt over instrumenter og farvann. Ratt og gass/trim sitter akkurat der de skal være. Der er god plass til beina under styrekonsollen og knær kommer ikke i konflikt med noen kanter. Cocpitdybden er 62 cm på det laveste.
+Båten er naturligvis selvlensende. Vindskjermen gir god beskyttelse bak styrekonsollen. Skroget har en relativ dyp V-bunn med 21,5 grader I senter vannlinje. Det er håndopplagt med triaksial duk i skroget.. Hekken er spesielt kraftig da motorfundamentet er trukket noe bak hekken og forsterket direkte i langsgående stringere. Båten lander mykt i sjøen, hekken slipper ikke og det er bortimot umulig å kavitere propellen.
+Alt utstyr ombord er av beste kvalitet. Alle beslag er i rustfritt syrefast materiale.
+Under styrekonsollen er der et romslig stuerom. Under akterbenken er batterikasse, tankinspeksjon, samt stort stuverom.
+{% endblock %}
+
+{% set quality = 'Kvalitet - Sikkerhet' %}
+{% block quality_description %}
+    Det er brukt førsteklasses GRP materialer i støpen. Gelcoaten er av en type som har den beste lysekthet og det er minimal vanninntrenging i den. Dette hindrer osmose.  Både i skrog og overbygg er det brukt sydd triaksial glassfibermatte. Dette gir et bedre styrk/vekt forhold. Alle beslag og skruer er i syrefast materiale.
+{% endblock %}
+
+
+{% set features_title = 'Utstyr' %}
+{% set standard_features_title = "Standard utstyr" %}
+{% set standard_features = [
+  'Polstret sete med vippefront og gassdemper',
+  'Fastmontert, nedfellbar badestig',
+  'Stuverom for anker/tauverk',
+  'Selvdrenerende cockpit',
+  'Batterikasse m/hovedstrømbryter',
+  'Manuell lensepumpe',
+  'Låsbare rom til utstyr',
+  'Fastmontert brennstofftank m/måler',
+  'Stor vindskjerm for Nordiske forhold',
+  'Eksklusivt instrumentpanel',
+  'Bryterpanel m/12 V uttak',
+  'Brannslukningsapparat',
+  'Konsolltrekk'
+] %}
+
+{% set extra_features_title = "Ekstrautstyr" %}
+{% set extra_features = [
+  'Blått/hvitt skrog',
+  'Flexiteek dørk',
+  'Kalesje',
+  'Puter på akterbenk',
+  'Puter på frontbenk',
+  'Coctailbord foran',
+  'Radio/CD spiller',
+  'Montering av ekkolodd',
+  'Bunnsmøring',
+  'Monteringspakke for Suzuki'
+] %}
+
+{% set specification_title = "Spesifikasjon" %}
+{% set partmap_one = [
+  'Drenering',
+  'Manuell pumpe',
+  'Pullert',
+  'Badetrapp',
+  'Bensintank'
+] %}
+
+{% set partmap_two = [
+  'Ankerbrønn',
+  'Stuverom cocpit',
+  'Stuverom skrog',
+  'Hanskerom'
+] %}
+
+{% set specification = [
+  ('Lengde cm',
+  '538'),
+  ('Bredde cm',
+  '208'),
+  ('Dybde cm',
+  '271'),
+  ('Fribord senter',
+  '73'),
+  ('Høyde over vannlinje m/vindskjerm ',
+  '130'),
+  ('Vekt uten motor',
+  '520'),
+  ('Nyttelast kg',
+  '520'),
+  ('Bæreevne personer',
+  '6'),
+  ('Stammelengde',
+  'Lang'),
+  ('Motor effekt min kW/HK',
+  '52/70'),
+  ('Motor effekt max kW/HK',
+  '103/140'),
+  ('Kabellengde fot',
+  '15"'),
+  ('Styrewire lengde fot',
+  '14"'),
+  ('Konstruksjonskategori',
+  'CE C'),
+  ('Lensesystem',
+  'Selvlenser'),
+  ('Tank liter',
+  '75'),
+  ('Ankerboks foran',
+  '1'),
+  ('Stuerom antall',
+  '3'),
+  ('Hanskerom',
+  '1'),
+  ('<h6>Fartsprøver</h6>' | safe,
+  '&nbsp;' | safe),
+  ('Motor',
+  'Suzuki DF90'),
+  ('Hastighet knop 2 pers',
+  '38,0'),
+  ('Motor',
+  'Suzuki DF115'),
+  ('Hastighet knop 2 pers',
+  '43,0')
+] %}
+
+{% block smallprint %}
+Vi forbeholder oss retten til endring av spesifikasjoner uten varsel. Reelle ytelser vil kunne variere individuelt i forhold til oppgitte testverdier.
+{% endblock %}
+
+
+{% block cta %}
+{% import 'macros.html' as macros %}
+{{ macros.product_cta() }}
+{% endblock %}

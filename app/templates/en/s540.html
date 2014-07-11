@@ -1,210 +1,124 @@
-{% extends('base_en.html') %}
-{% set active_page="boats" %}
-{% block main %}
+{% extends('s540_template.html') %}
+{% set page_title = 'Navette S 540 - an excellent boat for sport and leisure.' %}
 
-
-<article class="post__article">
-  <div class="post__header">
-    <h1 class="post__heading">S 540</h1>
-    <img src="/img/s540m.jpg" alt="Navette S 540" />
-  </div>
-
-  <div class="gallery">
-    <a class="gallery__img th" href="/img/s540/1.jpg"><img src="/img/s540/th/1.jpg" alt=""></a>
-    <a class="gallery__img th" href="/img/s540/2.jpg"><img src="/img/s540/th/2.jpg" alt=""></a>
-    <a class="gallery__img th" href="/img/s540/3.jpg"><img src="/img/s540/th/3.jpg" alt=""></a>
-    <a class="gallery__img th" href="/img/s540/4.jpg"><img src="/img/s540/th/4.jpg" alt=""></a>
-    <a class="gallery__img th" href="/img/s540/5.jpg"><img src="/img/s540/th/5.jpg" alt=""></a>
-  </div>
-
-  <div class="description">
-    <div>
-      <p class="columns">
+{% block description_text_one %}
         S 540 is a sporty console boat with great performance. A special emphasis was put on ergonomics during the development of the boat. Seats are comfortable and it is possible to move around in the boat with ease. The cockpit is among the absolute best. The driver has a good overview of instruments and water no matter if standing or sitting. Steering wheel and gas/trim sits right where they should be and there is plenty of room for your legs under the steering consle. The windshield provides good protection behind the control console. The hull has a relatively deep V-bottom which makes the ride soft even in rough waters.
         <span class="translate">
           Det er håndopplagt med triaksial duk i skroget. Hekken er spesielt kraftig da motorfundamentet er trukket noe bak hekken og forsterket direkte i langsgående stringere. Båten lander mykt i sjøen, hekken slipper ikke og det er bortimot umulig å kavitere propellen.
         </span>
         Under the console there is spacious storage room, while under the stern bench seat is located battery, <span class="translate">tankinspeksjon</span> and a large storage locker.
-      </p>
-    </div>
-    <div class="half-col">
-      <h6>Quality - Security</h6>
-      <p>The boat is self-bailing. Only high quality gelcoat and GRP materials are used in production, ensuring great physical properties and resistance to water. Therefore you dont have to worry about things like osmosis. The composite layer of both hull and superstructure includes stitched triaxial fiberglass mat, which allows for excellent strength-to-weight ratio. All on-board equipment is of high quality. All fittings and accessories are made from corrosion and acid resistant materials. </p>
-    </div>
-  </div>
-
-  <div class="equipment">
-  <h2>Equipment</h2>
-
-  <ul>
-    <h6>Standard equipment for S 540</h6>
-    <li>Padded seats with shock mitigation and flip-up front</li>
-    <li>Fixed, foldable boarding ladder</li>
-    <li>Storage compartment for anchor/ropes</li>
-    <li>Self-bailing system</li>
-    <li>Battery housing with main switch</li>
-    <li>Manual bilge pump</li>
-    <li>Lockable room for equipment</li>
-    <li>Fixed fuel tank with capacity markings</li>
-    <li>Large windshield, well suited for Nordic conditions</li>
-    <li>Exclusive dashboard</li>
-    <li>Switch panel with 12V outlet</li>
-    <li>Fire extinguisher</li>
-    <li>Console cover</li>
-  </ul>
-
-  <ul>
-    <h6>Extra equipment for S 540</h6>
-    <li>Blue/White hull</li>
-    <li>Flexiteek decking</li>
-    <li>Canopy</li>
-    <li>Pillows for front seats</li>
-    <li>Pillows for rear seats</li>
-    <li>Cocktail table</li>
-    <li>Radio/CD player</li>
-    <li>Sonar</li>
-    <li>Anti-fouling paint</li>
-    <li>Suzuki mounting kit</li>
-  </ul>
-  </div>
-
-  <div class="specification">
-
-  <h2>Specification</h2>
-    <img src="/img/s540/s540.png" alt="S 540" />
-
-  <ol>
-    <li>Drainage</li>
-    <li>Manual pump</li>
-    <li>Bollard</li>
-    <li>Boarding ladder</li>
-    <li>Fuel tank</li>
-  </ol>
-
-  <ol start="6">
-    <li>Anchor compartment</li>
-    <li>Cockpit storage compartment</li>
-    <li class="translate">Stuverom skrog</li>
-    <li>Glove compartment</li>
-  </ol>
-
-  <hr />
-
-    <table>
-      <tbody>
-      <tr>
-        <td>Length</td>
-        <td>538 cm</td>
-      </tr>
-      <tr>
-        <td>Width</td>
-        <td>208 cm</td>
-      </tr>
-      <tr>
-        <td>Depth</td>
-        <td>27 cm</td>
-      </tr>
-      <tr>
-        <td>Freeboard center</td>
-        <td>73 cm</td>
-      </tr>
-      <tr>
-        <td>Height above waterline w/ windshield </td>
-        <td>130 cm</td>
-      </tr>
-      <tr>
-        <td>Weight without motor</td>
-        <td>520 cm</td>
-      </tr>
-      <tr>
-        <td>Max payload</td>
-        <td>520 kg</td>
-      </tr>
-      <tr>
-        <td>Max persons</td>
-        <td>6 </td>
-      </tr>
-      <tr class="translate">
-        <td>Stammelengde</td>
-        <td>Lang</td>
-      </tr>
-      <tr>
-        <td>Min motor power</td>
-        <td>52/70 kW/HP</td>
-      </tr>
-      <tr>
-        <td>Max motor power</td>
-        <td>103/140 kW/HP</td>
-      </tr>
-      <tr>
-        <td class="translate">Kabellengde</td>
-        <td>15'</td>
-      </tr>
-      <tr class="translate">
-        <td>Styrewire lengde</td>
-        <td>14'</td>
-      </tr>
-      <tr>
-        <td>Category</td>
-        <td>CE C</td>
-      </tr>
-      <tr>
-        <td>Bailing system</td>
-        <td>Self-bailing</td>
-      </tr>
-      <tr>
-        <td>Fuel capacity</td>
-        <td>75 liter</td>
-      </tr>
-      <tr>
-        <td>Anchor compartment</td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td>Storage compartments</td>
-        <td>3</td>
-      </tr>
-      <tr>
-        <td>Glove compartment</td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td>
-          <h6>Speed test results</h6>
-        </td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <td>Motor model</td>
-        <td>Suzuki DF90</td>
-      </tr>
-      <tr>
-        <td>Speed (2 pers.)</td>
-        <td>38,0 knots</td>
-      </tr>
-      <tr>
-        <td>Motor model</td>
-        <td>Suzuki DF115</td>
-      </tr>
-      <tr>
-        <td>Speed (2 pers.)</td>
-        <td>43,0 knots</td>
-      </tr>
-      </tbody>
-    </table>
-
-  <hr />
-
-  <p>
-  <span class="smallprint">We reserve the right to change the specification without notice. Actual performance may vary individually in relation to the specified test values</span>
-  </p>
-  </div>
-
-</article>
-
-{% import 'macros.html' as macros %}
-{{ macros.product_cta_en() }}
-
 {% endblock %}
 
+{% set quality = 'Kvalitet - Sikkerhet' %}
+{% block quality_description %}
+      The boat is self-bailing. Only high quality gelcoat and GRP materials are used in production, ensuring great physical properties and resistance to water. Therefore you dont have to worry about things like osmosis. The composite layer of both hull and superstructure includes stitched triaxial fiberglass mat, which allows for excellent strength-to-weight ratio. All on-board equipment is of high quality. All fittings and accessories are made from corrosion and acid resistant materials.
+{% endblock %}
 
+{% set features_title = 'Features' %}
+{% set standard_features_title = "Standard features" %}
+{% set standard_features = [
+
+    'Padded seats with shock mitigation and flip-up front',
+    'Fixed, foldable boarding ladder',
+    'Storage compartment for anchor/ropes',
+    'Self-bailing system',
+    'Battery housing with main switch',
+    'Manual bilge pump',
+    'Lockable room for equipment',
+    'Fixed fuel tank with capacity markings',
+    'Large windshield, well suited for Nordic conditions',
+    'Exclusive dashboard',
+    'Switch panel with 12V outlet',
+    'Fire extinguisher',
+    'Console cover'
+] %}
+
+{% set extra_features_title = "Extra features" %}
+{% set extra_features = [
+    'Blue/White hull',
+    'Flexiteek decking',
+    'Canopy',
+    'Pillows for front seats',
+    'Pillows for rear seats',
+    'Cocktail table',
+    'Radio/CD player',
+    'Sonar',
+    'Anti-fouling paint',
+    'Suzuki mounting kit'
+] %}
+
+{% set specification_title = "Spesifikasjon" %}
+{% set partmap_one = [
+    'Drainage',
+    'Manual pump',
+    'Bollard',
+    'Boarding ladder',
+    'Fuel tank'
+] %}
+
+{% set partmap_two = [
+    'Anchor compartment',
+    'Cockpit storage compartment',
+    'Stuverom skrog',
+    'Glove compartment'
+] %}
+
+{% set specification = [
+    ('Length',
+    '538 cm'),
+    ('Width',
+    '208 cm'),
+    ('Depth',
+    '27 cm'),
+    ('Freeboard center',
+    '73 cm'),
+    ('Height above waterline w/ windshield ',
+    '130 cm'),
+    ('Weight without motor',
+    '520 cm'),
+    ('Max payload',
+    '520 kg'),
+    ('Max persons',
+    '6 '),
+    ('Stammelengde',
+    'Lang'),
+    ('Min motor power',
+    '52/70 kW/HP'),
+    ('Max motor power',
+    '103/140 kW/HP'),
+    ('Kabellengde',
+    '5"'),
+    ('Styrewire lengde',
+    '4"'),
+    ('Category',
+    'CE C'),
+    ('Bailing system',
+    'Self-bailing'),
+    ('Fuel capacity',
+    '75 liter'),
+    ('Anchor compartment',
+    '1'),
+    ('Storage compartments',
+    '3'),
+    ('Glove compartment',
+    '1'),
+    ('<h6>Speed test results</h6>' | safe,
+    '&nbsp;' | safe),
+    ('Motor model',
+    'Suzuki DF90'),
+    ('Speed (2 pers.)',
+    '38,0 knots'),
+    ('Motor model',
+    'Suzuki DF115'),
+    ('Speed (2 pers.)',
+    '43,0 knots'),
+] %}
+
+{% block smallprint %}
+  We reserve the right to change the specification without notice. Actual performance may vary individually in relation to the specified test values
+{% endblock %}
+
+{% block cta %}
+{% import 'macros.html' as macros %}
+{{ macros.product_cta_en() }}
+{% endblock %}

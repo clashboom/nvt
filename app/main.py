@@ -25,14 +25,6 @@ JINJA_ENV = jinja2.Environment(loader=jinja2.FileSystemLoader(TEMPLATE_DIR),
                                autoescape=True)
 
 
-# Webapp2 Sessions config
-config = {}
-config['webapp2_extras.sessions'] = {
-    'secret_key': 'navettes-not-so-secret-key',
-    'name': 'navette_session',
-}
-
-
 def rate_limit(seconds_per_request=1):
     def rate_limiter(function):
         @wraps(function)
@@ -69,7 +61,7 @@ def parseAcceptLanguage(acceptLanguage):
 
 
 def detectLocale(acceptLanguage):
-    defaultLocale = 'en'
+    defaultLocale = 'no'
     supportedLocales = ['no', 'nb', 'nn', 'en']
 
     locale_q_pairs = parseAcceptLanguage(acceptLanguage)
@@ -77,8 +69,10 @@ def detectLocale(acceptLanguage):
         for locale in supportedLocales:
             # pair[0] is locale, pair[1] is q value
             if pair[0].replace('-', '_').lower().startswith(locale.lower()):
-                return locale
-
+                if locale in ['no', 'nb', 'nn']:
+                    return 'no'
+                else:
+                    return defaultLocale
     return defaultLocale
 
 
@@ -97,12 +91,7 @@ class Handler(webapp2.RequestHandler):
         if not locale:
             locale = detectLocale(self.request.headers.get('accept_language'))
             self.session['locale'] = locale
-            path = self.request.referer
-            self.redirect(path if path else '/')
-        elif locale == 'en':
-            template = template[:-5] + '_' + 'en' + '.html'
-        locale = self.request.headers.get('accept_language')
-        self.write(self.render_str(template,
+        self.write(self.render_str(locale + '/' + template,
                                    locale=locale,
                                    *a, **params))
 
@@ -267,9 +256,18 @@ class MailHandler(Handler):
             logging.error(message)
 
 
+# Webapp2 Sessions config
+config = {}
+config['webapp2_extras.sessions'] = {
+    'secret_key': 'navettes-not-so-secret-key',
+    'name': 'navette_session',
+}
+
+
 app = webapp2.WSGIApplication([
     ('(?:/maritim.?)?/s540', S540Handler),
     ('(?:/maritim.?)?/s565', S565Handler),
+    ('/en/amarok', AmarokHandler),
     ('/amarok', AmarokHandler),
     ('/hilux', HiluxHandler),
     ('/maritim.?', BoatHandler),

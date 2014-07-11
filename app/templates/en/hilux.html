@@ -1,78 +1,28 @@
-{% extends 'base.html' %}
-{% set active_page="auto" %}
-{% block main %}
+{% extends 'hilux_template.html' %}
+{% set page_title = "Hardtop for Toyota Hilux" %}
 
-<div class="page__wrapper">
-<article class="post__article">
+{% set product_title = "Toyota Hilux SR5 Cargo Hardtop" %}
 
-<div class="post__header">
-  <h1 class="post__heading">Toyota Hilux SR5 Cargo Hardtop</h1>
-    <picture>
-      <!--[if IE 9]><video style="display: none;"><![endif]-->
-      <source srcset="/img/hilux/1_L.jpg" media="(min-width: 600px)">
-      <source srcset="/img/hilux/1_M.jpg" media="(min-width: 400px)">
-      <source srcset="/img/hilux/1_S.jpg">
-      <!--[if IE 9]></video><![endif]-->
-      <img srcset="/img/hilux/1_S.jpg" alt="Automotive">
-    </picture>
-</div>
-
-  <div class="gallery">
-    <a class="gallery__img th" href="/img/hilux/1_L.jpg"><img src="/img/hilux/th/1.jpg" alt=""></a>
-    <a class="gallery__img th" href="/img/hilux/2.jpg"><img src="/img/hilux/th/2.jpg" alt=""></a>
-  </div>
-
-<div class="description">
-  <div class="half-col">
-    <p>
+{% block description_text_one %}
     We are proud to have been given an opportunity by Loyds Industri to take part in manufacturing of this exclusive hardtop. The hardtop is designed so that it can include a variety of alternative furnishings - double retractable floor, drawers for storage of tools and possibilities for shelving on one or both sides, all of which is provided by Loyds. Three lockable doors, one rear and one on each side. Both side and rear hatches are fitted with gas struts for easy access. Customized body makes the load compartment water and dust proof. Solid roof rails for exterior roof transportation. And much more.
-    </p>
-  </div>
-
-  <div class="half-col">
-
-    <p>
-    Please note that Hilux Cargo is a special model developed by Toyota Norway, and is therefore only sold in this country. If you are located in Norway and already have a Hilux, this can of course be retrofitted on older cars. For more details please contact your Toyota dealer.
-    </p>
-  </div>
-</div>
-
-
-<div class="specification">
-
-  <h2>Specification</h2>
-
-  <table>
-    <tbody>
-      <tr>
-        <td>Load compartment floor length</td>
-        <td>1800 mm</td>
-      </tr>
-      <tr>
-        <td>Load compartment floor width</td>
-        <td>1470 mm</td>
-      </tr>
-      <tr class="translate">
-        <td>Høyde bakke baklem</td>
-        <td>800 mm</td>
-      </tr>
-      <tr>
-        <td>Max length in load compartment</td>
-        <td>2850 mm</td>
-      </tr>
-      <tr>
-        <td>Side hatch opening size</td>
-        <td>1400x400 mm</td>
-      </tr>
-      <tr>
-        <td>Hardtop weight</td>
-        <td>108 kg</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-</article>
-</div>
-
 {% endblock %}
+
+{% block description_text_two %}
+    Please note that Hilux Cargo is a special model developed by Toyota Norway, and is therefore only sold in this country. If you are located in Norway and already have a Hilux, this can of course be retrofitted on older cars. For more details please contact your Toyota dealer.
+{% endblock %}
+
+{% set specification_title = "Spesifikasjon" %}
+{% set specification = [
+  ('Load compartment floor length',
+  '1800 mm'),
+  ('Load compartment floor width',
+  '1470 mm'),
+  ('Høyde bakke baklem',
+  '800 mm'),
+  ('Max length in load compartment',
+  '2850 mm'),
+  ('Side hatch opening size',
+  '1400x400 mm'),
+  ('Hardtop weight',
+  '108 kg'),
+] %}

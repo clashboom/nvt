@@ -1,51 +1,11 @@
-{% extends 'base_en.html' %}
-{% block main %}
+{% extends 'home_template.html' %}
+{% set page_title = 'Navette' %}
 
-<div class="page__wrapper page__wrapper--home">
-  <div class="menu">
 
-    <section class="menu__section">
-      <a href="/auto">
+{% set auto_alt_text = "Automotive" %}
+{% set auto_title = "Automotive" %}
+{% set auto_subtitle = 'Composite solutions for automotive industry' %}
 
-        <picture>
-          <!--[if IE 9]><video style="display: none;"><![endif]-->
-          <source srcset="http://placehold.it/1600x1000" media="(min-width: 1000px)">
-          <source srcset="http://placehold.it/1200x800" media="(min-width: 800px)">
-          <source srcset="http://placehold.it/800x500">
-          <!--[if IE 9]></video><![endif]-->
-          <img srcset="http://placehold.it/800x500" alt="Automotive">
-        </picture>
-
-        <div class="menu__section__description">
-          <div class="inner">
-          <h2>Automotive</h2>
-          <p>Composite solutions for automotive industry</p>
-          </div>
-        </div>
-      </a>
-    </section>
-
-    <section class="menu__section">
-      <a href="/boats">
-        <picture>
-          <!--[if IE 9]><video style="display: none;"><![endif]-->
-          <source srcset="/img/watercraft_xl.jpg" media="(min-width: 2000px)">
-          <source srcset="/img/watercraft.jpg" media="(min-width: 1000px)">
-          <source srcset="/img/watercraft_med.jpg" media="(min-width: 480px)">
-          <source srcset="/img/watercraft_small.jpg">
-          <!--[if IE 9]></video><![endif]-->
-          <img srcset="/img/watercraft_small.jpg" alt="Maritime">
-        </picture>
-        <div class="menu__section__description">
-          <div class="inner">
-          <h2>Watercraft</h2>
-          <p>Multi-purpose boats with emphasis on usability</p>
-          </div>
-        </div>
-      </a>
-    </section>
-
-  </div>
-</div>
-
-{% endblock %}
+{% set water_alt_text = "Watercraft" %}
+{% set water_title = "Watercraft" %}
+{% set water_subtitle = 'Practical multi-purpose boats with emphasis on ergonomics' %}
