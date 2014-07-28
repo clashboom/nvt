@@ -61,7 +61,7 @@ def parseAcceptLanguage(acceptLanguage):
 
 
 def detectLocale(acceptLanguage):
-    defaultLocale = 'no'
+    defaultLocale = 'en'
     supportedLocales = ['no', 'nb', 'nn', 'en']
 
     locale_q_pairs = parseAcceptLanguage(acceptLanguage)
@@ -265,18 +265,16 @@ config['webapp2_extras.sessions'] = {
 
 
 app = webapp2.WSGIApplication([
-    ('(?:/maritim.?)?/s540', S540Handler),
-    ('(?:/maritim.?)?/s565', S565Handler),
+    ('(?:.?)?/s540', S540Handler),
+    ('(?:.?)?/s565', S565Handler),
     ('/en/amarok', AmarokHandler),
     ('/amarok', AmarokHandler),
     ('/hilux', HiluxHandler),
-    ('/maritim.?', BoatHandler),
     ('/boats', BoatHandler),
     ('/auto', AutoHandler),
     ('/contact', ContactHandler),
     ('/about', AboutHandler),
     ('/locale(?:/)?(.*)?', ChangeLocale),
-    # ('/edit', EditProductHandler),
     ('/upload', UploadHandler),
     ('/serve/([^/]+)?', ServeHandler),
     ('/product/([^/]+)?', ProductHandler),
