@@ -40,7 +40,7 @@
             <nav>
               {% for href, id, caption in navigation_bar %}
                 <a {% if id == active_page %} class="active"{% endif
-                %} href="{{ href|e }}">{{ caption|e }}</a>
+                %} href="{{ ('/en' if locale == 'en') + href|e }}">{{ caption|e }}</a>
               {% endfor %}
             </nav>
           </header>
@@ -70,11 +70,11 @@
               <ul>
                 <li class="list__title">{{ navigation }}</li>
                 <li><hr /></li>
-                <li><a href="/auto">{{ auto }}</a></li>
-                <li><a href="/boats">{{ boats }}</a></li>
-                <li><a href="/about">{{ about }}</a></li>
-                <li><a href="/contact">{{ contact }}</a></li>
-                <li><a href="/sitemap">{{ sitemap }}</a></li>
+                <li><a href="{{ '/en' if locale == 'en'}}/auto">{{ auto }}</a></li>
+                <li><a href="{{ '/en' if locale == 'en'}}/boats">{{ boats }}</a></li>
+                <li><a href="{{ '/en' if locale == 'en'}}/about">{{ about }}</a></li>
+                <li><a href="{{ '/en' if locale == 'en'}}/contact">{{ contact }}</a></li>
+                <li><a href="{{ '/en' if locale == 'en'}}/sitemap">{{ sitemap }}</a></li>
               </ul>
             </section>
 
@@ -82,8 +82,8 @@
               <ul>
                 <li class="list__title">{{ site}}</li>
                 <li><hr /></li>
-                <li><a href="/locale/en" rel="nofollow">English</a></li>
-                <li><a href="/locale/no" rel="nofollow">Norsk</a></li>
+                <li><a href="/en" rel="nofollow">English</a></li>
+                <li><a href="/no" rel="nofollow">Norsk</a></li>
                 <!-- <li><a href="/terms">Vilkår</a></li> -->
                 <!-- <li><a href="/privacy">Privatslivspolitikk</a></li> -->
                 <li> &copy; <span class="brand">Navette</span> 2014 </li>

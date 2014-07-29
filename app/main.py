@@ -109,8 +109,13 @@ class Handler(webapp2.RequestHandler):
                                               MemcacheSessionFactory)
 
 
+class PageHandler():
+    pass
+
+
 class ChangeLocale(Handler):
     def get(self, locale):
+        self.write(locale)
         if locale == 'en':
             self.session['locale'] = locale
         elif locale == 'no':
@@ -164,7 +169,7 @@ class UploadHandler(blobstore_handlers.BlobstoreUploadHandler):
 
 class MainHandler(Handler):
     def get(self):
-        self.render('home.html')
+        self.render("home.html")
 
 
 class BoatHandler(Handler):
@@ -264,20 +269,23 @@ config['webapp2_extras.sessions'] = {
 }
 
 
+# Locale regex
+loc = '(?:/)?(?:[a-z]{2})?'
+# Trailing slash regex
+ts = '(?:/)?'
+
 app = webapp2.WSGIApplication([
-    ('(?:.?)?/s540', S540Handler),
-    ('(?:.?)?/s565', S565Handler),
-    ('/en/amarok', AmarokHandler),
-    ('/amarok', AmarokHandler),
-    ('/hilux', HiluxHandler),
-    ('/boats', BoatHandler),
-    ('/auto', AutoHandler),
-    ('/contact', ContactHandler),
-    ('/about', AboutHandler),
-    ('/locale(?:/)?(.*)?', ChangeLocale),
+    (loc + '/s540' + ts, S540Handler),
+    (loc + '/s565' + ts, S565Handler),
+    (loc + '/amarok' + ts, AmarokHandler),
+    (loc + '/hilux' + ts, HiluxHandler),
+    (loc + '/boats' + ts, BoatHandler),
+    (loc + '/auto' + ts, AutoHandler),
+    (loc + '/contact' + ts, ContactHandler),
+    (loc + '/about' + ts, AboutHandler),
+    (loc + '/sitemap' + ts, SiteMapHandler),
+    ('/([a-z]{2})' + ts, ChangeLocale),
     ('/upload', UploadHandler),
     ('/serve/([^/]+)?', ServeHandler),
-    ('/product/([^/]+)?', ProductHandler),
-    ('/sitemap', SiteMapHandler),
     ('/.*', MainHandler),
 ], config=config, debug=True)
