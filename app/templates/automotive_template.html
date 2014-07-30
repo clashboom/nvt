@@ -1,11 +1,13 @@
-{% extends(locale + '/' + 'base.html') %}
+{% extends('base.html') %}
 {% set active_page="auto" %}
+{% set page_title = 'Composite solutions for automotive industry' %}
+{% set meta_description = '' %}
 {% block main %}
 
             <section class="products">
 
               <figure class="product">
-                <a href="{{ '/en' if locale == 'en'}}/amarok">
+                <a href="/amarok">
                 <picture>
                   <!--[if IE 9]><video style="display: none;"><![endif]-->
                   <source srcset="/img/amarok/1_XL.jpg" media="(min-width: 2000px)">
@@ -17,9 +19,9 @@
                 </picture>
                 <div class="product__description">
                   <div class="inner">
-                    <h2>{{ amarok_title }}</h2>
+                    <h2>{{ Hardtop for VW Amarok }}</h2>
                     <p>
-                      {{ amarok_subtitle }}
+                      {{ Lighteight but durable }}
                     </p>
                   </div>
                 </div>
@@ -27,7 +29,7 @@
               </figure>
 
               <figure class="product">
-                <a href="{{ '/en' if locale == 'en'}}/hilux">
+                <a href="/hilux">
                 <picture>
                   <!--[if IE 9]><video style="display: none;"><![endif]-->
                   <source srcset="/img/hilux/1_L.jpg" media="(min-width: 600px)">
@@ -38,8 +40,8 @@
                 </picture>
                 <div class="product__description">
                   <div class="inner">
-                    <h2>{{ hilux_title }}</h2>
-                    <p>{{ hilux_subtitle }}</p>
+                    <h2>{{ Hardtop for Toyota Hilux }}</h2>
+                    <p>{{ Exclusive hardtop for sale only in Norway }}</p>
                   </div>
                 </div>
                 </a>

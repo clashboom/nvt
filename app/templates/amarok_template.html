@@ -1,12 +1,15 @@
-{% extends(locale + '/' + 'base.html') %}
+{% extends('base.html') %}
 {% set active_page="auto" %}
+{% set page_title = 'Hardtop for VW Amarok' %}
+{% set meta_description = '' %}
+
 {% block main %}
 
 <div class="page__wrapper">
 <article class="post__article">
 
   <div class="post__header">
-    <h1 class="post__heading">{{ product_title }}</h1>
+    <h1 class="post__heading">{{ Hardtop for VW Amarok }}</h1>
     <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
       <source srcset="/img/amarok/1_XL.jpg" media="(min-width: 2000px)">
@@ -30,46 +33,89 @@
   <div class="description">
     <div class="half-col">
       <p>
-      {% block description_text_one %}
-      {% endblock %}
+    This durable and lightweight VW Amarok hardtop uses the exact design elements from the car. The hardtop is made to be flush with the car, giving it a continous appearance and two-box form of a station wagon. Roofshape of the hardtop is styled the same way as car's. It is also the same width as the car itself. Bottom of the hardtop follows the A-line from headlight to taillight, tracing the car's silhouette. The shape of the side panels adds nicely to the look of the whole car. When driving, the hardtop itself makes no extra wind noise. Integrated spoiler can optionally be equipped with a high level brake light.
       </p>
     </div>
     <div class="half-col">
       <p>
         {% block  description_text_two %}
+    Navette hardtops are constructed using multi-layered laminated glass fiber mats. The UV-resistant surface is made of durable, very robust Gelcoat. The paint is color coded to the VW Amarok paint codes. The painting process uses the most modern knowledge of surface treatment and confirms to the latest European regulations.
         {% endblock %}
       </p>
     </div>
   </div>
 
   <div class="equipment">
-    <h2>{{ features_title }}</h2>
+    <h2>{{ Features }}</h2>
 
     <ul>
-      <h5>{{ standard_features_title }}</h5>
-      {% for feature in standard_features %}
-      <li>{{ feature }}</li>
-      {% endfor %}
+      <h5>{{ Standard Features }}</h5>
+      <li>Inside sprayed with durable PVC</li>
+      <li>Integrated spoiler</li>
+      <li>Ready for Thule roof bars</li>
+      <li>Solid sides</li>
+      <li>Solid rear hatch with gas struts</li>
+      <li>Complete fitting instructions</li>
     </ul>
 
     <ul>
-      <h5>{{ extra_features_title }}</h5>
-      {% for feature in extra_features %}
-      <li>{{ feature }}</li>
-      {% endfor %}
+      <h5>{{ Extra features }}</h5>
+      <li>Tinted side windows</li>
+      <li>LED interior lighting</li>
+      <li>Rear breaklight</li>
+      <li>Central locking on rear hatch. <span class="smallprint">(Only for cars with central locking on fuel hatch.)</span></li>
+      <li>Roof bars from Thule</li>
     </ul>
   </div>
 
   <div class="specification">
-    <h2>{{ specification_title }}</h2>
+    <h2>{{ Specification }}</h2>
     <table>
       <tbody>
-        {% for property, value in specification %}
         <tr>
-          <td>{{ property }}</td>
-          <td>{{ value }}</td>
+          <td>Width</td>
+          <td>1760 mm</td>
         </tr>
-        {% endfor %}
+        <tr>
+          <td>Length</td>
+          <td>1590 mm</td>
+        </tr>
+        <tr>
+          <td>Height</td>
+          <td>640 mm</td>
+        </tr>
+        <tr>
+          <td>Loading height</td>
+          <td>1040 mm</td>
+        </tr>
+        <tr>
+          <td>Loading width</td>
+          <td>1350 mm</td>
+        </tr>
+        <tr>
+          <td>Weight</td>
+          <td>60 kg</td>
+        </tr>
+        <tr>
+          <td>Maximum roof load</td>
+          <td>50 kg</td>
+        </tr>
+        <tr>
+          <td>Width of the side hatch</td>
+          <td>1200 - 1000 mm</td>
+        </tr>
+        <tr>
+          <td>Height of the side hatch</td>
+          <td>760 - 720 mm</td>
+        </tr>
+        <tr>
+          <td>Max box size through aft hatch</td>
+          <td>1300 x 1050 x 920 mm</td>
+        </tr>
+        <tr>
+          <td>Max box size inside compartment</td>
+          <td>1300 x 1200 x 1040 mm</td>
+        </tr>
       </tbody>
     </table>
   </div>
@@ -77,6 +123,6 @@
 </div>
 
 {% import 'macros.html' as macros %}
-{{ macros.product_cta_en() }}
+{{ macros.product_cta() }}
 
 {% endblock %}

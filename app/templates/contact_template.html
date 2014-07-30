@@ -1,5 +1,8 @@
-{% extends(locale + '/' + 'base.html') %}
+{% extends('base.html') %}
 {% set active_page="contact" %}
+{% set page_title = 'Contact Us - Navette' %}
+{% set meta_description = '' %}
+
 {% block main %}
 <div class="contact space-wrapper">
 
@@ -7,7 +10,7 @@
     <div class="contact__entry">
       <div class="contact__details">
         <ul>
-          <li><strong>{{ headquarters }}</strong></li>
+          <li><strong>{{ Headquarters }}</strong></li>
           <li><hr /></li>
           <li>Navette AS</li>
           <a href="https://www.google.com/maps/place/Kongens+gate+5/@62.4731122,6.1559259,17z">
@@ -24,7 +27,7 @@
     <div class="contact__entry">
       <div class="contact__details">
         <ul>
-          <li><strong>{{ production }}</strong></li>
+          <li><strong>{{ Production Operations }}</strong></li>
           <li><hr /></li>
           <li>PLAST-TECH SIA</li>
           <a href="https://www.google.com/maps/place/56%C2%B041'22.6%22N+22%C2%B028'28.2%22E"/>
@@ -40,7 +43,7 @@
     <div class="contact__entry">
       <div class="contact__details">
         <ul>
-          <li><strong>{{ ceo }}</strong></li>
+          <li><strong>{{ Managing director }}</strong></li>
           <li><hr /></li>
           <li>Rune Nilsen</li>
           <li><a href="tel:+4790123205"><span class="fa fa-mobile"></span> +47 90 12 32 05</a></li>
@@ -51,11 +54,11 @@
   </div>
 
   <div class="contact__form">
-    <h2>{{ contact_form_title }}</h2>
+    <h2>{{ Get in touch }}</h2>
     <span class="subtitle">{{ contact_form_subtitle }}</span>
-    <form method="post">
+    <form action="/mail" method="post">
       <label for="email">{{ contact_name_label }}</label>
-      <input type="text" name="email" placeholder="{{ contact_name_placeholder }}" />
+      <input type="text" name="name" placeholder="{{ contact_name_placeholder }}" />
       <label for="email">{{ contact_from_label }}</label>
       <input type="text" name="email" placeholder="{{ contact_from_placeholder }}" required/>
       <label for="msg">{{ contact_msg_label }}</label>

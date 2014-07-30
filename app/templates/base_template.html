@@ -36,11 +36,18 @@
               <a href="/"><h1 class="brand"></span>Navette</h1></a>
             </div>
 
+            {% set navigation_bar = [
+            ('/auto', 'auto', 'Automotive'),
+            ('/boats', 'boats', 'Watercraft'),
+            ('/about', 'about', 'About'),
+            ('/contact', 'contact', 'Contact')
+            ] -%}
+
             {% set active_page = active_page|default('index') -%}
             <nav>
               {% for href, id, caption in navigation_bar %}
                 <a {% if id == active_page %} class="active"{% endif
-                %} href="{{ ('/en' if locale == 'en') + href|e }}">{{ caption|e }}</a>
+                %} href="{{ href|e }}">{{ caption|e }}</a>
               {% endfor %}
             </nav>
           </header>
@@ -70,11 +77,11 @@
               <ul>
                 <li class="list__title">{{ navigation }}</li>
                 <li><hr /></li>
-                <li><a href="{{ '/en' if locale == 'en'}}/auto">{{ auto }}</a></li>
-                <li><a href="{{ '/en' if locale == 'en'}}/boats">{{ boats }}</a></li>
-                <li><a href="{{ '/en' if locale == 'en'}}/about">{{ about }}</a></li>
-                <li><a href="{{ '/en' if locale == 'en'}}/contact">{{ contact }}</a></li>
-                <li><a href="{{ '/en' if locale == 'en'}}/sitemap">{{ sitemap }}</a></li>
+                <li><a href="{{ '/' + locale if locale else '' }}/auto">{{ auto }}</a></li>
+                <li><a href="{{ '/' + locale if locale else '' }}/boats">{{ boats }}</a></li>
+                <li><a href="{{ '/' + locale if locale else '' }}/about">{{ about }}</a></li>
+                <li><a href="{{ '/' + locale if locale else '' }}/contact">{{ contact }}</a></li>
+                <li><a href="{{ '/' + locale if locale else '' }}/sitemap">{{ sitemap }}</a></li>
               </ul>
             </section>
 

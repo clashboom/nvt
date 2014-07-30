@@ -5,17 +5,16 @@
   <div class="menu">
 
     <section class="menu__section">
-      <a href="{{ '/en' if locale == 'en'}}/auto">
-
+      <a href="{{ '/' + locale if locale else '' }}/auto">
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
-          <source srcset="http://placehold.it/1600x1000" media="(min-width: 1000px)">
-          <source srcset="http://placehold.it/1200x800" media="(min-width: 800px)">
-          <source srcset="http://placehold.it/800x500">
+          <source srcset="/img/amarok/1_XL.jpg" media="(min-width: 2000px)">
+          <source srcset="/img/amarok/1_L.jpg" media="(min-width: 600px)">
+          <source srcset="/img/amarok/1_M.jpg" media="(min-width: 400px)">
+          <source srcset="/img/amarok/1_S.jpg">
           <!--[if IE 9]></video><![endif]-->
-          <img srcset="http://placehold.it/800x500" alt="{{ auto_alt_text }}">
+          <img srcset="/img/amarok/1_S.jpg" alt="Automotive">
         </picture>
-
         <div class="menu__section__description">
           <div class="inner">
             <h2>{{ auto_title }}</h2>
@@ -26,7 +25,7 @@
     </section>
 
     <section class="menu__section">
-      <a href="{{ '/en' if locale == 'en'}}/boats">
+      <a href="{{ '/' + locale if locale else '' }}/boats">
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
           <source srcset="/img/watercraft_xl.jpg" media="(min-width: 2000px)">
@@ -45,25 +44,6 @@
       </a>
     </section>
 
-    <section class="menu__section">
-      <a href="{{ '/en' if locale == 'en'}}/boats">
-        <picture>
-          <!--[if IE 9]><video style="display: none;"><![endif]-->
-          <source srcset="http://placecage.com/c/1600/1000" media="(min-width: 2000px)">
-          <source srcset="http://placecage.com/c/1200/800" media="(min-width: 1000px)">
-          <source srcset="http://placecage.com/c/800/500" media="(min-width: 480px)">
-          <source srcset="http://placecage.com/c/800/500">
-          <!--[if IE 9]></video><![endif]-->
-          <img srcset="http://placecage.com/g/800/500" alt="{{ water_alt_text }}">
-        </picture>
-        <div class="menu__section__description">
-          <div class="inner">
-            <h2>Other</h2>
-            <p>Different work that does not belong here</p>
-          </div>
-        </div>
-      </a>
-    </section>
 
   </div>
 </div>

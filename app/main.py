@@ -17,13 +17,15 @@ from google.appengine.ext import blobstore
 from google.appengine.ext.webapp import blobstore_handlers
 from google.appengine.runtime import apiproxy_errors
 
+from webapp2_extras import i18n
 from webapp2_extras import sessions
 from webapp2_extras import sessions_memcache
 
 TEMPLATE_DIR = os.path.join(os.path.dirname(__file__), 'templates')
 JINJA_ENV = jinja2.Environment(loader=jinja2.FileSystemLoader(TEMPLATE_DIR),
+                               extensions=['jinja2.ext.i18n'],
                                autoescape=True)
-
+JINJA_ENV.install_gettext_translations(i18n)
 
 def rate_limit(seconds_per_request=1):
     def rate_limiter(function):
@@ -34,12 +36,12 @@ def rate_limit(seconds_per_request=1):
                                   self.request.remote_addr or ''), 1,
                                  time=seconds_per_request,
                                  namespace='rate_limiting')
+
             if not added:
                 self.response.write('Rate limit exceeded')
                 self.response.set_status(403)
                 return
-
-            return function
+            return function(self, *args, **kwargs)
         return wrapper
     return rate_limiter
 
@@ -60,20 +62,22 @@ def parseAcceptLanguage(acceptLanguage):
     return locale_q_pairs
 
 
-def detectLocale(acceptLanguage):
-    defaultLocale = 'en'
-    supportedLocales = ['no', 'nb', 'nn', 'en']
+default_locale = 'en'
+supported_locales = ['no', 'nb', 'nn', 'en']
+supported_locale_paths = ['no', 'en']
 
+
+def detectLocale(acceptLanguage):
     locale_q_pairs = parseAcceptLanguage(acceptLanguage)
     for pair in locale_q_pairs:
-        for locale in supportedLocales:
+        for locale in supported_locales:
             # pair[0] is locale, pair[1] is q value
             if pair[0].replace('-', '_').lower().startswith(locale.lower()):
                 if locale in ['no', 'nb', 'nn']:
                     return 'no'
                 else:
-                    return defaultLocale
-    return defaultLocale
+                    return default_locale
+    return default_locale
 
 
 class Handler(webapp2.RequestHandler):
@@ -85,15 +89,11 @@ class Handler(webapp2.RequestHandler):
         template = JINJA_ENV.get_template(template)
         return template.render(params)
 
-    def render(self, template, *a, **params):
-        locale = self.session.get('locale')
-        # norsk = ['no', 'nb', 'nn']
-        if not locale:
-            locale = detectLocale(self.request.headers.get('accept_language'))
-            self.session['locale'] = locale
-        self.write(self.render_str(locale + '/' + template,
-                                   locale=locale,
-                                   *a, **params))
+    def render(self, template, locale=None, *a, **params):
+        locale = self.request.GET.get('locale', 'en_US')
+        i18n.get_i18n().set_locale(locale)
+
+        self.write(self.render_str(template, *a, **params))
 
     def dispatch(self):
         self.session_store = sessions.get_store(request=self.request)
@@ -115,14 +115,16 @@ class PageHandler():
 
 class ChangeLocale(Handler):
     def get(self, locale):
-        self.write(locale)
+        ref = self.request.referer
+        if not ref:
+            ref = '/'
         if locale == 'en':
             self.session['locale'] = locale
         elif locale == 'no':
             self.session['locale'] = locale
         else:
-            self.redirect(self.request.referer)
-        self.redirect(self.request.referer)
+            self.redirect(ref)
+        self.redirect(ref)
 
 
 class EditProductHandler(Handler):
@@ -168,23 +170,28 @@ class UploadHandler(blobstore_handlers.BlobstoreUploadHandler):
 
 
 class MainHandler(Handler):
-    def get(self):
-        self.render("home.html")
+    def get(self, locale):
+        self.write("404!!!! WHAT HAPPENED???", locale=locale)
+
+
+class HomeHandler(Handler):
+    def get(self, locale):
+        self.render("home.html", locale=locale)
 
 
 class BoatHandler(Handler):
-    def get(self):
-        self.render('boats.html')
+    def get(self, locale):
+        self.render('boats.html', locale=locale)
 
 
 class S540Handler(Handler):
-    def get(self):
-        self.render('s540.html')
+    def get(self, locale):
+        self.render('s540.html', locale=locale)
 
 
 class S565Handler(Handler):
-    def get(self):
-        self.render('s565.html')
+    def get(self, locale):
+        self.render('s565_template.html', locale=locale)
 
 
 class ContactHandler(Handler):
@@ -194,7 +201,7 @@ class ContactHandler(Handler):
 
 class AboutHandler(Handler):
     def get(self):
-        self.render('about.html')
+        self.render('about_template.html')
 
 
 class AutoHandler(Handler):
@@ -244,8 +251,14 @@ class SiteMapHandler(Handler):
 class MailHandler(Handler):
     @rate_limit(seconds_per_request=15)
     def post(self):
+        user_name = self.request.get('name')
         user_email = self.request.get('email')
+        location = self.request.get('location')
         message = self.request.get('msg')
+        if user_name:
+            message += " - %s" % user_name
+        if location:
+            message += " User location: %s" % location
         from_addr = "info@saldusgaisma.lv"
         to_addr = "nejeega@gmail.com"
 
@@ -253,39 +266,42 @@ class MailHandler(Handler):
             msg = mail.EmailMessage()
             msg.sender = from_addr
             msg.to = to_addr
-            msg.subject = "Sent from page by user %s" % user_email
+            msg.subject = "Sent from navette.no by user %s" % user_email
             msg.html = message
-
             msg.send()
+            self.redirect(self.request.referer)
         except apiproxy_errors.OverQuotaError, message:
             logging.error(message)
 
 
-# Webapp2 Sessions config
+# Webapp2 config
 config = {}
 config['webapp2_extras.sessions'] = {
     'secret_key': 'navettes-not-so-secret-key',
     'name': 'navette_session',
 }
-
+config['webapp2_extras.i18n'] = {
+    'translations_path': 'locale',
+}
 
 # Locale regex
-loc = '(?:/)?(?:[a-z]{2})?'
 # Trailing slash regex
 ts = '(?:/)?'
 
 app = webapp2.WSGIApplication([
-    (loc + '/s540' + ts, S540Handler),
-    (loc + '/s565' + ts, S565Handler),
-    (loc + '/amarok' + ts, AmarokHandler),
-    (loc + '/hilux' + ts, HiluxHandler),
-    (loc + '/boats' + ts, BoatHandler),
-    (loc + '/auto' + ts, AutoHandler),
-    (loc + '/contact' + ts, ContactHandler),
-    (loc + '/about' + ts, AboutHandler),
-    (loc + '/sitemap' + ts, SiteMapHandler),
+    ('/s540' + ts, S540Handler),
+    ('/s565' + ts, S565Handler),
+    ('/amarok' + ts, AmarokHandler),
+    ('/hilux' + ts, HiluxHandler),
+    ('/boats' + ts, BoatHandler),
+    ('/auto' + ts, AutoHandler),
+    ('/contact' + ts, ContactHandler),
+    ('/about' + ts, AboutHandler),
+    ('/sitemap' + ts, SiteMapHandler),
     ('/([a-z]{2})' + ts, ChangeLocale),
     ('/upload', UploadHandler),
     ('/serve/([^/]+)?', ServeHandler),
+    ('/mail', MailHandler),
+    ('/', HomeHandler),
     ('/.*', MainHandler),
 ], config=config, debug=True)
