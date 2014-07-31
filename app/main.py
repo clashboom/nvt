@@ -90,8 +90,11 @@ class Handler(webapp2.RequestHandler):
         return template.render(params)
 
     def render(self, template, locale=None, *a, **params):
-        locale = self.request.GET.get('locale', 'en_US')
+        locale = self.session['locale']
+        if not locale:
+            locale = self.request.GET.get('locale', 'en_US')
         i18n.get_i18n().set_locale(locale)
+
         self.write(self.render_str(template, *a, **params))
 
     def dispatch(self):
