@@ -23,7 +23,7 @@
   </div>
   <div class="cta__note">
     <hr />
-    <p>Vil du få mer informasjon? Har du spørsmål, forespørsler eller annet? <a href="/contact">Ta gjerne kontakt med oss.</a></p>
+    <p>Vil du få mer informasjon? Har du spørsmål, forespørsler eller annet? Ta gjerne kontakt med oss.</a></p>
   </div>
 </div>
 {% endmacro %}
@@ -55,7 +55,7 @@
   </div>
   <div class="cta__note">
     <hr />
-    <p>{{ _("Need more information? Have any questions, requests or something to say? <a href='contact'> Go to our contact page</a>.") | safe }}</p>
+    <p>{{ _("Need more information? Have any questions, requests or something to say?") }} <a href="{{ '/' + locale if locale else '' }}contact">{{ _("Go to our contact page.") }}</a></p>
   </div>
 </div>
 {% endmacro %}

@@ -27,6 +27,7 @@ JINJA_ENV = jinja2.Environment(loader=jinja2.FileSystemLoader(TEMPLATE_DIR),
                                autoescape=True)
 JINJA_ENV.install_gettext_translations(i18n)
 
+
 def rate_limit(seconds_per_request=1):
     def rate_limiter(function):
         @wraps(function)
@@ -62,21 +63,17 @@ def parseAcceptLanguage(acceptLanguage):
     return locale_q_pairs
 
 
-default_locale = 'en'
 supported_locales = ['no', 'nb', 'nn', 'en']
-supported_locale_paths = ['no', 'en']
 
 
 def detectLocale(acceptLanguage):
+    default_locale = 'en'
     locale_q_pairs = parseAcceptLanguage(acceptLanguage)
     for pair in locale_q_pairs:
         for locale in supported_locales:
             # pair[0] is locale, pair[1] is q value
             if pair[0].replace('-', '_').lower().startswith(locale.lower()):
-                if locale in ['no', 'nb', 'nn']:
-                    return 'no'
-                else:
-                    return default_locale
+                return locale
     return default_locale
 
 
@@ -90,12 +87,12 @@ class Handler(webapp2.RequestHandler):
         return template.render(params)
 
     def render(self, template, locale=None, *a, **params):
-        locale = self.session['locale']
         if not locale:
-            locale = self.request.GET.get('locale', 'en_US')
+            locale = self.session.get('locale')
+        if not locale:
+            locale = detectLocale(self.request.headers.get('accept_language'))
         i18n.get_i18n().set_locale(locale)
-
-        self.write(self.render_str(template, *a, **params))
+        self.write(self.render_str(template, locale=locale, *a, **params))
 
     def dispatch(self):
         self.session_store = sessions.get_store(request=self.request)
@@ -111,22 +108,11 @@ class Handler(webapp2.RequestHandler):
                                               MemcacheSessionFactory)
 
 
-class PageHandler():
-    pass
-
-
 class ChangeLocale(Handler):
     def get(self, locale):
-        ref = self.request.referer
-        if not ref:
-            ref = '/'
-        if locale == 'en':
-            self.session['locale'] = locale
-        elif locale == 'no':
-            self.session['locale'] = locale
-        else:
-            self.redirect(ref)
-        self.redirect(ref)
+        path = '/' + locale + '/'
+        self.session['locale'] = locale
+        self.redirect(path)
 
 
 class EditProductHandler(Handler):
@@ -177,72 +163,48 @@ class MainHandler(Handler):
 
 
 class HomeHandler(Handler):
-    def get(self):
-        self.render("home.html")
+    def get(self, locale):
+        self.render("home.html", locale=locale)
 
 
 class BoatHandler(Handler):
-    def get(self):
-        self.render('boats.html')
+    def get(self, locale):
+        self.render('boats.html', locale=locale)
 
 
 class S540Handler(Handler):
-    def get(self):
-        self.render('s540.html')
+    def get(self, locale):
+        self.render('s540.html', locale=locale)
 
 
 class S565Handler(Handler):
-    def get(self):
-        self.render('s565.html')
+    def get(self, locale):
+        self.render('s565.html', locale=locale)
 
 
 class ContactHandler(Handler):
-    def get(self):
-        self.render('contact.html')
+    def get(self, locale):
+        self.render('contact.html', locale=locale)
 
 
 class AboutHandler(Handler):
-    def get(self):
-        self.render('about.html')
+    def get(self, locale):
+        self.render('about.html', locale=locale)
 
 
 class AutoHandler(Handler):
-    def get(self):
-        self.render('automotive.html')
+    def get(self, locale):
+        self.render('automotive.html', locale=locale)
 
 
 class AmarokHandler(Handler):
-    def get(self):
-        self.render("amarok.html")
+    def get(self, locale):
+        self.render("amarok.html", locale=locale)
 
 
 class HiluxHandler(Handler):
-    def get(self):
-        self.render("hilux.html")
-
-
-class Product(ndb.Model):
-    name = ndb.StringProperty(required=True)
-    template = ndb.StringProperty()
-
-    @property
-    def pictures(self):
-        return Gallery.query(Gallery.product == self.name)
-
-
-class Gallery(ndb.Model):
-    product = ndb.StringProperty(required=True)
-    pictures = ndb.BlobKeyProperty(repeated=True)
-
-
-class ProductHandler(Handler):
-    def get(self, product):
-        product = Product.query(Product.name == product).get()
-
-        if product:
-            self.render(product.template)
-
-        self.error(404)
+    def get(self, locale):
+        self.render("hilux.html", locale=locale)
 
 
 class SiteMapHandler(Handler):
@@ -257,8 +219,11 @@ class MailHandler(Handler):
         user_email = self.request.get('email')
         location = self.request.get('location')
         message = self.request.get('msg')
+        product = self.request.get('product')
         if user_name:
             message += " - %s" % user_name
+        if product:
+            message += "Product: %s " % product
         if location:
             message += " User location: %s" % location
         from_addr = "info@saldusgaisma.lv"
@@ -287,23 +252,24 @@ config['webapp2_extras.i18n'] = {
 }
 
 # Locale regex
+l = '(?:/([a-z]{2}))?'
 # Trailing slash regex
 ts = '(?:/)?'
 
 app = webapp2.WSGIApplication([
-    ('/s540' + ts, S540Handler),
-    ('/s565' + ts, S565Handler),
-    ('/amarok' + ts, AmarokHandler),
-    ('/hilux' + ts, HiluxHandler),
-    ('/watercraft' + ts, BoatHandler),
-    ('/automotive' + ts, AutoHandler),
-    ('/contact' + ts, ContactHandler),
-    ('/about' + ts, AboutHandler),
-    ('/sitemap' + ts, SiteMapHandler),
-    ('/([a-z]{2})' + ts, ChangeLocale),
+    (l + '/s540' + ts, S540Handler),
+    (l + '/s565' + ts, S565Handler),
+    (l + '/amarok' + ts, AmarokHandler),
+    (l + '/hilux' + ts, HiluxHandler),
+    (l + '/watercraft' + ts, BoatHandler),
+    (l + '/automotive' + ts, AutoHandler),
+    (l + '/contact' + ts, ContactHandler),
+    (l + '/about' + ts, AboutHandler),
+    (l + '/sitemap' + ts, SiteMapHandler),
+    (l + '/', HomeHandler),
+    ('/locale/([a-z]{2})' + ts, ChangeLocale),
     ('/upload', UploadHandler),
     ('/serve/([^/]+)?', ServeHandler),
     ('/mail', MailHandler),
-    ('/', HomeHandler),
     ('/.*', MainHandler),
 ], config=config, debug=True)

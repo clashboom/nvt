@@ -33,7 +33,7 @@
           </div>
           <header>
             <div>
-              <a href="/"><h1 class="brand"></span>Navette</h1></a>
+              <a href="{{ '/' + locale if locale else '' }}/"><h1 class="brand"></span>Navette</h1></a>
             </div>
 
             {% set navigation_bar = [
@@ -47,7 +47,7 @@
             <nav>
               {% for href, id, caption in navigation_bar %}
                 <a {% if id == active_page %} class="active"{% endif
-                %} href="{{ href|e }}">{{ caption|e }}</a>
+                %} href="{{ ('/' + locale if locale else '') +  href|e }}">{{ caption|e }}</a>
               {% endfor %}
             </nav>
           </header>
@@ -77,11 +77,11 @@
               <ul>
                 <li class="list__title">{{ _("Navigation") }}</li>
                 <li><hr /></li>
-                <li><a href="/auto">{{ _("Automotive") }}</a></li>
-                <li><a href="/boats">{{ _("Watercraft") }}</a></li>
-                <li><a href="/about">{{ _("About") }}</a></li>
-                <li><a href="/contact">{{ _("Contact") }}</a></li>
-                <li><a href="/sitemap">{{ _("Sitemap") }}</a></li>
+                <li><a href="{{ '/' + locale if locale else '' }}/auto">{{ _("Automotive") }}</a></li>
+                <li><a href="{{ '/' + locale if locale else '' }}/boats">{{ _("Watercraft") }}</a></li>
+                <li><a href="{{ '/' + locale if locale else '' }}/about">{{ _("About") }}</a></li>
+                <li><a href="{{ '/' + locale if locale else '' }}/contact">{{ _("Contact") }}</a></li>
+                <!-- <li><a href="{{ '/' + locale if locale else '' }}/sitemap">{{ _("Sitemap") }}</a></li> -->
               </ul>
             </section>
 
@@ -89,8 +89,8 @@
               <ul>
                 <li class="list__title">{{ _("Site") }}</li>
                 <li><hr /></li>
-                <li><a href="/en" rel="nofollow">English</a></li>
-                <li><a href="/no" rel="nofollow">Norsk</a></li>
+                <li><a href="/locale/en" rel="nofollow">English</a></li>
+                <li><a href="/locale/no" rel="nofollow">Norsk</a></li>
                 <!-- <li><a href="/terms">Vilkår</a></li> -->
                 <!-- <li><a href="/privacy">Privatslivspolitikk</a></li> -->
                 <li> &copy; <span class="brand">Navette</span> 2014 </li>

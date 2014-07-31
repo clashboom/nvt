@@ -8,7 +8,7 @@
 <section class="products">
 
   <figure class="product">
-    <a href="/amarok">
+    <a href="{{ '/' + locale if locale else '' }}/amarok">
     <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
       <source srcset="/img/amarok/amarok_hardtop_featured_xl.jpg" media="(min-width: 2000px)">
@@ -28,7 +28,7 @@
   </figure>
 
   <figure class="product">
-    <a href="/hilux">
+    <a href="{{ '/' + locale if locale else '' }}/hilux">
     <picture>
       <!--[if IE 9]><video style="display: none;"><![endif]-->
       <source srcset="/img/hilux/hilux_hardtop_featured_l.jpg" media="(min-width: 600px)">

@@ -9,7 +9,7 @@
   <div class="menu">
 
     <section class="menu__section">
-      <a href="/auto">
+      <a href="{{ '/' + locale if locale else '' }}/automotive">
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
           <source srcset="/img/automotive_xl.jpg" media="(min-width: 2000px)">
@@ -29,7 +29,7 @@
     </section>
 
     <section class="menu__section">
-      <a href="/boats">
+      <a href="{{ '/' + locale if locale else '' }}/watercraft">
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
           <source srcset="/img/watercraft_xl.jpg" media="(min-width: 2000px)">
