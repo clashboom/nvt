@@ -1,0 +1,55 @@
+{% extends('base.html') %}
+
+{% set page_title = _("Navette") %}
+{% set meta_description = _("Home sweet home") %}
+
+{% block main %}
+
+<div class="page__wrapper page__wrapper--home">
+  <div class="menu">
+
+    <section class="menu__section">
+      <a href="/auto">
+        <picture>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="/img/automotive_xl.jpg" media="(min-width: 2000px)">
+          <source srcset="/img/automotive_l.jpg" media="(min-width: 600px)">
+          <source srcset="/img/automotive_m.jpg" media="(min-width: 400px)">
+          <source srcset="/img/automotive_s.jpg">
+          <!--[if IE 9]></video><![endif]-->
+          <img srcset="/img/automotive_s.jpg" alt="Automotive">
+        </picture>
+        <div class="menu__section__description">
+          <div class="inner">
+            <h2>{{ _("Automotive") }}</h2>
+            <p class="subtitle">{{ _("Composite solutions for automotive industry") }}</p>
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <section class="menu__section">
+      <a href="/boats">
+        <picture>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="/img/watercraft_xl.jpg" media="(min-width: 2000px)">
+          <source srcset="/img/watercraft_l.jpg" media="(min-width: 600px)">
+          <source srcset="/img/watercraft_m.jpg" media="(min-width: 400px)">
+          <source srcset="/img/watercraft_s.jpg">
+          <!--[if IE 9]></video><![endif]-->
+          <img srcset="/img/watercraft_s.jpg" alt="watercraft">
+        </picture>
+        <div class="menu__section__description">
+          <div class="inner">
+            <h2>{{ _("Watercraft") }}</h2>
+            <p>{{ _("Practical multi-purpose boats with emphasis on ergonomics") }}</p>
+          </div>
+        </div>
+      </a>
+    </section>
+
+
+  </div>
+</div>
+
+{% endblock %}

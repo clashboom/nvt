@@ -1,0 +1,51 @@
+{% extends('base.html') %}
+{% set active_page="watercraft" %}
+{% set page_title = _("Practical multi-purpose boats with emphasis on ergonomics") %}
+{% set meta_description = '' %}
+{% block main %}
+
+  <section class="products">
+    <figure class="product">
+      <a href="/s565">
+      <picture>
+      <!--[if IE 9]><video style="display: none;"><![endif]-->
+        <source srcset="/img/s565/navette_s565_featured_xl.jpg" media="(min-width: 2000px)">
+        <source srcset="/img/s565/navette_s565_featured_l.jpg" media="(min-width: 600px)">
+        <source srcset="/img/s565/navette_s565_featured_m.jpg" media="(min-width: 400px)">
+        <source srcset="/img/s565/navette_s565_featured_s.jpg">
+        <!--[if IE 9]></video><![endif]-->
+        <img srcset="/img/s565/navette_s565_featured_s.jpg" alt="Automotive">
+      </picture>
+      <div class="product__description">
+        <div class="inner">
+          <h2>S 565</h2>
+          <p>{{ _("Fast and comfortable console boat with great ride characteristics") }}</p>
+        </div>
+      </div>
+      </a>
+    </figure>
+
+    <figure class="product">
+      <a href="/s540">
+      <picture>
+      <!--[if IE 9]><video style="display: none;"><![endif]-->
+        <source srcset="/img/s540/navette_s540_featured_xl.jpg" media="(min-width: 2000px)">
+        <source srcset="/img/s540/navette_s540_featured_l.jpg" media="(min-width: 600px)">
+        <source srcset="/img/s540/navette_s540_featured_m.jpg" media="(min-width: 400px)">
+        <source srcset="/img/s540/navette_s540_featured_s.jpg">
+        <!--[if IE 9]></video><![endif]-->
+        <img srcset="/img/s540/navette_s540_featured_s.jpg" alt="Automotive">
+      </picture>
+      <div class="product__description">
+        <div class="inner">
+        <h2>S 540</h2>
+        <p>{{ _("Excellent boat for sport and leisure.") }}</p>
+        </div>
+      </div>
+      </a>
+    </figure>
+  </section>
+
+{% endblock %}
+
+

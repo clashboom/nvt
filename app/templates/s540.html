@@ -1,0 +1,204 @@
+{% extends('base.html') %}
+{% set active_page="watercraft" %}
+
+{% set page_title = _("Navette S 540 - an excellent boat for sport and leisure.") %}
+{% set meta_description = _("Meta meta") %}
+
+{% block main %}
+
+<article class="post__article">
+  <div class="post__header">
+    <h1 class="post__heading">S 540</h1>
+    <img src="/img/s540/s540_side_view.jpg" alt="Navette S 540">
+  </div>
+
+  <div class="gallery">
+    <a class="gallery__img th" href="/img/s540/navette_s540_featured_xl.jpg"><img src="/img/s540/th/navette_s540_featured_th.jpg" alt=""></a>
+    <a class="gallery__img th" href="/img/s540/navette_s540_boat_xl.jpg"><img src="/img/s540/th/navette_s540_boat_th.jpg" alt=""></a>
+    <a class="gallery__img th" href="/img/s540/navette_s540_front.jpg"><img src="/img/s540/th/navette_s540_front_th.jpg" alt=""></a>
+    <a class="gallery__img th" href="/img/s540/navette_s540_console.jpg"><img src="/img/s540/th/navette_s540_console_th.jpg" alt=""></a>
+    <a class="gallery__img th" href="/img/s540/navette_s540_panel.jpg"><img src="/img/s540/th/navette_s540_panel_th.jpg" alt=""></a>
+  </div>
+
+  <div class="description">
+    <div>
+      <p class="columns">{{ _("S 540 is a sporty console boat with great performance. A special emphasis was put on ergonomics during the development of the boat. Seats are comfortable and it is possible to move around in the boat with ease. The cockpit is among the absolute best. The driver has a good overview of instruments and water no matter if standing or sitting. Steering wheel and gas/trim sits right where they should be and there is plenty of room for your legs under the steering consle. The windshield provides good protection behind the control console. The hull has a relatively deep V-bottom which makes the ride soft even in rough waters. Det er håndopplagt med triaksial duk i skroget. Hekken er spesielt kraftig da motorfundamentet er trukket noe bak hekken og forsterket direkte i langsgående stringere. Båten lander mykt i sjøen, hekken slipper ikke og det er bortimot umulig å kavitere propellen. Under the console there is spacious storage room, while under the stern bench seat is located battery, tankinspeksjon and a large storage locker.") }}</p>
+    </div>
+    <div class="half">
+      <h6>{{ _("Quality - Security") }}</h6>
+      <p>{{ _("The boat is self-bailing. Only high quality gelcoat and GRP materials are used in production, ensuring great physical properties and resistance to water. Therefore you dont have to worry about things like osmosis. The composite layer of both hull and superstructure includes stitched triaxial fiberglass mat, which allows for excellent strength-to-weight ratio. All on-board equipment is of high quality. All fittings and accessories are made from corrosion and acid resistant materials.") }}</p>
+    </div>
+  </div>
+
+  <div class="equipment">
+    <h2>{{ _("Features") }}</h2>
+
+    <ul>
+      <h5>{{ _("Standard Features") }}</h5>
+      <li>{{ _("Padded seats with shock mitigation and flip-up front") }}</li>
+      <li>{{ _("Fixed foldable boarding ladder") }}</li>
+      <li>{{ _("Storage compartment for anchor/ropes") }}</li>
+      <li>{{ _("Self-bailing system") }}</li>
+      <li>{{ _("Battery housing with main switch") }}</li>
+      <li>{{ _("Manual bilge pump") }}</li>
+      <li>{{ _("Lockable room for equipment") }}</li>
+      <li>{{ _("Fixed fuel tank with capacity markings") }}</li>
+      <li>{{ _("Large windshield well suited for Nordic conditions") }}</li>
+      <li>{{ _("Exclusive dashboard") }}</li>
+      <li>{{ _("Switch panel with 12V outlet") }}</li>
+      <li>{{ _("Fire extinguisher") }}</li>
+      <li>{{ _("Console cover") }}</li>
+    </ul>
+
+    <ul>
+      <h5>{{ _("Extra Features") }}</h5>
+      <li>{{ _("Blue/White hull") }}</li>
+      <li>{{ _("Flexiteek decking") }}</li>
+      <li>{{ _("Canopy") }}</li>
+      <li>{{ _("Pillows for front seats") }}</li>
+      <li>{{ _("Pillows for rear seats") }}</li>
+      <li>{{ _("Cocktail table") }}</li>
+      <li>{{ _("Radio/CD player") }}</li>
+      <li>{{ _("Sonar") }}</li>
+      <li>{{ _("Anti-fouling paint") }}</li>
+      <li>{{ _("Suzuki mounting kit") }}</li>
+    </ul>
+  </div>
+
+  <div class="specification">
+
+    <h2>{{ _("Specification") }}</h2>
+    <img src="/img/s540/s540_top_view.jpg" alt="Navette S 540" />
+
+    <ol>
+      <li>{{ _("Drainage") }}</li>
+      <li>{{ _("Manual pump") }}</li>
+      <li>{{ _("Bollard") }}</li>
+      <li>{{ _("Boarding ladder") }}</li>
+      <li>{{ _("Fuel tank") }}</li>
+    </ol>
+
+    <ol start="6">
+      <li>{{ _("Anchor compartment") }}</li>
+      <li>{{ _("Cockpit storage compartment") }}</li>
+      <li>{{ _("Stuverom skrog") }}</li>
+      <li>{{ _("Glove compartment") }}</li>
+    </ol>
+
+    <hr />
+
+    <table>
+      <tbody>
+      <tr>
+        <td>{{ _("Length") }}</td>
+        <td>{{ _("538 cm") }}</td>
+      </tr>
+      <tr>
+        <td>{{ _("Width") }}</td>
+        <td>{{ _("208 cm") }}</td>
+      </tr>
+      <tr>
+        <td>{{ _("Depth") }}</td>
+        <td>{{ _("27 cm") }}</td>
+      </tr>
+      <tr>
+        <td>{{ _("Freeboard center") }}</td>
+        <td>{{ _("73 cm") }}</td>
+      </tr>
+      <tr>
+        <td>{{ _("Height above waterline w/ windshield ") }}</td>
+        <td>{{ _("130 cm") }}</td>
+      </tr>
+      <tr>
+        <td>{{ _("Weight without motor") }}</td>
+        <td>{{ _("520 cm") }}</td>
+      </tr>
+      <tr>
+        <td>{{ _("Max payload") }}</td>
+        <td>{{ _("520 kg") }}</td>
+      </tr>
+      <tr>
+        <td>{{ _("Max persons") }}</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>{{ _("Stammelengde") }}</td>
+        <td>{{ _("Lang") }}</td>
+      </tr>
+      <tr>
+        <td>{{ _("Min motor power") }}</td>
+        <td>{{ _("52/70 kW/HP") }}</td>
+      </tr>
+      <tr>
+        <td>{{ _("Max motor power") }}</td>
+        <td>{{ _("103/140 kW/HP") }}</td>
+      </tr>
+      <tr>
+        <td>{{ _("Kabellengde") }}</td>
+        <td>{{ _('5"') }}</td>
+      </tr>
+      <tr>
+        <td>{{ _("Styrewire lengde") }}</td>
+        <td>{{ _('4"') }}</td>
+      </tr>
+      <tr>
+        <td>{{ _("Category") }}</td>
+        <td>{{ _("CE C") }}</td>
+      </tr>
+      <tr>
+        <td>{{ _("Bailing system") }}</td>
+        <td>{{ _("Self-bailing") }}</td>
+      </tr>
+      <tr>
+        <td>{{ _("Fuel capacity") }}</td>
+        <td>{{ _("75 liter") }}</td>
+      </tr>
+      <tr>
+        <td>{{ _("Anchor compartment") }}</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>{{ _("Storage compartments") }}</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>{{ _("Glove compartment") }}</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td><h6>{{ _("Speed test results") }}</h6></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>{{ _("Motor model") }}</td>
+        <td>{{ _("Suzuki DF90") }}</td>
+      </tr>
+      <tr>
+        <td>{{ _("Speed 2 pers.") }}</td>
+        <td>{{ _("380 knots") }}</td>
+      </tr>
+      <tr>
+        <td>{{ _("Motor model") }}</td>
+        <td>{{ _("Suzuki DF115") }}</td>
+      </tr>
+      <tr>
+        <td>{{ _("Speed 2 pers.") }}</td>
+        <td>{{ _("430 knots") }}</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <hr />
+
+{% import 'macros.html' as macros %}
+{{ macros.specification_notice() }}
+
+  </div>
+
+</article>
+
+{{ macros.product_cta("S540") }}
+
+{% endblock %}
+
+

@@ -1,0 +1,73 @@
+{% extends('base.html') %}
+{% set active_page="contact" %}
+{% set page_title = _("Contact Us - Navette") %}
+{% set meta_description = _("Meta meta contact us") %}
+
+{% block main %}
+<div class="contact space-wrapper">
+
+  <div class="contact__list">
+    <div class="contact__entry">
+      <div class="contact__details">
+        <ul>
+          <li><strong>{{ _("Headquarters") }}</strong></li>
+          <li><hr /></li>
+          <li>Navette AS</li>
+          <a href="https://www.google.com/maps/place/Kongens+gate+5/@62.4731122,6.1559259,17z">
+          <li><img src="http://maps.googleapis.com/maps/api/staticmap?zoom=14&size=250x250&markers=62.4731122,6.1559259&sensor=false" alt=""></li>
+          <li><span class="fa fa-map-marker"></span> Kongensgate 5, 6002 Ålesund, Norway</li>
+          </a>
+          <li><a href="tel:+4770121803"><span class="fa fa-phone"></span> +47 70 12 18 03</a></li>
+          <li><span class="fa fa-fax"></span> +47 70 10 44 61</li>
+          <li><a href="mailto:post@navette.no"><span class="fa fa-envelope-o"></span> post@navette.no</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="contact__entry">
+      <div class="contact__details">
+        <ul>
+          <li><strong>{{ _("Production Operations") }}</strong></li>
+          <li><hr /></li>
+          <li>PLAST-TECH SIA</li>
+          <a href="https://www.google.com/maps/place/56%C2%B041'22.6%22N+22%C2%B028'28.2%22E"/>
+          <li><img src="http://maps.googleapis.com/maps/api/staticmap?zoom=11&size=250x250&markers=56.6896209,22.4744928&sensor=false" alt=""></li>
+          <li><span class="fa fa-map-marker"></span> "Enkuri", Saldus nov., Kurzeme, Latvia, LV-3801</li>
+          </a>
+          <li><a href="tel:+37129368587"><span class="fa fa-mobile"></span> +371 29368587</a></li>
+          <li><a href="mailto:edgars@plast-tech.lv"><span class="fa fa-envelope-o"></span> edgars@plast-tech.lv</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="contact__entry">
+      <div class="contact__details">
+        <ul>
+          <li><strong>{{ _("Managing Director") }}</strong></li>
+          <li><hr /></li>
+          <li>Rune Nilsen</li>
+          <li><a href="tel:+4790123205"><span class="fa fa-mobile"></span> +47 90 12 32 05</a></li>
+          <li><a href="mailto:rune@navette.no"><span class="fa fa-envelope-o"></span> rune@navette.no</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact__form">
+    <h2>{{ _("Get in touch") }}</h2>
+    <span class="subtitle">{{ _("Drop us a line. We'd be delighted") }}</span>
+    <form action="/mail" method="post">
+      <label for="email">{{ _("Name") }}</label>
+      <input type="text" name="name" placeholder="{{ _("Your name") }}" />
+      <label for="email">{{ _("E-mail") }}</label>
+      <input type="text" name="email" placeholder="{{ _("Your e-mail") }}" required/>
+      <label for="msg">{{ _("Message") }}</label>
+      <textarea name="msg" rows="8" cols="40" placeholder="{{ _("Your message") }}" required></textarea>
+      <input type="submit" name="submit" class="button" value="{{ _("Send") }}" />
+    </form>
+  </div>
+
+</div>
+{% endblock %}
+
+

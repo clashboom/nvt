@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-07-30 16:45+0300\n"
-"PO-Revision-Date: 2014-07-30 16:46+0300\n"
+"POT-Creation-Date: 2014-07-31 14:02+0300\n"
+"PO-Revision-Date: 2014-07-31 14:02+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: nb_NO <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
@@ -18,11 +18,1125 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 1.3\n"
 
-#: templates/about_template.html:14
+#: templates/about.html:3
+msgid "About Navette"
+msgstr ""
+
+#: templates/about.html:4
+msgid "Meta tag to be filled"
+msgstr ""
+
+#: templates/about.html:11
+msgid "Who We Are"
+msgstr "Did you know"
+
+#: templates/about.html:12
+msgid "what we do"
+msgstr "what happened"
+
+#: templates/about.html:24
 msgid ""
-"We offer more than 12 years of experience in composite industry. We have "
-"designed and produced a wide variety of composite solutions for maritime "
-"and automotive industries as well as individuals - from house boats and "
-"auto bodywork to swimming pools and storage products."
-msgstr "HAHAHAHAHAHAHAHAHAHA"
+"We offer more than 12 years of experience in the composite industry. We "
+"have designed and produced a wide variety of composite solutions for "
+"maritime and automotive industries as well as for individuals - from "
+"house boats and auto bodywork to swimming pools and storage products."
+msgstr "Wicked sick coffe, Jim!"
+
+#: templates/about.html:38
+msgid ""
+"We do everything from engineering and design to tooling and production as"
+" a part of both our own solutions and partnerships. Our production "
+"methods are mainly wet layup and resin infusion. High quality and "
+"attention to detail are our core values at every stage of the production "
+"process."
+msgstr ""
+
+#: templates/about.html:51
+msgid ""
+"We truly believe that good design not only looks good, but more "
+"importantly, works well for the user. A lot of thought has been put into "
+"design of each one of our products, to make sure that they are both "
+"practical and easy to use."
+msgstr ""
+
+#: templates/about.html:57
+msgid "A Brief History of Navette"
+msgstr ""
+
+#: templates/about.html:58
+msgid "or how it all came to be"
+msgstr ""
+
+#: templates/about.html:67
+msgid "Foundation of the Company"
+msgstr ""
+
+#: templates/about.html:69
+msgid ""
+"Navette is founded in Norway. The company is born out of an idea to "
+"design and manufacture pleasure boats. Initially there are 3 founders, "
+"but later Rune Nilsen buys all shares."
+msgstr ""
+
+#: templates/about.html:71
+msgid "Year 2001"
+msgstr ""
+
+#: templates/about.html:79
+msgid "Launch of Navette S 565"
+msgstr ""
+
+#: templates/about.html:81
+msgid ""
+"After a year of hard work and effort, the first fiberglass boat - <a "
+"href='/s565'>Navette S 565</a> is launched into production."
+msgstr ""
+
+#: templates/about.html:83
+msgid "Year 2002"
+msgstr ""
+
+#: templates/about.html:91
+msgid "Availability"
+msgstr ""
+
+#: templates/about.html:93
+msgid ""
+"Production is outsourced to a Latvian company with a goal to cut costs "
+"while maintaining the quality. This step results in lower prices and "
+"product being more available to the customer."
+msgstr ""
+
+#: templates/about.html:95 templates/about.html:107 templates/about.html:119
+msgid "Year 2003"
+msgstr ""
+
+#: templates/about.html:103
+msgid "Quality Assurance"
+msgstr ""
+
+#: templates/about.html:105
+msgid ""
+"To ensure quality control, Navette expands its operations to Latvia, "
+"estabilishing a production facility in Saldus. The facility is small but "
+"for now - satisfactory."
+msgstr ""
+
+#: templates/about.html:115
+msgid "Launch of S 540"
+msgstr ""
+
+#: templates/about.html:117
+msgid ""
+"The second fiberglass boat in the series - <a href='/s540'>Navette S "
+"540</a> is introduced to the market."
+msgstr ""
+
+#: templates/about.html:127
+msgid "A Change of Mindset"
+msgstr ""
+
+#: templates/about.html:129
+msgid ""
+" Due to pleasure boat market being very unstable, a decision is made to "
+"also produce other products. At the same time Navette expands to much "
+"larger, now its own production facilities near Saldus.  "
+msgstr ""
+
+#: templates/about.html:131
+msgid "Year 2005"
+msgstr ""
+
+#: templates/about.html:139
+msgid "Going automotive"
+msgstr ""
+
+#: templates/about.html:141
+msgid ""
+"In cooperation with Ebil Norge, Navette produces fiberglass bodies for a "
+"city electric car <a "
+"href='http://en.wikipedia.org/wiki/Buddy_(electric_car)' "
+"rel='nofollow'>Buddy</a>, the sixth generation of the Kewet electric "
+"vehicle."
+msgstr ""
+
+#: templates/about.html:143
+msgid "Year 2007-2010"
+msgstr ""
+
+#: templates/about.html:151
+msgid "Hard to top"
+msgstr ""
+
+#: templates/about.html:153
+msgid ""
+"In cooperation with Loyds Industri, begins fiberglass hardtop production "
+"for Toyota Hilux. Navette also designs and adds a hardtop for VW Amarok "
+"to its product line."
+msgstr ""
+
+#: templates/about.html:155
+msgid "Year 2012"
+msgstr ""
+
+#: templates/amarok.html:4 templates/amarok.html:13
+#: templates/automotive.html:23
+msgid "Hardtop for VW Amarok"
+msgstr ""
+
+#: templates/amarok.html:5
+msgid "Description meta meta"
+msgstr ""
+
+#: templates/amarok.html:36
+msgid ""
+"This durable and lightweight VW Amarok hardtop uses the exact design "
+"elements from the car. The hardtop is made to be flush with the car, "
+"giving it a continous appearance and two-box form of a station wagon. "
+"Roofshape of the hardtop is styled the same way as car's. It is also the "
+"same width as the car itself. Bottom of the hardtop follows the A-line "
+"from headlight to taillight, tracing the car's silhouette. The shape of "
+"the side panels adds nicely to the look of the whole car. When driving, "
+"the hardtop itself makes no extra wind noise. Integrated spoiler can "
+"optionally be equipped with a high level brake light."
+msgstr ""
+
+#: templates/amarok.html:39
+msgid ""
+"Navette hardtops are constructed using multi-layered laminated glass "
+"fiber mats. The UV-resistant surface is made of durable, very robust "
+"Gelcoat. The paint is color coded to the VW Amarok paint codes. The "
+"painting process uses the most modern knowledge of surface treatment and "
+"confirms to the latest European regulations."
+msgstr ""
+
+#: templates/amarok.html:44 templates/s540.html:34 templates/s565.html:40
+msgid "Features"
+msgstr ""
+
+#: templates/amarok.html:47 templates/s540.html:37 templates/s565.html:43
+msgid "Standard Features"
+msgstr ""
+
+#: templates/amarok.html:48
+msgid "Inside sprayed with durable PVC"
+msgstr ""
+
+#: templates/amarok.html:49
+msgid "Integrated spoiler"
+msgstr ""
+
+#: templates/amarok.html:50
+msgid "Ready for Thule roof bars"
+msgstr ""
+
+#: templates/amarok.html:51
+msgid "Solid sides"
+msgstr ""
+
+#: templates/amarok.html:52
+msgid "Solid rear hatch with gas struts"
+msgstr ""
+
+#: templates/amarok.html:53
+msgid "Complete fitting instructions"
+msgstr ""
+
+#: templates/amarok.html:57
+msgid "Extra features"
+msgstr ""
+
+#: templates/amarok.html:58
+msgid "Tinted side windows"
+msgstr ""
+
+#: templates/amarok.html:59
+msgid "LED interior lighting"
+msgstr ""
+
+#: templates/amarok.html:60
+msgid "Rear breaklight"
+msgstr ""
+
+#: templates/amarok.html:61
+msgid ""
+"Central locking on rear hatch. <span class='smallprint'>(Only for cars "
+"with central locking on fuel hatch.)</span>"
+msgstr ""
+
+#: templates/amarok.html:62
+msgid "Roof bars from Thule"
+msgstr ""
+
+#: templates/amarok.html:67 templates/hilux.html:42 templates/s540.html:70
+#: templates/s565.html:79
+msgid "Specification"
+msgstr ""
+
+#: templates/amarok.html:71 templates/s540.html:97 templates/s565.html:108
+msgid "Width"
+msgstr ""
+
+#: templates/amarok.html:72
+msgid "1760 mm"
+msgstr ""
+
+#: templates/amarok.html:75 templates/s540.html:93 templates/s565.html:104
+msgid "Length"
+msgstr ""
+
+#: templates/amarok.html:76
+msgid "1590 mm"
+msgstr ""
+
+#: templates/amarok.html:79
+msgid "Height"
+msgstr ""
+
+#: templates/amarok.html:80
+msgid "640 mm"
+msgstr ""
+
+#: templates/amarok.html:83
+msgid "Loading height"
+msgstr ""
+
+#: templates/amarok.html:84
+msgid "1040 mm"
+msgstr ""
+
+#: templates/amarok.html:87
+msgid "Loading width"
+msgstr ""
+
+#: templates/amarok.html:88
+msgid "1350 mm"
+msgstr ""
+
+#: templates/amarok.html:91
+msgid "Weight"
+msgstr ""
+
+#: templates/amarok.html:92
+msgid "60 kg"
+msgstr ""
+
+#: templates/amarok.html:95
+msgid "Maximum roof load"
+msgstr ""
+
+#: templates/amarok.html:96
+msgid "50 kg"
+msgstr ""
+
+#: templates/amarok.html:99
+msgid "Width of the side hatch"
+msgstr ""
+
+#: templates/amarok.html:100
+msgid "1200 - 1000 mm"
+msgstr ""
+
+#: templates/amarok.html:103
+msgid "Height of the side hatch"
+msgstr ""
+
+#: templates/amarok.html:104
+msgid "760 - 720 mm"
+msgstr ""
+
+#: templates/amarok.html:107
+msgid "Max box size through aft hatch"
+msgstr ""
+
+#: templates/amarok.html:108
+msgid "1300 x 1050 x 920 mm"
+msgstr ""
+
+#: templates/amarok.html:111
+msgid "Max box size inside compartment"
+msgstr ""
+
+#: templates/amarok.html:112
+msgid "1300 x 1200 x 1040 mm"
+msgstr ""
+
+#: templates/automotive.html:4 templates/home.html:25
+msgid "Composite solutions for automotive industry"
+msgstr ""
+
+#: templates/automotive.html:5 templates/s540.html:5
+msgid "Meta meta"
+msgstr ""
+
+#: templates/automotive.html:24
+msgid "Lightweight but durable"
+msgstr ""
+
+#: templates/automotive.html:42 templates/hilux.html:4
+msgid "Hardtop for Toyota Hilux"
+msgstr ""
+
+#: templates/automotive.html:43
+msgid "Exclusive hardtop for sale only in Norway"
+msgstr ""
+
+#: templates/base.html:40 templates/base.html:80 templates/home.html:24
+msgid "Automotive"
+msgstr ""
+
+#: templates/base.html:41 templates/base.html:81 templates/home.html:44
+msgid "Watercraft"
+msgstr ""
+
+#: templates/base.html:42 templates/base.html:82
+msgid "About"
+msgstr ""
+
+#: templates/base.html:43 templates/base.html:66 templates/base.html:83
+msgid "Contact"
+msgstr ""
+
+#: templates/base.html:78
+msgid "Navigation"
+msgstr ""
+
+#: templates/base.html:84
+msgid "Sitemap"
+msgstr ""
+
+#: templates/base.html:90
+msgid "Site"
+msgstr ""
+
+#: templates/base.html:101
+msgid "Top"
+msgstr ""
+
+#: templates/boats.html:3 templates/home.html:45
+msgid "Practical multi-purpose boats with emphasis on ergonomics"
+msgstr ""
+
+#: templates/boats.html:22
+msgid "Fast and comfortable console boat with great ride characteristics"
+msgstr ""
+
+#: templates/boats.html:42
+msgid "Excellent boat for sport and leisure."
+msgstr ""
+
+#: templates/contact.html:3
+msgid "Contact Us - Navette"
+msgstr ""
+
+#: templates/contact.html:4
+msgid "Meta meta contact us"
+msgstr ""
+
+#: templates/contact.html:13
+msgid "Headquarters"
+msgstr ""
+
+#: templates/contact.html:30
+msgid "Production Operations"
+msgstr ""
+
+#: templates/contact.html:46
+msgid "Managing Director"
+msgstr ""
+
+#: templates/contact.html:57
+msgid "Get in touch"
+msgstr ""
+
+#: templates/contact.html:58
+msgid "Drop us a line. We'd be delighted"
+msgstr ""
+
+#: templates/contact.html:60
+msgid "Name"
+msgstr ""
+
+#: templates/contact.html:61
+msgid "Your name"
+msgstr ""
+
+#: templates/contact.html:62 templates/macros.html:39
+msgid "E-mail"
+msgstr ""
+
+#: templates/contact.html:63 templates/macros.html:40
+msgid "Your e-mail"
+msgstr ""
+
+#: templates/contact.html:64
+msgid "Message"
+msgstr ""
+
+#: templates/contact.html:65
+msgid "Your message"
+msgstr ""
+
+#: templates/contact.html:66 templates/macros.html:53
+msgid "Send"
+msgstr ""
+
+#: templates/hilux.html:5
+msgid "a"
+msgstr ""
+
+#: templates/hilux.html:13
+msgid "Toyota Hilux SR5 Cargo Hardtop"
+msgstr ""
+
+#: templates/hilux.html:31
+msgid ""
+"We are proud to have been given an opportunity by Loyds Industri to take "
+"part in manufacturing of this exclusive hardtop. The hardtop is designed "
+"so that it can include a variety of alternative furnishings - double "
+"retractable floor, drawers for storage of tools and possibilities for "
+"shelving on one or both sides, all of which is provided by Loyds. Three "
+"lockable doors, one rear and one on each side. Both side and rear hatches"
+" are fitted with gas struts for easy access. Customized body makes the "
+"load compartment water and dust proof. Solid roof rails for exterior roof"
+" transportation. And much more."
+msgstr ""
+
+#: templates/hilux.html:35
+msgid ""
+"Please note that Hilux Cargo is a special model developed by Toyota "
+"Norway, and is therefore only sold in this country. If you are located in"
+" Norway and already have a Hilux, this can of course be retrofitted on "
+"older cars. For more details please contact your Toyota dealer."
+msgstr ""
+
+#: templates/hilux.html:47
+msgid "Load compartment floor length"
+msgstr ""
+
+#: templates/hilux.html:48
+msgid "1800 mm"
+msgstr ""
+
+#: templates/hilux.html:51
+msgid "Load compartment floor width"
+msgstr ""
+
+#: templates/hilux.html:52
+msgid "1470 mm"
+msgstr ""
+
+#: templates/hilux.html:55
+msgid "Høyde bakke baklem"
+msgstr ""
+
+#: templates/hilux.html:56
+msgid "800 mm"
+msgstr ""
+
+#: templates/hilux.html:59
+msgid "Max length in load compartment"
+msgstr ""
+
+#: templates/hilux.html:60
+msgid "2850 mm"
+msgstr ""
+
+#: templates/hilux.html:63
+msgid "Side hatch opening size"
+msgstr ""
+
+#: templates/hilux.html:64
+msgid "1400x400 mm"
+msgstr ""
+
+#: templates/hilux.html:67
+msgid "Hardtop weight"
+msgstr ""
+
+#: templates/hilux.html:68
+msgid "108 kg"
+msgstr ""
+
+#: templates/home.html:3
+msgid "Navette"
+msgstr ""
+
+#: templates/home.html:4
+msgid "Home sweet home"
+msgstr ""
+
+#: templates/macros.html:34
+msgid "Request a quote"
+msgstr ""
+
+#: templates/macros.html:35
+msgid "Interested in pricing? Let us know, please!"
+msgstr ""
+
+#: templates/macros.html:43
+msgid "Where are you located?"
+msgstr ""
+
+#: templates/macros.html:44
+msgid "Your place of residence"
+msgstr ""
+
+#: templates/macros.html:47
+msgid "Product"
+msgstr ""
+
+#: templates/macros.html:48
+msgid "What features? When do you need it?"
+msgstr ""
+
+#: templates/macros.html:58
+msgid ""
+"Need more information? Have any questions, requests or something to say? "
+"<a href='contact'> Go to our contact page</a>."
+msgstr ""
+
+#: templates/macros.html:65
+msgid ""
+"We reserve the right to change the specification without notice. Actual "
+"performance may vary individually in relation to the specified test "
+"values"
+msgstr ""
+
+#: templates/s540.html:4
+msgid "Navette S 540 - an excellent boat for sport and leisure."
+msgstr ""
+
+#: templates/s540.html:25
+msgid ""
+"S 540 is a sporty console boat with great performance. A special emphasis"
+" was put on ergonomics during the development of the boat. Seats are "
+"comfortable and it is possible to move around in the boat with ease. The "
+"cockpit is among the absolute best. The driver has a good overview of "
+"instruments and water no matter if standing or sitting. Steering wheel "
+"and gas/trim sits right where they should be and there is plenty of room "
+"for your legs under the steering consle. The windshield provides good "
+"protection behind the control console. The hull has a relatively deep "
+"V-bottom which makes the ride soft even in rough waters. Det er "
+"håndopplagt med triaksial duk i skroget. Hekken er spesielt kraftig da "
+"motorfundamentet er trukket noe bak hekken og forsterket direkte i "
+"langsgående stringere. Båten lander mykt i sjøen, hekken slipper ikke og "
+"det er bortimot umulig å kavitere propellen. Under the console there is "
+"spacious storage room, while under the stern bench seat is located "
+"battery, tankinspeksjon and a large storage locker."
+msgstr ""
+
+#: templates/s540.html:28 templates/s565.html:34
+msgid "Quality - Security"
+msgstr ""
+
+#: templates/s540.html:29
+msgid ""
+"The boat is self-bailing. Only high quality gelcoat and GRP materials are"
+" used in production, ensuring great physical properties and resistance to"
+" water. Therefore you dont have to worry about things like osmosis. The "
+"composite layer of both hull and superstructure includes stitched "
+"triaxial fiberglass mat, which allows for excellent strength-to-weight "
+"ratio. All on-board equipment is of high quality. All fittings and "
+"accessories are made from corrosion and acid resistant materials."
+msgstr ""
+
+#: templates/s540.html:38 templates/s565.html:45
+msgid "Padded seats with shock mitigation and flip-up front"
+msgstr ""
+
+#: templates/s540.html:39 templates/s565.html:46
+msgid "Fixed foldable boarding ladder"
+msgstr ""
+
+#: templates/s540.html:40 templates/s565.html:48
+msgid "Storage compartment for anchor/ropes"
+msgstr ""
+
+#: templates/s540.html:41
+msgid "Self-bailing system"
+msgstr ""
+
+#: templates/s540.html:42
+msgid "Battery housing with main switch"
+msgstr ""
+
+#: templates/s540.html:43 templates/s565.html:51
+msgid "Manual bilge pump"
+msgstr ""
+
+#: templates/s540.html:44
+msgid "Lockable room for equipment"
+msgstr ""
+
+#: templates/s540.html:45
+msgid "Fixed fuel tank with capacity markings"
+msgstr ""
+
+#: templates/s540.html:46 templates/s565.html:54
+msgid "Large windshield well suited for Nordic conditions"
+msgstr ""
+
+#: templates/s540.html:47 templates/s565.html:55
+msgid "Exclusive dashboard"
+msgstr ""
+
+#: templates/s540.html:48
+msgid "Switch panel with 12V outlet"
+msgstr ""
+
+#: templates/s540.html:49 templates/s565.html:58
+msgid "Fire extinguisher"
+msgstr ""
+
+#: templates/s540.html:50
+msgid "Console cover"
+msgstr ""
+
+#: templates/s540.html:54
+msgid "Extra Features"
+msgstr ""
+
+#: templates/s540.html:55
+msgid "Blue/White hull"
+msgstr ""
+
+#: templates/s540.html:56
+msgid "Flexiteek decking"
+msgstr ""
+
+#: templates/s540.html:57 templates/s565.html:66
+msgid "Canopy"
+msgstr ""
+
+#: templates/s540.html:58 templates/s565.html:67
+msgid "Pillows for front seats"
+msgstr ""
+
+#: templates/s540.html:59 templates/s565.html:68
+msgid "Pillows for rear seats"
+msgstr ""
+
+#: templates/s540.html:60 templates/s565.html:69
+msgid "Cocktail table"
+msgstr ""
+
+#: templates/s540.html:61
+msgid "Radio/CD player"
+msgstr ""
+
+#: templates/s540.html:62 templates/s565.html:72
+msgid "Sonar"
+msgstr ""
+
+#: templates/s540.html:63 templates/s565.html:73
+msgid "Anti-fouling paint"
+msgstr ""
+
+#: templates/s540.html:64
+msgid "Suzuki mounting kit"
+msgstr ""
+
+#: templates/s540.html:74 templates/s565.html:82
+msgid "Drainage"
+msgstr ""
+
+#: templates/s540.html:75 templates/s565.html:83
+msgid "Manual pump"
+msgstr ""
+
+#: templates/s540.html:76 templates/s565.html:84
+msgid "Bollard"
+msgstr ""
+
+#: templates/s540.html:77 templates/s565.html:85
+msgid "Boarding ladder"
+msgstr ""
+
+#: templates/s540.html:78 templates/s565.html:86
+msgid "Fuel tank"
+msgstr ""
+
+#: templates/s540.html:82 templates/s540.html:157 templates/s565.html:87
+#: templates/s565.html:168
+msgid "Anchor compartment"
+msgstr ""
+
+#: templates/s540.html:83
+msgid "Cockpit storage compartment"
+msgstr ""
+
+#: templates/s540.html:84 templates/s565.html:92
+msgid "Stuverom skrog"
+msgstr ""
+
+#: templates/s540.html:85 templates/s540.html:165 templates/s565.html:93
+#: templates/s565.html:176
+msgid "Glove compartment"
+msgstr ""
+
+#: templates/s540.html:94
+msgid "538 cm"
+msgstr ""
+
+#: templates/s540.html:98
+msgid "208 cm"
+msgstr ""
+
+#: templates/s540.html:101 templates/s565.html:112
+msgid "Depth"
+msgstr ""
+
+#: templates/s540.html:102
+msgid "27 cm"
+msgstr ""
+
+#: templates/s540.html:105 templates/s565.html:116
+msgid "Freeboard center"
+msgstr ""
+
+#: templates/s540.html:106
+msgid "73 cm"
+msgstr ""
+
+#: templates/s540.html:109
+msgid "Height above waterline w/ windshield "
+msgstr ""
+
+#: templates/s540.html:110
+msgid "130 cm"
+msgstr ""
+
+#: templates/s540.html:113 templates/s565.html:124
+msgid "Weight without motor"
+msgstr ""
+
+#: templates/s540.html:114
+msgid "520 cm"
+msgstr ""
+
+#: templates/s540.html:117
+msgid "Max payload"
+msgstr ""
+
+#: templates/s540.html:118
+msgid "520 kg"
+msgstr ""
+
+#: templates/s540.html:121 templates/s565.html:132
+msgid "Max persons"
+msgstr ""
+
+#: templates/s540.html:125 templates/s565.html:136
+msgid "Stammelengde"
+msgstr ""
+
+#: templates/s540.html:126
+msgid "Lang"
+msgstr ""
+
+#: templates/s540.html:129
+msgid "Min motor power"
+msgstr ""
+
+#: templates/s540.html:130 templates/s565.html:141
+msgid "52/70 kW/HP"
+msgstr ""
+
+#: templates/s540.html:133
+msgid "Max motor power"
+msgstr ""
+
+#: templates/s540.html:134 templates/s565.html:145
+msgid "103/140 kW/HP"
+msgstr ""
+
+#: templates/s540.html:137 templates/s565.html:148
+msgid "Kabellengde"
+msgstr ""
+
+#: templates/s540.html:138
+msgid "5\""
+msgstr ""
+
+#: templates/s540.html:141
+msgid "Styrewire lengde"
+msgstr ""
+
+#: templates/s540.html:142
+msgid "4\""
+msgstr ""
+
+#: templates/s540.html:145 templates/s565.html:156
+msgid "Category"
+msgstr ""
+
+#: templates/s540.html:146 templates/s565.html:157
+msgid "CE C"
+msgstr ""
+
+#: templates/s540.html:149 templates/s565.html:160
+msgid "Bailing system"
+msgstr ""
+
+#: templates/s540.html:150 templates/s565.html:161
+msgid "Self-bailing"
+msgstr ""
+
+#: templates/s540.html:153 templates/s565.html:164
+msgid "Fuel capacity"
+msgstr ""
+
+#: templates/s540.html:154
+msgid "75 liter"
+msgstr ""
+
+#: templates/s540.html:161 templates/s565.html:172
+msgid "Storage compartments"
+msgstr ""
+
+#: templates/s540.html:169 templates/s565.html:180
+msgid "Speed test results"
+msgstr ""
+
+#: templates/s540.html:173 templates/s540.html:181 templates/s565.html:184
+#: templates/s565.html:192
+msgid "Motor model"
+msgstr ""
+
+#: templates/s540.html:174 templates/s565.html:185
+msgid "Suzuki DF90"
+msgstr ""
+
+#: templates/s540.html:177 templates/s540.html:185 templates/s565.html:188
+#: templates/s565.html:196
+msgid "Speed 2 pers."
+msgstr ""
+
+#: templates/s540.html:178
+msgid "380 knots"
+msgstr ""
+
+#: templates/s540.html:182 templates/s565.html:193
+msgid "Suzuki DF115"
+msgstr ""
+
+#: templates/s540.html:186
+msgid "430 knots"
+msgstr ""
+
+#: templates/s565.html:4
+msgid ""
+"Navette S 565 - Fast and comfortable console boat with great ride "
+"characteristics"
+msgstr ""
+
+#: templates/s565.html:5
+msgid "Meta S 565"
+msgstr ""
+
+#: templates/s565.html:27
+msgid ""
+"S 565 combines advantages of Jeep and bowrider. The boat has Jeepens "
+"enkle bruksegenskaper and bowriders protection from weather. The boat has"
+" been developed with an emphasis on ergonomics. It is easy to move around"
+" in and the seating is comfortable. In the front there is easily enough "
+"room for 2-3 adults, while up to six persons can be seated around a "
+"table. The cockpit is among the absolute best. The driver can be seated "
+"or standing and still have a good overview of both panel and water. "
+"Steering wheel and gas / trim sits right where they should be. There is "
+"plenty of room for your legs and knees under the steering console. Under "
+"the rear seat there is a spacious storage compartment and under the "
+"control console - room for fish box, cooler, life jackets, etc. There is "
+"also a storage compartment for long items such as fishing rods or water "
+"skis. The boat is naturally self-bailing, even with seven persons on "
+"board. The windshield provides good protection behind the control "
+"console. The hull has a relatively deep V-bottom which ensures "
+"comfortable ride even in rough waters.  Det er håndopplagt med triaksial "
+"duk i skroget. Hekken er spesielt kraftig da motorfundamentet er trukket "
+"noe bak hekken og forsterket direkte i langsgående stringere. Båten "
+"lander mykt i sjøen, hekken slipper ikke og det er bortimot umulig å "
+"kavitere propellen."
+msgstr ""
+
+#: templates/s565.html:31
+msgid ""
+"Under the rear seat there is battery, fuel tank gauge, and a large "
+"storage compartment. There is also a compartment for fenders, as they are"
+" the often dirty and not necessarily to be taken into the boat. All "
+"hatches in the cockpit can be equipped with a lock. Høy hekk som gir god "
+"sikkerhet. There is gate with sturdy boarding ladder in the rear and "
+"sidegate on the port side for easy boarding. Large windshield, "
+"thoughtfully organized ergonomic cockpit, canopy behind windshield with "
+"room for 6 people, sunbed or seats for up to 6 persons in the bow, large "
+"storage compartments with room for seat cushions, coolers, fishing rods, "
+"life jackets, water skis etc."
+msgstr ""
+
+#: templates/s565.html:35
+msgid ""
+"Only high quality gelcoat and GRP materials were used in production, "
+"ensuring great physical properties and resistance to water. Therefore you"
+" dont have to worry about things like osmosis. The composite layers of "
+"both hull and superstructure includes stitched triaxial fiberglass mat, "
+"which allows for excellent strength-to-weight ratio. All on-board "
+"equipment is of high quality. All fittings and accessories are made from "
+"corrosion resistant materials."
+msgstr ""
+
+#: templates/s565.html:44
+msgid "Hydraulic steering"
+msgstr ""
+
+#: templates/s565.html:47
+msgid "Tow hook for water sports"
+msgstr ""
+
+#: templates/s565.html:49
+msgid "Self-bailing cockpit"
+msgstr ""
+
+#: templates/s565.html:50
+msgid "Batterikasse m/hovedstrømbryter"
+msgstr ""
+
+#: templates/s565.html:52
+msgid "Lockable compartments for equipment"
+msgstr ""
+
+#: templates/s565.html:53
+msgid "Fastmontert brennstofftank m/måler"
+msgstr ""
+
+#: templates/s565.html:56
+msgid "Exclusive steering wheel"
+msgstr ""
+
+#: templates/s565.html:57
+msgid "Switch panel with automatic breakers"
+msgstr ""
+
+#: templates/s565.html:63
+msgid "Extra Feature"
+msgstr ""
+
+#: templates/s565.html:64
+msgid "Blue hull"
+msgstr ""
+
+#: templates/s565.html:65
+msgid "Flexiteek deck"
+msgstr ""
+
+#: templates/s565.html:70
+msgid "Sunbed"
+msgstr ""
+
+#: templates/s565.html:71
+msgid "Radio/CD player with 2 speakers"
+msgstr ""
+
+#: templates/s565.html:74
+msgid "Mounting kit for motor"
+msgstr ""
+
+#: templates/s565.html:91
+msgid "Cockpit storage"
+msgstr ""
+
+#: templates/s565.html:94
+msgid "Fender compartment"
+msgstr ""
+
+#: templates/s565.html:95
+msgid "Side gate"
+msgstr ""
+
+#: templates/s565.html:96
+msgid "Rear gate"
+msgstr ""
+
+#: templates/s565.html:105
+msgid "565 cm"
+msgstr ""
+
+#: templates/s565.html:109
+msgid "225 cm"
+msgstr ""
+
+#: templates/s565.html:113
+msgid "31 cm"
+msgstr ""
+
+#: templates/s565.html:117
+msgid "90 cm"
+msgstr ""
+
+#: templates/s565.html:120
+msgid "Height above waterline /w windshield "
+msgstr ""
+
+#: templates/s565.html:121
+msgid "166 cm"
+msgstr ""
+
+#: templates/s565.html:125
+msgid "640 kg"
+msgstr ""
+
+#: templates/s565.html:128
+msgid "Maximum payload"
+msgstr ""
+
+#: templates/s565.html:129
+msgid "580 kg"
+msgstr ""
+
+#: templates/s565.html:137
+msgid "Long"
+msgstr ""
+
+#: templates/s565.html:140
+msgid "Minimum motor power"
+msgstr ""
+
+#: templates/s565.html:144
+msgid "Maximum motor power"
+msgstr ""
+
+#: templates/s565.html:149
+msgid "6\""
+msgstr ""
+
+#: templates/s565.html:152
+msgid "Hydrauliske slanger lengde"
+msgstr ""
+
+#: templates/s565.html:153
+msgid "500 cm"
+msgstr ""
+
+#: templates/s565.html:165
+msgid "95 liter"
+msgstr ""
+
+#: templates/s565.html:189
+msgid "360 knots"
+msgstr ""
+
+#: templates/s565.html:197
+msgid "415 knots"
+msgstr ""
+
+#: templates/s565.html:209
+msgid "Reviews"
+msgstr ""
+
+#: templates/s565.html:212
+msgid ""
+"It is still possible to innovate when it comes to console boat, for which"
+" Navette S 565 serves as a good example. Ålesund company has in our "
+"opinion created some of the most exciting and innovative bowriders for a "
+"long time."
+msgstr ""
 

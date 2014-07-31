@@ -92,7 +92,6 @@ class Handler(webapp2.RequestHandler):
     def render(self, template, locale=None, *a, **params):
         locale = self.request.GET.get('locale', 'en_US')
         i18n.get_i18n().set_locale(locale)
-
         self.write(self.render_str(template, *a, **params))
 
     def dispatch(self):
@@ -170,28 +169,28 @@ class UploadHandler(blobstore_handlers.BlobstoreUploadHandler):
 
 
 class MainHandler(Handler):
-    def get(self, locale):
-        self.write("404!!!! WHAT HAPPENED???", locale=locale)
+    def get(self):
+        self.write("404!!!! WHAT HAPPENED???")
 
 
 class HomeHandler(Handler):
-    def get(self, locale):
-        self.render("home.html", locale=locale)
+    def get(self):
+        self.render("home.html")
 
 
 class BoatHandler(Handler):
-    def get(self, locale):
-        self.render('boats.html', locale=locale)
+    def get(self):
+        self.render('boats.html')
 
 
 class S540Handler(Handler):
-    def get(self, locale):
-        self.render('s540.html', locale=locale)
+    def get(self):
+        self.render('s540.html')
 
 
 class S565Handler(Handler):
-    def get(self, locale):
-        self.render('s565_template.html', locale=locale)
+    def get(self):
+        self.render('s565.html')
 
 
 class ContactHandler(Handler):
@@ -201,7 +200,7 @@ class ContactHandler(Handler):
 
 class AboutHandler(Handler):
     def get(self):
-        self.render('about_template.html')
+        self.render('about.html')
 
 
 class AutoHandler(Handler):
@@ -293,8 +292,8 @@ app = webapp2.WSGIApplication([
     ('/s565' + ts, S565Handler),
     ('/amarok' + ts, AmarokHandler),
     ('/hilux' + ts, HiluxHandler),
-    ('/boats' + ts, BoatHandler),
-    ('/auto' + ts, AutoHandler),
+    ('/watercraft' + ts, BoatHandler),
+    ('/automotive' + ts, AutoHandler),
     ('/contact' + ts, ContactHandler),
     ('/about' + ts, AboutHandler),
     ('/sitemap' + ts, SiteMapHandler),

@@ -1,4 +1,4 @@
-{% macro product_cta(product="") %}
+{% macro product_cta_no(product="") %}
 <div class="cta">
   <div class="cta__description">
     <h2>Be om et tilbud</h2>
@@ -28,32 +28,40 @@
 </div>
 {% endmacro %}
 
-{% macro product_cta_en(product="") %}
+{% macro product_cta(product="") %}
 <div class="cta">
   <div class="cta__description">
-    <h1>Request a quote</h2>
-    <span>Interested in pricing? Let us know, please! </span>
+    <h2>{{ _("Request a quote") }}</h2>
+    <span>{{ _("Interested in pricing? Let us know, please!") }}</span>
   </div>
   <div class="cta__form">
     <form action="/mail" method="post">
-      <label for="email">Email
-        <input type="email" name="email" id="email" placeholder="Your e-mail" />
+      <label for="email"> {{ _("E-mail") }}
+        <input type="email" name="email" id="email" placeholder="{{ _("Your e-mail") }}" />
       </label>
 
-      <label for="email">Where are you located?
-        <input type="text" name="location" id="location" placeholder="Your place of residence" />
+      <label for="email">{{ _("Where are you located?") }}
+        <input type="text" name="location" id="location" placeholder="{{ _("Your place of residence") }}" />
       </label>
 
-      <label for="msg">Product
-        <textarea name="msg" id=msg rows="8" cols="40" placeholder="Which product? What package? When do you need it?"></textarea>
+      <label for="msg">{{ _("Product") }}
+        <textarea name="msg" id=msg rows="8" cols="40" placeholder="{{ _("What features? When do you need it?") }}"></textarea>
       </label>
 
-      <input class="button right" type="submit" name="submit" id="submit" value="Send" />
+      <input type="hidden" name="product" value="{{ product }}">
+
+      <input class="button right" type="submit" name="submit" id="submit" value="{{ _("Send") }}" />
     </form>
   </div>
   <div class="cta__note">
     <hr />
-    <p>Need more information? Have any questions, requests or something to say? <a href="/en/contact"> Go to our contact page</a>.</p>
+    <p>{{ _("Need more information? Have any questions, requests or something to say? <a href='contact'> Go to our contact page</a>.") | safe }}</p>
   </div>
 </div>
+{% endmacro %}
+
+{% macro specification_notice() %}
+    <p>
+      <span class="smallprint">{{ _("We reserve the right to change the specification without notice. Actual performance may vary individually in relation to the specified test values") }}</span>
+    </p>
 {% endmacro %}
