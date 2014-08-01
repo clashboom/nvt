@@ -1,7 +1,7 @@
 {% extends('base.html') %}
 
-{% set page_title = _("Navette") %}
-{% set meta_description = _("Home sweet home") %}
+{% set page_title = _("Navette Homepage") %}
+{% set meta_description = _("We offer composite solutions for businesses and individuals. Have a project to be done? Let us know.") %}
 
 {% block main %}
 
@@ -29,7 +29,7 @@
     </section>
 
     <section class="menu__section">
-      <a href="{{ '/' + locale if locale else '' }}/watercraft">
+      <a href="{{ '/' + locale if locale else '' }}/boats">
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
           <source srcset="/img/watercraft_xl.jpg" media="(min-width: 2000px)">
@@ -37,11 +37,11 @@
           <source srcset="/img/watercraft_m.jpg" media="(min-width: 400px)">
           <source srcset="/img/watercraft_s.jpg">
           <!--[if IE 9]></video><![endif]-->
-          <img srcset="/img/watercraft_s.jpg" alt="watercraft">
+          <img srcset="/img/watercraft_s.jpg" alt="boats">
         </picture>
         <div class="menu__section__description">
           <div class="inner">
-            <h2>{{ _("Watercraft") }}</h2>
+            <h2>{{ _("Boats") }}</h2>
             <p>{{ _("Practical multi-purpose boats with emphasis on ergonomics") }}</p>
           </div>
         </div>

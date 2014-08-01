@@ -12,7 +12,7 @@ from google.appengine.api import images
 from google.appengine.api import mail
 from google.appengine.api import memcache
 # from google.appengine.api import urlfetch
-from google.appengine.ext import ndb
+# from google.appengine.ext import ndb
 from google.appengine.ext import blobstore
 from google.appengine.ext.webapp import blobstore_handlers
 from google.appengine.runtime import apiproxy_errors
@@ -157,9 +157,9 @@ class UploadHandler(blobstore_handlers.BlobstoreUploadHandler):
 #         self.error(404)
 
 
-class MainHandler(Handler):
-    def get(self):
-        self.write("404!!!! WHAT HAPPENED???")
+class FourHandler(Handler):
+    def get(self, locale):
+        self.render("404.html", locale=locale)
 
 
 class HomeHandler(Handler):
@@ -261,7 +261,7 @@ app = webapp2.WSGIApplication([
     (l + '/s565' + ts, S565Handler),
     (l + '/amarok' + ts, AmarokHandler),
     (l + '/hilux' + ts, HiluxHandler),
-    (l + '/watercraft' + ts, BoatHandler),
+    (l + '/boats' + ts, BoatHandler),
     (l + '/automotive' + ts, AutoHandler),
     (l + '/contact' + ts, ContactHandler),
     (l + '/about' + ts, AboutHandler),
@@ -271,5 +271,5 @@ app = webapp2.WSGIApplication([
     ('/upload', UploadHandler),
     ('/serve/([^/]+)?', ServeHandler),
     ('/mail', MailHandler),
-    ('/.*', MainHandler),
+    (l + '/.*' + ts, FourHandler),
 ], config=config, debug=True)

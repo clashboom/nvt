@@ -1,7 +1,8 @@
 {% extends('base.html') %}
 {% set active_page="contact" %}
-{% set page_title = _("Contact Us - Navette") %}
-{% set meta_description = _("Meta meta contact us") %}
+
+{% set page_title = _("Contact Navette") %}
+{% set meta_description = _("Find us on map and get in touch - call us, send us a message via e-mail or by filling out the form.") %}
 
 {% block main %}
 <div class="contact space-wrapper">
@@ -54,7 +55,7 @@
   </div>
 
   <div class="contact__form">
-    <h2>{{ _("Get in touch") }}</h2>
+    <h2>{{ _("Send a message") }}</h2>
     <span class="subtitle">{{ _("Drop us a line. We'd be delighted") }}</span>
     <form action="/mail" method="post">
       <label for="email">{{ _("Name") }}</label>

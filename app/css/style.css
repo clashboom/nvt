@@ -144,7 +144,7 @@ h1 {
 }
 .topbar {
   display: block;
-  min-height: 8.09px;
+  min-height: 4.854px;
   background: #293b47;
 }
 header {
@@ -266,6 +266,10 @@ header::after {
   -moz-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-sizing: border-box;
+  -webkit-box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
+  box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
 }
 .menu__section:before,
 .product:before,
@@ -282,12 +286,8 @@ header::after {
 .product:last-child {
   margin-right: 0%;
 }
-.menu__section:hover img,
-.product:hover img,
-.menu__section:hover .product__description,
-.product:hover .product__description,
-.menu__section:hover .menu__section__description,
-.product:hover .menu__section__description {
+.menu__section:hover,
+.product:hover {
   -webkit-box-shadow: 0px 8px 17px rgba(0,0,0,0.2);
   -moz-box-shadow: 0px 8px 17px rgba(0,0,0,0.2);
   box-shadow: 0px 8px 17px rgba(0,0,0,0.2);
@@ -298,7 +298,6 @@ header::after {
 .product .product__description,
 .menu__section .menu__section__description,
 .product .menu__section__description {
-  box-sizing: border-box;
   -webkit-box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
   -moz-box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
   box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
@@ -1043,7 +1042,8 @@ textarea {
   height: 10rem;
 }
 button,
-.button {
+.button,
+#goog-wm-sb {
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
@@ -1068,7 +1068,8 @@ button,
   transition: background-color 300ms ease-out;
 }
 button:hover,
-.button:hover {
+.button:hover,
+#goog-wm-sb:hover {
   background-color: #263238;
   color: #eceff1;
 }
@@ -1077,9 +1078,6 @@ button:hover,
 }
 .left {
   float: left;
-}
-.translate {
-  color: #800000 !important;
 }
 .cd-top {
   display: inline-block;
