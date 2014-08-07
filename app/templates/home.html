@@ -6,10 +6,9 @@
 {% block main %}
 
 <div class="page__wrapper page__wrapper--home">
-  <div class="menu">
+  <section class="grid menu">
 
-    <section class="menu__section">
-      <a href="{{ '/' + locale if locale else '' }}/automotive">
+    <figure class="menu__section effect-bubba">
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
           <source srcset="/img/automotive_xl.jpg" media="(min-width: 2000px)">
@@ -19,17 +18,16 @@
           <!--[if IE 9]></video><![endif]-->
           <img srcset="/img/automotive_s.jpg" alt="Automotive">
         </picture>
-        <div class="menu__section__description">
-          <div class="inner">
+        <figcaption class="menu__section__description">
             <h2>{{ _("Automotive") }}</h2>
             <p class="subtitle">{{ _("Composite solutions for automotive industry") }}</p>
-          </div>
-        </div>
-      </a>
-    </section>
+        </figcaption>
+        <a href="{{ '/' + locale if locale else '' }}/automotive">
+          {{ _("View category") }}
+        </a>
+    </figure>
 
-    <section class="menu__section">
-      <a href="{{ '/' + locale if locale else '' }}/boats">
+    <figure class="menu__section effect-bubba">
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
           <source srcset="/img/watercraft_xl.jpg" media="(min-width: 2000px)">
@@ -39,17 +37,17 @@
           <!--[if IE 9]></video><![endif]-->
           <img srcset="/img/watercraft_s.jpg" alt="boats">
         </picture>
-        <div class="menu__section__description">
-          <div class="inner">
+        <figcaption class="menu__section__description">
             <h2>{{ _("Boats") }}</h2>
             <p>{{ _("Practical multi-purpose boats with emphasis on ergonomics") }}</p>
-          </div>
-        </div>
-      </a>
-    </section>
+        </figcaption>
+        <a href="{{ '/' + locale if locale else '' }}/boats">
+          {{ _("View category") }}
+        </a>
+    </figure>
 
 
-  </div>
+  </section>
 </div>
 
 {% endblock %}

@@ -215,7 +215,7 @@ header .brand {
   letter-spacing: 5px;
 }
 header nav a {
-  line-height: 1.5;
+  line-height: 2;
   padding: 4.854px 8.09px;
   margin-top: 24.270000000000003px;
   text-decoration: none;
@@ -250,6 +250,7 @@ header::after {
 }
 .menu__section,
 .product {
+  overflow: hidden;
   position: relative;
   *zoom: 1;
   float: left;
@@ -263,9 +264,6 @@ header::after {
   margin-right: 3%;
   background-size: cover;
   background-position: center top;
-  -moz-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   box-sizing: border-box;
   -webkit-box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
   -moz-box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
@@ -285,12 +283,6 @@ header::after {
 .menu__section:last-child,
 .product:last-child {
   margin-right: 0%;
-}
-.menu__section:hover,
-.product:hover {
-  -webkit-box-shadow: 0px 8px 17px rgba(0,0,0,0.2);
-  -moz-box-shadow: 0px 8px 17px rgba(0,0,0,0.2);
-  box-shadow: 0px 8px 17px rgba(0,0,0,0.2);
 }
 .menu__section img,
 .product img,
@@ -317,20 +309,30 @@ header::after {
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   text-align: center;
-  border-top: 1px solid #eceff1;
   background-color: #ebebeb;
   width: 100%;
   z-index: 2;
 }
 .menu__section a,
 .product a {
-  text-decoration: none;
-  color: #303e49;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  -moz-transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+.menu__section picture,
+.product picture {
+  display: block;
+}
+.menu__section h2,
+.product h2 {
+  color: inherit;
 }
 .main {
   display: block;
@@ -791,8 +793,8 @@ tbody tr:nth-child(odd) {
   .product {
     margin-bottom: 16.18px;
   }
-  .product__description .inner,
-  .menu__section__description .inner {
+  .product__description,
+  .menu__section__description {
     padding: 24.270000000000003px 32.36px 16.18px;
   }
   .cd-top {
@@ -906,8 +908,8 @@ tbody tr:nth-child(odd) {
   .gallery:after {
     clear: both;
   }
-  .product__description .inner,
-  .menu__section__description .inner {
+  .product__description,
+  .menu__section__description {
     min-height: 48.540000000000006px;
     padding: 32.36px 40.45px;
   }
@@ -982,6 +984,30 @@ tbody tr:nth-child(odd) {
     left: auto;
     right: 122%;
     text-align: right;
+  }
+}
+figure figcaption h2,
+figure figcaption p {
+  text-transform: uppercase;
+}
+figure figcaption p {
+  letter-spacing: 1px;
+  opacity: 0.8;
+  font-size: 12.944px;
+}
+@media screen and (max-width: 32em) {
+  figure figcaption h2,
+  figure figcaption p {
+    text-transform: uppercase;
+  }
+  figure figcaption h2 {
+    font-weight: 800;
+    font-size: 29.124000000000002px;
+    line-height: 32.36px;
+  }
+  figure figcaption p {
+    font-size: 12.944px;
+    line-height: 16.18px;
   }
 }
 .cssanimations .timeline__img {

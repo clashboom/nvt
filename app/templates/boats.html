@@ -6,9 +6,8 @@
 
 {% block main %}
 
-  <section class="products">
-    <figure class="product">
-      <a href="{{ '/' + locale if locale else '' }}/s565">
+  <section class="grid products">
+    <figure class="product effect-bubba">
       <picture>
       <!--[if IE 9]><video style="display: none;"><![endif]-->
         <source srcset="/img/s565/navette_s565_featured_xl.jpg" media="(min-width: 2000px)">
@@ -18,17 +17,16 @@
         <!--[if IE 9]></video><![endif]-->
         <img srcset="/img/s565/navette_s565_featured_s.jpg" alt="Automotive">
       </picture>
-      <div class="product__description">
-        <div class="inner">
-          <h2>S 565</h2>
-          <p>{{ _("Fast and comfortable console boat with great ride characteristics") }}</p>
-        </div>
-      </div>
+      <figcaption class="product__description">
+        <h2>S 565</h2>
+        <p>{{ _("Fast and comfortable console boat with great ride characteristics") }}</p>
+      </figcaption>
+      <a href="{{ '/' + locale if locale else '' }}/s565">
+        {{ _("View category") }}
       </a>
     </figure>
 
-    <figure class="product">
-      <a href="{{ '/' + locale if locale else '' }}/s540">
+    <figure class="product effect-bubba">
       <picture>
       <!--[if IE 9]><video style="display: none;"><![endif]-->
         <source srcset="/img/s540/navette_s540_featured_xl.jpg" media="(min-width: 2000px)">
@@ -38,12 +36,12 @@
         <!--[if IE 9]></video><![endif]-->
         <img srcset="/img/s540/navette_s540_featured_s.jpg" alt="Automotive">
       </picture>
-      <div class="product__description">
-        <div class="inner">
+      <figcaption class="product__description">
         <h2>S 540</h2>
-        <p>{{ _("Excellent boat for sport and leisure.") }}</p>
-        </div>
-      </div>
+        <p>{{ _("Excellent boat for sport and leisure") }}</p>
+      </figcaption>
+      <a href="{{ '/' + locale if locale else '' }}/s540">
+        {{ _("View category") }}
       </a>
     </figure>
   </section>

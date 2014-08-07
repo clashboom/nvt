@@ -5,10 +5,9 @@
 {% set meta_description = _("Navette composite solutions for automotive industry. Fiberglass hardtops and more. Need a custom project done? Let us know.") %}
 {% block main %}
 
-<section class="products">
+<section class="grid products">
 
-  <figure class="product">
-    <a href="{{ '/' + locale if locale else '' }}/amarok">
+  <figure class="product effect-bubba">
     <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
       <source srcset="/img/amarok/amarok_hardtop_featured_xl.jpg" media="(min-width: 2000px)">
@@ -18,17 +17,16 @@
       <!--[if IE 9]></video><![endif]-->
       <img srcset="/img/amarok/amarok_hardtop_featured_s.jpg" alt="Automotive">
     </picture>
-    <div class="product__description">
-      <div class="inner">
-        <h2>{{ _("Hardtop for VW Amarok") }}</h2>
-        <p>{{ _("Lightweight but durable") }}</p>
-      </div>
-    </div>
+    <figcaption class="product__description">
+      <h2>{{ _("VW Amarok Hardtop") }}</h2>
+      <p>{{ _("Lightweight but durable") }}</p>
+    </figcaption>
+    <a href="{{ '/' + locale if locale else '' }}/amarok">
+      {{ _("View category") }}
     </a>
   </figure>
 
-  <figure class="product">
-    <a href="{{ '/' + locale if locale else '' }}/hilux">
+  <figure class="product effect-bubba">
     <picture>
       <!--[if IE 9]><video style="display: none;"><![endif]-->
       <source srcset="/img/hilux/hilux_hardtop_featured_l.jpg" media="(min-width: 600px)">
@@ -37,12 +35,12 @@
       <!--[if IE 9]></video><![endif]-->
       <img srcset="/img/hilux/hilux_hardtop_featured_s.jpg" alt="Automotive">
     </picture>
-    <div class="product__description">
-      <div class="inner">
-        <h2>{{ _("Hardtop for Toyota Hilux") }}</h2>
-        <p>{{ _("Exclusive hardtop for sale only in Norway") }}</p>
-      </div>
-    </div>
+    <figcaption class="product__description">
+      <h2>{{ _("Toyota Hilux Hardtop") }}</h2>
+      <p>{{ _("Exclusive hardtop for sale only in Norway") }}</p>
+    </figcaption>
+    <a href="{{ '/' + locale if locale else '' }}/hilux">
+      {{ _("View category") }}
     </a>
   </figure>
 

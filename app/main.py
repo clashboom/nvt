@@ -223,7 +223,7 @@ class MailHandler(Handler):
         if user_name:
             message += " - %s" % user_name
         if product:
-            message += "Product: %s " % product
+            message += " Product: %s " % product
         if location:
             message += " User location: %s" % location
         from_addr = "info@saldusgaisma.lv"
