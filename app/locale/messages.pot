@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-08-01 16:37+0300\n"
+"POT-Creation-Date: 2014-08-08 08:47+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,7 +72,7 @@ msgid ""
 "We offer more than 12 years of experience in the composite industry. We "
 "have designed and produced a wide variety of composite solutions for "
 "maritime and automotive industries as well as for individuals - from "
-"house boats and auto bodywork to swimming pools and storage products."
+"pleasure boats and auto bodywork to swimming pools and storage products."
 msgstr ""
 
 #: templates/about.html:39
@@ -223,7 +223,7 @@ msgid ""
 " well."
 msgstr ""
 
-#: templates/amarok.html:13 templates/automotive.html:23
+#: templates/amarok.html:13
 msgid "Hardtop for VW Amarok"
 msgstr ""
 
@@ -235,9 +235,9 @@ msgid ""
 "Roofshape of the hardtop is styled the same way as car's. It is also the "
 "same width as the car itself. Bottom of the hardtop follows the A-line "
 "from headlight to taillight, tracing the car's silhouette. The shape of "
-"the side panels adds nicely to the look of the whole car. When driving, "
-"the hardtop itself makes no extra wind noise. Integrated spoiler can "
-"optionally be equipped with a high level brake light."
+"the side panels adds nicely to the look of the whole car. An integrated "
+"spoiler can optionally be equipped with a high level brake light. The "
+"hardtop is ready for roof bars by Thule."
 msgstr ""
 
 #: templates/amarok.html:39
@@ -410,23 +410,33 @@ msgid ""
 "and more. Need a custom project done? Let us know."
 msgstr ""
 
-#: templates/automotive.html:24
+#: templates/automotive.html:21
+msgid "VW Amarok Hardtop"
+msgstr ""
+
+#: templates/automotive.html:22
 msgid "Lightweight but durable"
 msgstr ""
 
-#: templates/automotive.html:42
-msgid "Hardtop for Toyota Hilux"
+#: templates/automotive.html:25 templates/automotive.html:43
+#: templates/boats.html:25 templates/boats.html:44 templates/home.html:26
+#: templates/home.html:45
+msgid "View category"
 msgstr ""
 
-#: templates/automotive.html:43
+#: templates/automotive.html:39
+msgid "Toyota Hilux Hardtop"
+msgstr ""
+
+#: templates/automotive.html:40
 msgid "Exclusive hardtop for sale only in Norway"
 msgstr ""
 
-#: templates/base.html:40 templates/base.html:80 templates/home.html:24
+#: templates/base.html:40 templates/base.html:80 templates/home.html:22
 msgid "Automotive"
 msgstr ""
 
-#: templates/base.html:41 templates/base.html:81 templates/home.html:44
+#: templates/base.html:41 templates/base.html:81 templates/home.html:41
 msgid "Boats"
 msgstr ""
 
@@ -458,12 +468,12 @@ msgstr ""
 msgid "Navette Boats"
 msgstr ""
 
-#: templates/boats.html:24
+#: templates/boats.html:22
 msgid "Fast and comfortable console boat with great ride characteristics"
 msgstr ""
 
-#: templates/boats.html:44
-msgid "Excellent boat for sport and leisure."
+#: templates/boats.html:41
+msgid "Excellent boat for sport and leisure"
 msgstr ""
 
 #: templates/contact.html:4
@@ -617,11 +627,11 @@ msgid ""
 "project to be done? Let us know."
 msgstr ""
 
-#: templates/home.html:25
+#: templates/home.html:23
 msgid "Composite solutions for automotive industry"
 msgstr ""
 
-#: templates/home.html:45
+#: templates/home.html:42
 msgid "Practical multi-purpose boats with emphasis on ergonomics"
 msgstr ""
 
@@ -882,7 +892,7 @@ msgstr ""
 msgid "520 cm"
 msgstr ""
 
-#: templates/s540.html:117
+#: templates/s540.html:117 templates/s565.html:128
 msgid "Max payload"
 msgstr ""
 
@@ -1139,10 +1149,6 @@ msgstr ""
 msgid "640 kg"
 msgstr ""
 
-#: templates/s565.html:128
-msgid "Maximum payload"
-msgstr ""
-
 #: templates/s565.html:129
 msgid "580 kg"
 msgstr ""
@@ -1184,6 +1190,6 @@ msgid ""
 msgstr ""
 
 #: templates/s565.html:214
-msgid "Full review from Båtliv (1.0MB .pdf)"
+msgid "Review from Båtliv (1.0MB .pdf)"
 msgstr ""
 

@@ -334,6 +334,14 @@ header::after {
 .product h2 {
   color: inherit;
 }
+figure.effect-bubba img {
+  opacity: 8;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+figure.effect-bubba img:hover {
+  opacity: 0.6;
+}
 .main {
   display: block;
   padding: 32.36px 10% 64.72px;

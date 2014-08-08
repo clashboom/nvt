@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-08-01 16:37+0300\n"
+"POT-Creation-Date: 2014-08-08 08:47+0300\n"
 "PO-Revision-Date: 2014-07-31 14:02+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: nb_NO <LL@li.org>\n"
@@ -59,7 +59,7 @@ msgstr "Om Navette"
 
 #: templates/about.html:5
 msgid "Experience, production methods, core values and history of Navette AS"
-msgstr ""
+msgstr "Våre produksjonsmetoder, kjerneverdier og erfaring."
 
 #: templates/about.html:12
 msgid "Who we are?"
@@ -74,8 +74,12 @@ msgid ""
 "We offer more than 12 years of experience in the composite industry. We "
 "have designed and produced a wide variety of composite solutions for "
 "maritime and automotive industries as well as for individuals - from "
-"house boats and auto bodywork to swimming pools and storage products."
+"boats and auto bodywork to swimming pools and storage products."
 msgstr ""
+"Navette har over 12 års erfaring med komposittprodukter. Vi har "
+"konstruert og produsert en rekke forskjellige komposittløsninger for "
+"maritim og bilindustrien, så vel som for enkeltpersoner - fra båter"
+"og karosseri på bil til svømmebassenger og oppbevaringsbokser."
 
 #: templates/about.html:39
 msgid ""
@@ -225,7 +229,7 @@ msgid ""
 " well."
 msgstr ""
 
-#: templates/amarok.html:13 templates/automotive.html:23
+#: templates/amarok.html:13
 msgid "Hardtop for VW Amarok"
 msgstr "Hardtop til VW Amarok"
 
@@ -237,9 +241,9 @@ msgid ""
 "Roofshape of the hardtop is styled the same way as car's. It is also the "
 "same width as the car itself. Bottom of the hardtop follows the A-line "
 "from headlight to taillight, tracing the car's silhouette. The shape of "
-"the side panels adds nicely to the look of the whole car. When driving, "
-"the hardtop itself makes no extra wind noise. Integrated spoiler can "
-"optionally be equipped with a high level brake light."
+"the side panels adds nicely to the look of the whole car. An integrated "
+"spoiler can optionally be equipped with a high level brake light. The "
+"hardtop is ready for roof bars by Thule."
 msgstr ""
 
 #: templates/amarok.html:39
@@ -412,23 +416,35 @@ msgid ""
 "and more. Need a custom project done? Let us know."
 msgstr ""
 
-#: templates/automotive.html:24
+#: templates/automotive.html:21
+msgid "VW Amarok Hardtop"
+msgstr ""
+
+#: templates/automotive.html:22
 msgid "Lightweight but durable"
 msgstr ""
 
-#: templates/automotive.html:42
-msgid "Hardtop for Toyota Hilux"
-msgstr ""
+#: templates/automotive.html:25 templates/automotive.html:43
+#: templates/boats.html:25 templates/boats.html:44 templates/home.html:26
+#: templates/home.html:45
+#, fuzzy
+msgid "View category"
+msgstr "Konstruksjonskategori"
 
-#: templates/automotive.html:43
+#: templates/automotive.html:39
+#, fuzzy
+msgid "Toyota Hilux Hardtop"
+msgstr "Toyota Hilux SR5 Cargo Hardtop"
+
+#: templates/automotive.html:40
 msgid "Exclusive hardtop for sale only in Norway"
 msgstr ""
 
-#: templates/base.html:40 templates/base.html:80 templates/home.html:24
+#: templates/base.html:40 templates/base.html:80 templates/home.html:22
 msgid "Automotive"
 msgstr "Automotive"
 
-#: templates/base.html:41 templates/base.html:81 templates/home.html:44
+#: templates/base.html:41 templates/base.html:81 templates/home.html:41
 msgid "Boats"
 msgstr "Båter"
 
@@ -460,12 +476,13 @@ msgstr "Topp"
 msgid "Navette Boats"
 msgstr "Navette Båter"
 
-#: templates/boats.html:24
+#: templates/boats.html:22
 msgid "Fast and comfortable console boat with great ride characteristics"
 msgstr "Rask og sikker skjærgårdsjeep med fantastiske sjøegenskaper"
 
-#: templates/boats.html:44
-msgid "Excellent boat for sport and leisure."
+#: templates/boats.html:41
+#, fuzzy
+msgid "Excellent boat for sport and leisure"
 msgstr "Ypperlig båt til sport og fritid"
 
 #: templates/contact.html:4
@@ -630,11 +647,11 @@ msgid ""
 "project to be done? Let us know."
 msgstr ""
 
-#: templates/home.html:25
+#: templates/home.html:23
 msgid "Composite solutions for automotive industry"
 msgstr ""
 
-#: templates/home.html:45
+#: templates/home.html:42
 msgid "Practical multi-purpose boats with emphasis on ergonomics"
 msgstr "Flerbruksbåter hvor praktiske løsninger og kvalitet er sterkt vektlagt"
 
@@ -920,7 +937,7 @@ msgstr "Vekt uten motor"
 msgid "520 cm"
 msgstr ""
 
-#: templates/s540.html:117
+#: templates/s540.html:117 templates/s565.html:128
 msgid "Max payload"
 msgstr "Nyttelast"
 
@@ -1210,10 +1227,6 @@ msgstr ""
 msgid "640 kg"
 msgstr ""
 
-#: templates/s565.html:128
-msgid "Maximum payload"
-msgstr ""
-
 #: templates/s565.html:129
 msgid "580 kg"
 msgstr ""
@@ -1259,6 +1272,6 @@ msgstr ""
 "lang tid.”"
 
 #: templates/s565.html:214
-msgid "Full review from Båtliv (1.0MB .pdf)"
+msgid "Review from Båtliv (1.0MB .pdf)"
 msgstr ""
 
