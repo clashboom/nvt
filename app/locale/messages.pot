@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-08-08 08:47+0300\n"
+"POT-Creation-Date: 2014-08-14 15:58+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,7 +72,7 @@ msgid ""
 "We offer more than 12 years of experience in the composite industry. We "
 "have designed and produced a wide variety of composite solutions for "
 "maritime and automotive industries as well as for individuals - from "
-"pleasure boats and auto bodywork to swimming pools and storage products."
+"boats and auto bodywork to swimming pools and storage products."
 msgstr ""
 
 #: templates/about.html:39
@@ -218,9 +218,9 @@ msgstr ""
 
 #: templates/amarok.html:5
 msgid ""
-"Our lightweight, yet durable VW Amarok Hardtop uses design elements from "
-"the car itself, making the hardtop not only practical but good-looking as"
-" well."
+"This VW Amarok Hardtop is both lightweight and durable. It uses design "
+"elements from the car itself, making the hardtop not only practical but "
+"good-looking as well."
 msgstr ""
 
 #: templates/amarok.html:13
@@ -469,7 +469,7 @@ msgid "Navette Boats"
 msgstr ""
 
 #: templates/boats.html:22
-msgid "Fast and comfortable console boat with great ride characteristics"
+msgid "Comfortable bowrider for the whole family"
 msgstr ""
 
 #: templates/boats.html:41
@@ -564,8 +564,8 @@ msgstr ""
 #: templates/hilux.html:35
 msgid ""
 "Please note that Hilux Cargo is a special model developed by Toyota "
-"Norway, and is therefore only sold in this country. If you are located in"
-" Norway and already have a Hilux, this can of course be retrofitted on "
+"Norway, and is therefore only sold in Norway. If you are located in "
+"Norway and already have a Hilux, this can of course be retrofitted on "
 "older cars. For more details please contact your Toyota dealer."
 msgstr ""
 
@@ -585,35 +585,27 @@ msgstr ""
 msgid "1470 mm"
 msgstr ""
 
-#: templates/hilux.html:55
-msgid "Høyde bakke baklem"
-msgstr ""
-
-#: templates/hilux.html:56
-msgid "800 mm"
-msgstr ""
-
-#: templates/hilux.html:59
+#: templates/hilux.html:54
 msgid "Max length in load compartment"
 msgstr ""
 
-#: templates/hilux.html:60
+#: templates/hilux.html:55
 msgid "2850 mm"
 msgstr ""
 
-#: templates/hilux.html:63
+#: templates/hilux.html:58
 msgid "Side hatch opening size"
 msgstr ""
 
-#: templates/hilux.html:64
+#: templates/hilux.html:59
 msgid "1400x400 mm"
 msgstr ""
 
-#: templates/hilux.html:67
+#: templates/hilux.html:62
 msgid "Hardtop weight"
 msgstr ""
 
-#: templates/hilux.html:68
+#: templates/hilux.html:63
 msgid "108 kg"
 msgstr ""
 
@@ -680,8 +672,8 @@ msgstr ""
 
 #: templates/s540.html:5
 msgid ""
-"S 540 is a fast, yet comfortable console boat with great performance, "
-"ideal for both sport and leisure."
+"S 540 is a fast, yet comfortable console boat, well suited for Nordic "
+"conditions and ideal for both sport and leisure."
 msgstr ""
 
 #: templates/s540.html:25
@@ -694,13 +686,9 @@ msgid ""
 "and gas/trim sits right where they should be and there is plenty of room "
 "for your legs under the steering consle. The windshield provides good "
 "protection behind the control console. The hull has a relatively deep "
-"V-bottom which makes the ride soft even in rough waters. Det er "
-"håndopplagt med triaksial duk i skroget. Hekken er spesielt kraftig da "
-"motorfundamentet er trukket noe bak hekken og forsterket direkte i "
-"langsgående stringere. Båten lander mykt i sjøen, hekken slipper ikke og "
-"det er bortimot umulig å kavitere propellen. Under the console there is "
-"spacious storage room, while under the stern bench seat is located "
-"battery, tankinspeksjon and a large storage locker."
+"V-bottom which makes the ride soft even in rough waters. Under the "
+"console there is spacious storage room, while under the stern bench seat "
+"is located battery, fuel meter and a large storage locker."
 msgstr ""
 
 #: templates/s540.html:28 templates/s565.html:34
@@ -734,7 +722,7 @@ msgstr ""
 msgid "Self-bailing system"
 msgstr ""
 
-#: templates/s540.html:42
+#: templates/s540.html:42 templates/s565.html:50
 msgid "Battery housing with main switch"
 msgstr ""
 
@@ -746,7 +734,7 @@ msgstr ""
 msgid "Lockable room for equipment"
 msgstr ""
 
-#: templates/s540.html:45
+#: templates/s540.html:45 templates/s565.html:53
 msgid "Fixed fuel tank with capacity markings"
 msgstr ""
 
@@ -834,8 +822,8 @@ msgstr ""
 msgid "Fuel tank"
 msgstr ""
 
-#: templates/s540.html:82 templates/s540.html:157 templates/s565.html:87
-#: templates/s565.html:168
+#: templates/s540.html:82 templates/s540.html:145 templates/s565.html:87
+#: templates/s565.html:156
 msgid "Anchor compartment"
 msgstr ""
 
@@ -844,11 +832,10 @@ msgid "Cockpit storage"
 msgstr ""
 
 #: templates/s540.html:84 templates/s565.html:92
-msgid "Stuverom skrog"
+msgid "Aft storage"
 msgstr ""
 
-#: templates/s540.html:85 templates/s540.html:165 templates/s565.html:93
-#: templates/s565.html:176
+#: templates/s540.html:85 templates/s565.html:93
 msgid "Glove compartment"
 msgstr ""
 
@@ -905,100 +892,76 @@ msgid "Max persons"
 msgstr ""
 
 #: templates/s540.html:125 templates/s565.html:136
-msgid "Stammelengde"
-msgstr ""
-
-#: templates/s540.html:126 templates/s565.html:137
-msgid "Long"
-msgstr ""
-
-#: templates/s540.html:129 templates/s565.html:140
 msgid "Min motor power"
 msgstr ""
 
-#: templates/s540.html:130 templates/s565.html:141
+#: templates/s540.html:126 templates/s565.html:137
 msgid "52/70 kW/HP"
 msgstr ""
 
-#: templates/s540.html:133 templates/s565.html:144
+#: templates/s540.html:129 templates/s565.html:140
 msgid "Max motor power"
 msgstr ""
 
-#: templates/s540.html:134 templates/s565.html:145
+#: templates/s540.html:130 templates/s565.html:141
 msgid "103/140 kW/HP"
 msgstr ""
 
-#: templates/s540.html:137 templates/s565.html:148
-msgid "Kabellengde"
-msgstr ""
-
-#: templates/s540.html:138
-msgid "5\""
-msgstr ""
-
-#: templates/s540.html:141
-msgid "Styrewire lengde"
-msgstr ""
-
-#: templates/s540.html:142
-msgid "4\""
-msgstr ""
-
-#: templates/s540.html:145 templates/s565.html:156
+#: templates/s540.html:133 templates/s565.html:144
 msgid "Category"
 msgstr ""
 
-#: templates/s540.html:146 templates/s565.html:157
+#: templates/s540.html:134 templates/s565.html:145
 msgid "CE C"
 msgstr ""
 
-#: templates/s540.html:149 templates/s565.html:160
+#: templates/s540.html:137 templates/s565.html:148
 msgid "Bailing system"
 msgstr ""
 
-#: templates/s540.html:150 templates/s565.html:161
+#: templates/s540.html:138 templates/s565.html:149
 msgid "Self-bailing"
 msgstr ""
 
-#: templates/s540.html:153 templates/s565.html:164
+#: templates/s540.html:141 templates/s565.html:152
 msgid "Fuel capacity"
 msgstr ""
 
-#: templates/s540.html:154
+#: templates/s540.html:142
 msgid "75 liter"
 msgstr ""
 
-#: templates/s540.html:161 templates/s565.html:172
+#: templates/s540.html:149 templates/s565.html:160
 msgid "Storage compartments"
 msgstr ""
 
-#: templates/s540.html:169 templates/s565.html:180
+#: templates/s540.html:153 templates/s565.html:164
 msgid "Speed test results"
 msgstr ""
 
-#: templates/s540.html:173 templates/s540.html:181 templates/s565.html:184
-#: templates/s565.html:192
+#: templates/s540.html:157 templates/s540.html:165 templates/s565.html:168
+#: templates/s565.html:176
 msgid "Motor model"
 msgstr ""
 
-#: templates/s540.html:174 templates/s565.html:185
+#: templates/s540.html:158 templates/s565.html:169
 msgid "Suzuki DF90"
 msgstr ""
 
-#: templates/s540.html:177 templates/s540.html:185 templates/s565.html:188
-#: templates/s565.html:196
+#: templates/s540.html:161 templates/s540.html:169 templates/s565.html:172
+#: templates/s565.html:180
 msgid "Speed 2 pers."
 msgstr ""
 
-#: templates/s540.html:178
+#: templates/s540.html:162
 msgid "38 knots"
 msgstr ""
 
-#: templates/s540.html:182 templates/s565.html:193
+#: templates/s540.html:166 templates/s565.html:177
 msgid "Suzuki DF115"
 msgstr ""
 
-#: templates/s540.html:186
+#: templates/s540.html:170
 msgid "43 knots"
 msgstr ""
 
@@ -1030,10 +993,7 @@ msgid ""
 "is naturally self-bailing, even with seven persons on board. The "
 "windshield provides good protection behind the control console. The hull "
 "has a relatively deep V-bottom that ensures comfortable ride even in "
-"rough waters.  Det er håndopplagt med triaksial duk i skroget. Hekken er "
-"spesielt kraftig da motorfundamentet er trukket noe bak hekken og "
-"forsterket direkte i langsgående stringere. Båten lander mykt i sjøen, "
-"hekken slipper ikke og det er bortimot umulig å kavitere propellen."
+"rough waters."
 msgstr ""
 
 #: templates/s565.html:31
@@ -1041,13 +1001,13 @@ msgid ""
 "Under the rear seat there is battery, fuel tank gauge, and a large "
 "storage compartment. There is also a compartment for fenders, as they are"
 " the often dirty and not necessarily to be taken into the boat. All "
-"hatches in the cockpit can be equipped with a lock. Høy hekk som gir god "
-"sikkerhet. There is gate with sturdy boarding ladder in the rear and "
-"sidegate on the port side for easy boarding. Large windshield, "
-"thoughtfully organized ergonomic cockpit, canopy behind windshield with "
-"room for 6 people, sunbed or seats for up to 6 persons in the bow, large "
-"storage compartments with room for seat cushions, coolers, fishing rods, "
-"life jackets, water skis etc."
+"hatches in the cockpit can be equipped with a lock. A gate with sturdy "
+"boarding ladder is in the rear end of the boat and sidegate on the port "
+"side for easy boarding. Large windshield, thoughtfully organized "
+"ergonomic cockpit, canopy behind windshield with room for 6 people, "
+"sunbed or seats for up to 6 persons in the bow, large storage "
+"compartments with room for seat cushions, coolers, fishing rods, life "
+"jackets, water skis etc."
 msgstr ""
 
 #: templates/s565.html:35
@@ -1073,16 +1033,8 @@ msgstr ""
 msgid "Self-bailing cockpit"
 msgstr ""
 
-#: templates/s565.html:50
-msgid "Batterikasse m/hovedstrømbryter"
-msgstr ""
-
 #: templates/s565.html:52
 msgid "Lockable compartments for equipment"
-msgstr ""
-
-#: templates/s565.html:53
-msgid "Fastmontert brennstofftank m/måler"
 msgstr ""
 
 #: templates/s565.html:56
@@ -1153,35 +1105,23 @@ msgstr ""
 msgid "580 kg"
 msgstr ""
 
-#: templates/s565.html:149
-msgid "6\""
-msgstr ""
-
-#: templates/s565.html:152
-msgid "Hydrauliske slanger lengde"
-msgstr ""
-
 #: templates/s565.html:153
-msgid "500 cm"
-msgstr ""
-
-#: templates/s565.html:165
 msgid "95 liter"
 msgstr ""
 
-#: templates/s565.html:189
+#: templates/s565.html:173
 msgid "36 knots"
 msgstr ""
 
-#: templates/s565.html:197
+#: templates/s565.html:181
 msgid "41 knots"
 msgstr ""
 
-#: templates/s565.html:209
+#: templates/s565.html:193
 msgid "Reviews"
 msgstr ""
 
-#: templates/s565.html:212
+#: templates/s565.html:196
 msgid ""
 "It is still possible to innovate when it comes to console boat, for which"
 " Navette S 565 serves as a good example. Ålesund company has in our "
@@ -1189,7 +1129,7 @@ msgid ""
 "long time."
 msgstr ""
 
-#: templates/s565.html:214
+#: templates/s565.html:198
 msgid "Review from Båtliv (1.0MB .pdf)"
 msgstr ""
 
