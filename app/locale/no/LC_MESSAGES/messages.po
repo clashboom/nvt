@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-09-09 12:27+0300\n"
+"POT-Creation-Date: 2014-09-09 16:48+0300\n"
 "PO-Revision-Date: 2014-07-31 14:02+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: nb_NO <LL@li.org>\n"
@@ -274,14 +274,14 @@ msgid ""
 "hardtop is ready for roof bars by Thule."
 msgstr ""
 "Denne slitesterke og lette VW Amarok hardtop bruker de nøyaktige "
-"designelementene fra bilen. Hardtopen er lagd for å være i et med "
-"bilen for å gi den en gjennomgående utseende og den kjente formen "
-"til en stasjonsvogn. Takformen av hardtopen er i samme stil som bilens. "
-"Den har også samme bredde som bilen selv. Bunnen av hardtopen følger "
-"A-linjen fra frontlykt til baklykt og følger hele bilens silhuett. "
-"Formen på sidepanelet legger seg lekkert til utseende av hele bilen. "
-"En integrert spoiler kan eventuelt bli utstyrt med et høyt bremselys. "
-"Hardtopen er klar for takstativ av Thule."
+"designelementene fra bilen. Hardtopen er lagd for å være i et med bilen "
+"for å gi den en gjennomgående utseende og den kjente formen til en "
+"stasjonsvogn. Takformen av hardtopen er i samme stil som bilens. Den har "
+"også samme bredde som bilen selv. Bunnen av hardtopen følger A-linjen fra"
+" frontlykt til baklykt og følger hele bilens silhuett. Formen på "
+"sidepanelet legger seg lekkert til utseende av hele bilen. En integrert "
+"spoiler kan eventuelt bli utstyrt med et høyt bremselys. Hardtopen er "
+"klar for takstativ av Thule."
 
 #: templates/amarok.html:39
 msgid ""
@@ -291,11 +291,11 @@ msgid ""
 "painting process uses the most modern knowledge of surface treatment and "
 "confirms to the latest European regulations."
 msgstr ""
-"Navette hardtoper er konstruert av mange lag laminerte glassfiber matter. "
-"Det UV resistente overlaget er lagd av slitesterkt og veldig robust "
+"Navette hardtoper er konstruert av mange lag laminerte glassfiber matter."
+" Det UV resistente overlaget er lagd av slitesterkt og veldig robust "
 "Gelcoat. Malingen er fargekodet etter VW Amarok malingskoder. "
-"Malingprosessen bruker den mest moderne kunnskapen av " 
-"overflatebehandling og forholder seg til de seneste europeiske reglementene."
+"Malingprosessen bruker den mest moderne kunnskapen av overflatebehandling"
+" og forholder seg til de seneste europeiske reglementene."
 
 #: templates/amarok.html:44 templates/s540.html:34 templates/s565.html:40
 msgid "Features"
@@ -307,146 +307,142 @@ msgstr "Standard utstyr"
 
 #: templates/amarok.html:48
 msgid "Inside sprayed with durable PVC"
-msgstr ""
+msgstr "Holdbar PVC belegg på innsiden"
 
 #: templates/amarok.html:49
 msgid "Integrated spoiler"
-msgstr ""
+msgstr "Integrert spoiler"
 
 #: templates/amarok.html:50
+msgid "Rear hatch with gas struts"
+msgstr "Bakre luke med gassfjærer"
+
+#: templates/amarok.html:51
+msgid "Complete fitting instructions"
+msgstr "Komplett monteringsanvisning"
+
+#: templates/amarok.html:52
 msgid "Ready for Thule roof bars"
 msgstr "Klar for takstativ av Thule"
 
-#: templates/amarok.html:51
-msgid "Solid sides"
-msgstr ""
-
-#: templates/amarok.html:52
-msgid "Solid rear hatch with gas struts"
-msgstr ""
-
-#: templates/amarok.html:53
-msgid "Complete fitting instructions"
-msgstr ""
-
-#: templates/amarok.html:57
+#: templates/amarok.html:56
 msgid "Extra features"
 msgstr "Ekstrautstyr"
 
-#: templates/amarok.html:58
+#: templates/amarok.html:57
 msgid "Tinted side windows"
-msgstr ""
+msgstr "Fargede sidevinduer"
+
+#: templates/amarok.html:58
+msgid "LED interior lighting"
+msgstr "Innvendig belysning LED"
 
 #: templates/amarok.html:59
-msgid "LED interior lighting"
-msgstr ""
+msgid "Rear breaklight"
+msgstr "Bremselys. "
 
 #: templates/amarok.html:60
-msgid "Rear breaklight"
-msgstr ""
-
-#: templates/amarok.html:61
 msgid "Central locking on rear hatch."
-msgstr ""
+msgstr "Sentrallås bakluke."
+
+#: templates/amarok.html:60
+msgid "Only for cars with central locking on fuel hatch."
+msgstr "Bare for biler med sentrallås på drivstoff luke."
 
 #: templates/amarok.html:61
-msgid "Only for cars with central locking on fuel hatch."
-msgstr ""
-
-#: templates/amarok.html:62
 msgid "Roof bars from Thule"
 msgstr "Takstativ av Thule"
 
-#: templates/amarok.html:67 templates/hilux.html:42 templates/s540.html:70
+#: templates/amarok.html:66 templates/hilux.html:42 templates/s540.html:70
 #: templates/s565.html:79
 msgid "Specification"
 msgstr "Spesifikasjon"
 
-#: templates/amarok.html:71 templates/s540.html:97 templates/s565.html:108
+#: templates/amarok.html:70 templates/s540.html:97 templates/s565.html:108
 msgid "Width"
 msgstr "Bredde"
 
-#: templates/amarok.html:72
+#: templates/amarok.html:71
 msgid "1760 mm"
 msgstr ""
 
-#: templates/amarok.html:75 templates/s540.html:93 templates/s565.html:104
+#: templates/amarok.html:74 templates/s540.html:93 templates/s565.html:104
 msgid "Length"
 msgstr "Lengde"
 
-#: templates/amarok.html:76
+#: templates/amarok.html:75
 msgid "1590 mm"
 msgstr ""
 
-#: templates/amarok.html:79
+#: templates/amarok.html:78
 msgid "Height"
 msgstr "Høyde"
 
-#: templates/amarok.html:80
+#: templates/amarok.html:79
 msgid "640 mm"
 msgstr ""
 
-#: templates/amarok.html:83
+#: templates/amarok.html:82
 msgid "Loading height"
-msgstr ""
+msgstr "Innvendig høyde"
 
-#: templates/amarok.html:84
+#: templates/amarok.html:83
 msgid "1040 mm"
 msgstr ""
 
-#: templates/amarok.html:87
+#: templates/amarok.html:86
 msgid "Loading width"
-msgstr ""
+msgstr "Innvendig bredde"
 
-#: templates/amarok.html:88
+#: templates/amarok.html:87
 msgid "1350 mm"
 msgstr ""
 
-#: templates/amarok.html:91
+#: templates/amarok.html:90
 msgid "Weight"
 msgstr "Vekt topp"
 
-#: templates/amarok.html:92
+#: templates/amarok.html:91
 msgid "60 kg"
 msgstr ""
 
-#: templates/amarok.html:95
+#: templates/amarok.html:94
 msgid "Maximum roof load"
-msgstr ""
+msgstr "Maks tillatte taklast "
 
-#: templates/amarok.html:96
+#: templates/amarok.html:95
 msgid "50 kg"
 msgstr ""
 
-#: templates/amarok.html:99
+#: templates/amarok.html:98
 msgid "Width of the side hatch"
-msgstr ""
+msgstr "Bredde på sideluke"
 
-#: templates/amarok.html:100
+#: templates/amarok.html:99
 msgid "1200 - 1000 mm"
 msgstr ""
 
-#: templates/amarok.html:103
+#: templates/amarok.html:102
 msgid "Height of the side hatch"
-msgstr ""
+msgstr "Høyde på sideluke"
 
-#: templates/amarok.html:104
+#: templates/amarok.html:103
 msgid "760 - 720 mm"
 msgstr ""
 
-#: templates/amarok.html:107
+#: templates/amarok.html:106
 msgid "Max box size through aft hatch"
-msgstr ""
+msgstr "Maks størrelse gjennom akter luke "
 
-#: templates/amarok.html:108
+#: templates/amarok.html:107
 msgid "1300 x 1050 x 920 mm"
 msgstr ""
 
-#: templates/amarok.html:111
+#: templates/amarok.html:110
 msgid "Max box size inside compartment"
-msgstr "Lenge i topp/innstikk"
+msgstr "Maks størrelse i topp/innstikk"
 
-#: templates/amarok.html:112
+#: templates/amarok.html:111
 msgid "1300 x 1200 x 1040 mm"
 msgstr ""
 
@@ -674,7 +670,7 @@ msgstr ""
 
 #: templates/home.html:3
 msgid "Navette Homepage"
-msgstr ""
+msgstr "Navette | Forsiden"
 
 #: templates/home.html:4
 msgid ""
@@ -758,19 +754,19 @@ msgid ""
 "console there is spacious storage room, while under the stern bench seat "
 "is located battery, fuel meter and a large storage locker."
 msgstr ""
-"S540 er en sportslig styrekonsollbåt med sportslige og sikre sjøegenskaper. "
-"Under utviklingen av båten er det lagt særlig vekt på ergonometri. Det er "
-"enkelt å bevege seg i båten og sitteplassene er behagelige. Førerplassen "
-"er blant markedets desidert beste. Føreren kan sitte, halvt stå eller stå og "
-"likevel ha god oversikt over instrumenter og farvann. Ratt og gass/trim "
-"sitter akkurat der de skal være. Der er god plass til beina under "
-"styrekonsollen og knær kommer ikke i konflikt med noen kanter. "
-"Cocpitdybden er 62 cm på det laveste. Vindskjermen gir god beskyttelse "
-"bak styrekonsollen. Skroget har en relativ dyp V-bunn med 21,5 grader I "
-"senter vannlinje. Hekken er spesielt kraftig da motorfundamentet er "
-"trukket noe bak hekken og forsterket direkte i langsgående stringere. "
-"Båten lander mykt i sjøen, hekken slipper ikke og det er bortimot umulig "
-"å kavitere propellen."
+"S540 er en sportslig styrekonsollbåt med sportslige og sikre "
+"sjøegenskaper. Under utviklingen av båten er det lagt særlig vekt på "
+"ergonometri. Det er enkelt å bevege seg i båten og sitteplassene er "
+"behagelige. Førerplassen er blant markedets desidert beste. Føreren kan "
+"sitte, halvt stå eller stå og likevel ha god oversikt over instrumenter "
+"og farvann. Ratt og gass/trim sitter akkurat der de skal være. Der er god"
+" plass til beina under styrekonsollen og knær kommer ikke i konflikt med "
+"noen kanter. Cocpitdybden er 62 cm på det laveste. Vindskjermen gir god "
+"beskyttelse bak styrekonsollen. Skroget har en relativ dyp V-bunn med "
+"21,5 grader I senter vannlinje. Hekken er spesielt kraftig da "
+"motorfundamentet er trukket noe bak hekken og forsterket direkte i "
+"langsgående stringere. Båten lander mykt i sjøen, hekken slipper ikke og "
+"det er bortimot umulig å kavitere propellen."
 
 #: templates/s540.html:28 templates/s565.html:34
 msgid "Quality - Security"
@@ -787,11 +783,11 @@ msgid ""
 "accessories are made from corrosion and acid resistant materials."
 msgstr ""
 "Båten er naturligvis selvlensende. Det er brukt førsteklasses GRP "
-"materialer i støpen. Gelcoaten er av en "
-"type som har den beste lysekthet og det er minimal vanninntrenging i den."
-" Dette hindrer osmose.  Både i skrog og overbygg er det brukt sydd "
-"triaksial glassfibermatte. Dette gir et bedre styrk/vekt forhold. Alle "
-"beslag og skruer er i syrefast materiale."
+"materialer i støpen. Gelcoaten er av en type som har den beste lysekthet "
+"og det er minimal vanninntrenging i den. Dette hindrer osmose.  Både i "
+"skrog og overbygg er det brukt sydd triaksial glassfibermatte. Dette gir "
+"et bedre styrk/vekt forhold. Alle beslag og skruer er i syrefast "
+"materiale."
 
 #: templates/s540.html:38 templates/s565.html:45
 msgid "Padded seats with shock mitigation and flip-up front"

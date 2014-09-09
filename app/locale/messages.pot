@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-09-09 12:27+0300\n"
+"POT-Creation-Date: 2014-09-09 16:48+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -264,139 +264,135 @@ msgid "Integrated spoiler"
 msgstr ""
 
 #: templates/amarok.html:50
-msgid "Ready for Thule roof bars"
+msgid "Rear hatch with gas struts"
 msgstr ""
 
 #: templates/amarok.html:51
-msgid "Solid sides"
-msgstr ""
-
-#: templates/amarok.html:52
-msgid "Solid rear hatch with gas struts"
-msgstr ""
-
-#: templates/amarok.html:53
 msgid "Complete fitting instructions"
 msgstr ""
 
-#: templates/amarok.html:57
+#: templates/amarok.html:52
+msgid "Ready for Thule roof bars"
+msgstr ""
+
+#: templates/amarok.html:56
 msgid "Extra features"
 msgstr ""
 
-#: templates/amarok.html:58
+#: templates/amarok.html:57
 msgid "Tinted side windows"
 msgstr ""
 
-#: templates/amarok.html:59
+#: templates/amarok.html:58
 msgid "LED interior lighting"
 msgstr ""
 
-#: templates/amarok.html:60
+#: templates/amarok.html:59
 msgid "Rear breaklight"
 msgstr ""
 
-#: templates/amarok.html:61
+#: templates/amarok.html:60
 msgid "Central locking on rear hatch."
 msgstr ""
 
-#: templates/amarok.html:61
+#: templates/amarok.html:60
 msgid "Only for cars with central locking on fuel hatch."
 msgstr ""
 
-#: templates/amarok.html:62
+#: templates/amarok.html:61
 msgid "Roof bars from Thule"
 msgstr ""
 
-#: templates/amarok.html:67 templates/hilux.html:42 templates/s540.html:70
+#: templates/amarok.html:66 templates/hilux.html:42 templates/s540.html:70
 #: templates/s565.html:79
 msgid "Specification"
 msgstr ""
 
-#: templates/amarok.html:71 templates/s540.html:97 templates/s565.html:108
+#: templates/amarok.html:70 templates/s540.html:97 templates/s565.html:108
 msgid "Width"
 msgstr ""
 
-#: templates/amarok.html:72
+#: templates/amarok.html:71
 msgid "1760 mm"
 msgstr ""
 
-#: templates/amarok.html:75 templates/s540.html:93 templates/s565.html:104
+#: templates/amarok.html:74 templates/s540.html:93 templates/s565.html:104
 msgid "Length"
 msgstr ""
 
-#: templates/amarok.html:76
+#: templates/amarok.html:75
 msgid "1590 mm"
 msgstr ""
 
-#: templates/amarok.html:79
+#: templates/amarok.html:78
 msgid "Height"
 msgstr ""
 
-#: templates/amarok.html:80
+#: templates/amarok.html:79
 msgid "640 mm"
 msgstr ""
 
-#: templates/amarok.html:83
+#: templates/amarok.html:82
 msgid "Loading height"
 msgstr ""
 
-#: templates/amarok.html:84
+#: templates/amarok.html:83
 msgid "1040 mm"
 msgstr ""
 
-#: templates/amarok.html:87
+#: templates/amarok.html:86
 msgid "Loading width"
 msgstr ""
 
-#: templates/amarok.html:88
+#: templates/amarok.html:87
 msgid "1350 mm"
 msgstr ""
 
-#: templates/amarok.html:91
+#: templates/amarok.html:90
 msgid "Weight"
 msgstr ""
 
-#: templates/amarok.html:92
+#: templates/amarok.html:91
 msgid "60 kg"
 msgstr ""
 
-#: templates/amarok.html:95
+#: templates/amarok.html:94
 msgid "Maximum roof load"
 msgstr ""
 
-#: templates/amarok.html:96
+#: templates/amarok.html:95
 msgid "50 kg"
 msgstr ""
 
-#: templates/amarok.html:99
+#: templates/amarok.html:98
 msgid "Width of the side hatch"
 msgstr ""
 
-#: templates/amarok.html:100
+#: templates/amarok.html:99
 msgid "1200 - 1000 mm"
 msgstr ""
 
-#: templates/amarok.html:103
+#: templates/amarok.html:102
 msgid "Height of the side hatch"
 msgstr ""
 
-#: templates/amarok.html:104
+#: templates/amarok.html:103
 msgid "760 - 720 mm"
 msgstr ""
 
-#: templates/amarok.html:107
+#: templates/amarok.html:106
 msgid "Max box size through aft hatch"
 msgstr ""
 
-#: templates/amarok.html:108
+#: templates/amarok.html:107
 msgid "1300 x 1050 x 920 mm"
 msgstr ""
 
-#: templates/amarok.html:111
+#: templates/amarok.html:110
 msgid "Max box size inside compartment"
 msgstr ""
 
-#: templates/amarok.html:112
+#: templates/amarok.html:111
 msgid "1300 x 1200 x 1040 mm"
 msgstr ""
 
