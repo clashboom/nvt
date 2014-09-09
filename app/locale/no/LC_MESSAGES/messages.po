@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-08-14 15:58+0300\n"
+"POT-Creation-Date: 2014-09-09 12:27+0300\n"
 "PO-Revision-Date: 2014-07-31 14:02+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: nb_NO <LL@li.org>\n"
@@ -102,9 +102,9 @@ msgid ""
 "design of each one of our products, to make sure that they are both "
 "practical and easy to use."
 msgstr ""
-"Vi tror at god design ikke bare ser bra ut, menviktigere: fungerer godt "
-"for brukeren.Hver enkelt av våre produkter er både praktisk og enkel å "
-"bruke."
+"Vi tror virkelig at godt design ikke bare ser bra ut, men enda viktigere,"
+" fungerer bra for brukeren. Mye har gått inn i designet bak vært eneste "
+"produkt for å sikre at de både er praktiske og enkle å bruke. "
 
 #: templates/about.html:58
 msgid "A Brief History of Navette"
@@ -116,7 +116,7 @@ msgstr "hvordan ble vi til"
 
 #: templates/about.html:68
 msgid "Foundation of the Company"
-msgstr ""
+msgstr "Stiftelsen av selskapet"
 
 #: templates/about.html:70
 msgid ""
@@ -124,6 +124,9 @@ msgid ""
 "design and manufacture pleasure boats. Initially there are 3 founders, "
 "but later Rune Nilsen buys all shares."
 msgstr ""
+"Navette er basert i Norge. Selskapet ble skapt av en idé om å designe og "
+"lage lystbåter. I utgangspunktet var det 3 grunnleggere, men senere "
+"kjøpte Rune Nilsen alle aksjene. "
 
 #: templates/about.html:72
 msgid "Year 2001"
@@ -131,13 +134,15 @@ msgstr "År 2001"
 
 #: templates/about.html:80
 msgid "Launch of Navette S 565"
-msgstr ""
+msgstr "Lanseringen av Navette S 565"
 
 #: templates/about.html:82
 msgid ""
 "After a year of hard work and effort, the first fiberglass boat - Navette"
 " S 565 is launched into production."
 msgstr ""
+"Etter et år med hardt arbeid og innsats ble den første fiberglass båten -"
+" Navette S 565 lansert inn i produksjon."
 
 #: templates/about.html:84
 msgid "Year 2002"
@@ -145,7 +150,7 @@ msgstr "År 2002"
 
 #: templates/about.html:92
 msgid "Availability"
-msgstr ""
+msgstr "Tilgjengelighet"
 
 #: templates/about.html:94
 msgid ""
@@ -153,6 +158,9 @@ msgid ""
 "while maintaining the quality. This step results in lower prices and "
 "product being more available to the customer."
 msgstr ""
+"Produksjonen blir outsourcet til et latvisk selskap der målet er å kutte "
+"kostnadene mens man opprettholder kvaliteten. Dette skrittet resulterer i"
+" lavere kostnader og gjør produktene mer tilgjengelig for kundene."
 
 #: templates/about.html:96 templates/about.html:108 templates/about.html:120
 msgid "Year 2003"
@@ -160,7 +168,7 @@ msgstr "År 2003"
 
 #: templates/about.html:104
 msgid "Quality Assurance"
-msgstr ""
+msgstr "Kvalitets forsikring"
 
 #: templates/about.html:106
 msgid ""
@@ -168,20 +176,25 @@ msgid ""
 "estabilishing a production facility in Saldus. The facility is small but "
 "for now - satisfactory."
 msgstr ""
+"For å sikre kvalitetskontroll ekspanderer Navette sine operasjoner til "
+"Latvia og etablerer et produksjonsanlegg i Saldus. Anlegget er lite, men "
+"for øyeblikket - tilfredsstillende."
 
 #: templates/about.html:116
-msgid "Launch of S 540"
-msgstr ""
+msgid "Launch of Navette S 540"
+msgstr "Lansering av Navette S 540"
 
 #: templates/about.html:118
 msgid ""
 "The second fiberglass boat in the series - Navette S 540 is introduced to"
 " the market."
 msgstr ""
+"Den andre fiberglass båten i serien - Navette S 540 er lansert inn i "
+"produksjon."
 
 #: templates/about.html:128
 msgid "A Change of Mindset"
-msgstr ""
+msgstr "En forandring i tankegangen"
 
 #: templates/about.html:130
 msgid ""
@@ -189,6 +202,9 @@ msgid ""
 "also produce other products. At the same time Navette expands to much "
 "larger, now its own production facilities near Saldus.  "
 msgstr ""
+"Grunnet ustabiliteten i lystbåt markedet bestemte man seg for å også "
+"produsere andre produkter. På samme tid ekspanderer Navette seg mye og "
+"har nå sine egne produksjonsanlegg nær Saldus."
 
 #: templates/about.html:132
 msgid "Year 2005"
@@ -196,24 +212,25 @@ msgstr "År 2005"
 
 #: templates/about.html:140
 msgid "Going automotive"
-msgstr ""
+msgstr "Til det automotive"
 
 #: templates/about.html:142
 msgid ""
 "In cooperation with Ebil Norge, Navette produces fiberglass bodies for a "
-"city electric car <a "
-"href='http://en.wikipedia.org/wiki/Buddy_(electric_car)' "
-"rel='nofollow'>Buddy</a>, the sixth generation of the Kewet electric "
+"city electric car - Buddy, the sixth generation of the Kewet electric "
 "vehicle."
 msgstr ""
+"I samarbeid med Ebil Norge produserer Navette fiberglass karosserier en "
+"el-bil for bylivet - Buddy, den sjette generasjonen av Kewet "
+"elektriskebiler."
 
 #: templates/about.html:144
 msgid "Year 2007-2010"
 msgstr "År 2007 - År 2010"
 
 #: templates/about.html:152
-msgid "Hard to top"
-msgstr ""
+msgid "Production of hardtops"
+msgstr "Produsering av hardtop "
 
 #: templates/about.html:154
 msgid ""
@@ -221,6 +238,9 @@ msgid ""
 "for Toyota Hilux. Navette also designs and adds a hardtop for VW Amarok "
 "to its product line."
 msgstr ""
+"I samarbeid med Loyds industri startet fiberglass hardtop produksjonen "
+"for Toyota Hilux. Navette designer også og legger til hardtop for VW "
+"Amarok for deres produksjons."
 
 #: templates/about.html:156
 msgid "Year 2012"
@@ -228,7 +248,7 @@ msgstr "År 2012"
 
 #: templates/amarok.html:4
 msgid "VW Amarok Hardtop - Navette Automotive"
-msgstr ""
+msgstr "Toyota Hilux Cargo Hardtop - Navette Automotive"
 
 #: templates/amarok.html:5
 msgid ""
@@ -253,6 +273,15 @@ msgid ""
 "spoiler can optionally be equipped with a high level brake light. The "
 "hardtop is ready for roof bars by Thule."
 msgstr ""
+"Denne slitesterke og lette VW Amarok hardtop bruker de nøyaktige "
+"designelementene fra bilen. Hardtopen er lagd for å være i et med "
+"bilen for å gi den en gjennomgående utseende og den kjente formen "
+"til en stasjonsvogn. Takformen av hardtopen er i samme stil som bilens. "
+"Den har også samme bredde som bilen selv. Bunnen av hardtopen følger "
+"A-linjen fra frontlykt til baklykt og følger hele bilens silhuett. "
+"Formen på sidepanelet legger seg lekkert til utseende av hele bilen. "
+"En integrert spoiler kan eventuelt bli utstyrt med et høyt bremselys. "
+"Hardtopen er klar for takstativ av Thule."
 
 #: templates/amarok.html:39
 msgid ""
@@ -262,6 +291,11 @@ msgid ""
 "painting process uses the most modern knowledge of surface treatment and "
 "confirms to the latest European regulations."
 msgstr ""
+"Navette hardtoper er konstruert av mange lag laminerte glassfiber matter. "
+"Det UV resistente overlaget er lagd av slitesterkt og veldig robust "
+"Gelcoat. Malingen er fargekodet etter VW Amarok malingskoder. "
+"Malingprosessen bruker den mest moderne kunnskapen av " 
+"overflatebehandling og forholder seg til de seneste europeiske reglementene."
 
 #: templates/amarok.html:44 templates/s540.html:34 templates/s565.html:40
 msgid "Features"
@@ -281,7 +315,7 @@ msgstr ""
 
 #: templates/amarok.html:50
 msgid "Ready for Thule roof bars"
-msgstr ""
+msgstr "Klar for takstativ av Thule"
 
 #: templates/amarok.html:51
 msgid "Solid sides"
@@ -312,14 +346,16 @@ msgid "Rear breaklight"
 msgstr ""
 
 #: templates/amarok.html:61
-msgid ""
-"Central locking on rear hatch. <span class='smallprint'>(Only for cars "
-"with central locking on fuel hatch.)</span>"
+msgid "Central locking on rear hatch."
+msgstr ""
+
+#: templates/amarok.html:61
+msgid "Only for cars with central locking on fuel hatch."
 msgstr ""
 
 #: templates/amarok.html:62
 msgid "Roof bars from Thule"
-msgstr ""
+msgstr "Takstativ av Thule"
 
 #: templates/amarok.html:67 templates/hilux.html:42 templates/s540.html:70
 #: templates/s565.html:79
@@ -368,7 +404,7 @@ msgstr ""
 
 #: templates/amarok.html:91
 msgid "Weight"
-msgstr ""
+msgstr "Vekt topp"
 
 #: templates/amarok.html:92
 msgid "60 kg"
@@ -408,7 +444,7 @@ msgstr ""
 
 #: templates/amarok.html:111
 msgid "Max box size inside compartment"
-msgstr ""
+msgstr "Lenge i topp/innstikk"
 
 #: templates/amarok.html:112
 msgid "1300 x 1200 x 1040 mm"
@@ -426,11 +462,11 @@ msgstr ""
 
 #: templates/automotive.html:21
 msgid "VW Amarok Hardtop"
-msgstr ""
+msgstr "Hardtop til VW Amarok"
 
 #: templates/automotive.html:22
-msgid "Lightweight but durable"
-msgstr ""
+msgid "Lightweight and durable"
+msgstr "Lett og slitesterk"
 
 #: templates/automotive.html:25 templates/automotive.html:43
 #: templates/boats.html:25 templates/boats.html:44 templates/home.html:26
@@ -440,11 +476,11 @@ msgstr "Link på kategori"
 
 #: templates/automotive.html:39
 msgid "Toyota Hilux Hardtop"
-msgstr "Toyota Hilux SR5 Cargo Hardtop"
+msgstr "Hardtop til Toyota Hilux"
 
 #: templates/automotive.html:40
-msgid "Exclusive hardtop for sale only in Norway"
-msgstr ""
+msgid "In collaboration with Loyds Industry"
+msgstr "I samarbeid med Loyds Industri"
 
 #: templates/base.html:40 templates/base.html:80 templates/home.html:22
 msgid "Automotive"
@@ -484,7 +520,7 @@ msgstr "Navette Båter"
 
 #: templates/boats.html:22
 msgid "Comfortable bowrider for the whole family"
-msgstr "En romslig båt med god komfort til hele familien"
+msgstr "Romslig og komfortabel båt til hele familien"
 
 #: templates/boats.html:41
 msgid "Excellent boat for sport and leisure"
@@ -648,7 +684,7 @@ msgstr ""
 
 #: templates/home.html:23
 msgid "Composite solutions for automotive industry"
-msgstr ""
+msgstr "Komposittløsninger for den automotive industrien"
 
 #: templates/home.html:42
 msgid "Practical multi-purpose boats with emphasis on ergonomics"
@@ -664,19 +700,19 @@ msgstr "Ønsker du et pristilbud? Tips oss!"
 
 #: templates/macros.html:43
 msgid "Where are you located?"
-msgstr ""
+msgstr "Hvor er du?"
 
 #: templates/macros.html:44
 msgid "Your place of residence"
-msgstr ""
+msgstr "Din geografiske lokasjon"
 
 #: templates/macros.html:47
 msgid "Product"
-msgstr ""
+msgstr "Produkt"
 
 #: templates/macros.html:48
 msgid "What features? When do you need it?"
-msgstr ""
+msgstr "Hvilke funksjoner? Når du trenger det på?"
 
 #: templates/macros.html:58
 msgid "Need more information? Have any questions, requests or something to say?"
@@ -722,6 +758,19 @@ msgid ""
 "console there is spacious storage room, while under the stern bench seat "
 "is located battery, fuel meter and a large storage locker."
 msgstr ""
+"S540 er en sportslig styrekonsollbåt med sportslige og sikre sjøegenskaper. "
+"Under utviklingen av båten er det lagt særlig vekt på ergonometri. Det er "
+"enkelt å bevege seg i båten og sitteplassene er behagelige. Førerplassen "
+"er blant markedets desidert beste. Føreren kan sitte, halvt stå eller stå og "
+"likevel ha god oversikt over instrumenter og farvann. Ratt og gass/trim "
+"sitter akkurat der de skal være. Der er god plass til beina under "
+"styrekonsollen og knær kommer ikke i konflikt med noen kanter. "
+"Cocpitdybden er 62 cm på det laveste. Vindskjermen gir god beskyttelse "
+"bak styrekonsollen. Skroget har en relativ dyp V-bunn med 21,5 grader I "
+"senter vannlinje. Hekken er spesielt kraftig da motorfundamentet er "
+"trukket noe bak hekken og forsterket direkte i langsgående stringere. "
+"Båten lander mykt i sjøen, hekken slipper ikke og det er bortimot umulig "
+"å kavitere propellen."
 
 #: templates/s540.html:28 templates/s565.html:34
 msgid "Quality - Security"
@@ -737,7 +786,8 @@ msgid ""
 "ratio. All on-board equipment is of high quality. All fittings and "
 "accessories are made from corrosion and acid resistant materials."
 msgstr ""
-"Det er brukt førsteklasses GRP materialer i støpen. Gelcoaten er av en "
+"Båten er naturligvis selvlensende. Det er brukt førsteklasses GRP "
+"materialer i støpen. Gelcoaten er av en "
 "type som har den beste lysekthet og det er minimal vanninntrenging i den."
 " Dette hindrer osmose.  Både i skrog og overbygg er det brukt sydd "
 "triaksial glassfibermatte. Dette gir et bedre styrk/vekt forhold. Alle "
@@ -1046,14 +1096,6 @@ msgstr ""
 "skal være. Der er god plass til beina under styrekonsollen og knær kommer"
 " ikke i konflikt med noen kanter. Cocpiten er dyp med gode håndrekker. "
 "Båten er naturligvis selvlensende, også med 7 personer ombord. "
-"Vindskjermen gir god beskyttelse bak styrekonsollen. Skroget har en "
-"relativ dyp V-bunn med 21,5 grader i senter vannlinje. Det er håndopplagt"
-" med triaksial duk under vannlinjen. Hekken er spesielt kraftig da "
-"motorfundamentet er trukket noe bak hekken og forsterket direkte i "
-"langsgående forsterkninger. Under benken foran er det rom til alle løse "
-"puter. Under styrekonsollen er der plass til fiskekasse eller kjøleboks, "
-"samt redningsvester o.l.. Der er også eget rom for lange gjenstander slik"
-" som fiskestang og vannski."
 
 #: templates/s565.html:31
 msgid ""
@@ -1068,6 +1110,14 @@ msgid ""
 "compartments with room for seat cushions, coolers, fishing rods, life "
 "jackets, water skis etc."
 msgstr ""
+"Vindskjermen gir god beskyttelse bak styrekonsollen. Skroget har en "
+"relativ dyp V-bunn med 21,5 grader i senter vannlinje. Det er håndopplagt"
+" med triaksial duk under vannlinjen. Hekken er spesielt kraftig da "
+"motorfundamentet er trukket noe bak hekken og forsterket direkte i "
+"langsgående forsterkninger. Under benken foran er det rom til alle løse "
+"puter. Under styrekonsollen er der plass til fiskekasse eller kjøleboks, "
+"samt redningsvester o.l.. Der er også eget rom for lange gjenstander slik"
+" som fiskestang og vannski."
 
 #: templates/s565.html:35
 msgid ""
@@ -1201,3 +1251,4 @@ msgstr ""
 #: templates/s565.html:198
 msgid "Review from Båtliv (1.0MB .pdf)"
 msgstr "Anmeldelse i Båtliv (1.0MB .pdf)"
+

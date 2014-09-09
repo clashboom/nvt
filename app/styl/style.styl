@@ -96,10 +96,6 @@ header
 .main
   background whitish
 
-footer
-  background footer_bg
-
-
 html
   -webkit-text-size-adjust 100%
   -ms-text-size-adjust 100%
@@ -109,7 +105,6 @@ body
   font-size 16px
   a
     color link_color
-    text-decoration none
     -moz-transform: translate3d(0,0,0);
     -webkit-transform: translate3d(0,0,0);
     -webkit-transition all .2s linear
@@ -228,7 +223,7 @@ header
   h2
     color inherit
 
-figure.effect-bubba 
+figure.effect-bubba
   img
     opacity 8.0
     -webkit-transition opacity 0.35s
@@ -289,6 +284,7 @@ blockquote cite
   margin 0
 
 footer
+  background footer_bg
   color footer_color
   display block
   min-height 12em
@@ -304,8 +300,9 @@ footer
     &:hover
       color footer_link_hover_color
   li.list__title
-    font-weight 700
-    font-style italic
+    font-size ms(15)
+    line-height ms(15)
+    text-transform uppercase
   li.fa
     display inline-block
     // margin-right 20px
@@ -381,6 +378,12 @@ article
   ul,
   ol
     padding-left 0
+  a
+    text-decoration none
+  .contact__title
+    font-size ms(15)
+    line-height ms(15)
+    text-transform uppercase
 
 .smallprint
   font-size ms(8)
@@ -482,15 +485,15 @@ tbody
   .cta
     margin-top ms(60)
   footer
-    padding ms(50) 5% ms(20)
+    padding ms(50) 10% ms(20)
   article
     .columns
       -webkit-column-count: 3;
-      -webkit-column-gap: 1%; /* Saf3, Chrome*/
+      -webkit-column-gap: ms(20); /* Saf3, Chrome*/
       -moz-column-count: 3;
-      -moz-column-gap: 1%; /* FF3.5+ */
+      -moz-column-gap: ms(20); /* FF3.5+ */
       column-count: 3;
-      column-gap: 1%; /* Opera 11+*/
+      column-gap: ms(20); /* Opera 11+*/
   article > div
     margin-bottom ms(20)
   .review
@@ -617,7 +620,7 @@ figure
 
 @media screen and (min-width: 125em)
   .main
-    min-height 50em
+    min-height 57em
 
 input[type="text"],
 input[type="password"],

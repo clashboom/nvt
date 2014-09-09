@@ -153,9 +153,6 @@ header {
 .main {
   background: #f7f7f7;
 }
-footer {
-  background: #293b47;
-}
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -166,7 +163,6 @@ body {
 }
 body a {
   color: #303e49;
-  text-decoration: none;
   -moz-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-transition: all 0.2s linear;
@@ -475,6 +471,7 @@ blockquote cite a {
   margin: 0;
 }
 footer {
+  background: #293b47;
   color: #cfd8dc;
   display: block;
   min-height: 12em;
@@ -523,8 +520,9 @@ footer a:hover {
   color: bg400;
 }
 footer li.list__title {
-  font-weight: 700;
-  font-style: italic;
+  font-size: 24.270000000000003px;
+  line-height: 24.270000000000003px;
+  text-transform: uppercase;
 }
 footer li.fa {
   display: inline-block;
@@ -681,6 +679,14 @@ article img {
 .contact ul,
 .contact ol {
   padding-left: 0;
+}
+.contact a {
+  text-decoration: none;
+}
+.contact .contact__title {
+  font-size: 24.270000000000003px;
+  line-height: 24.270000000000003px;
+  text-transform: uppercase;
 }
 .smallprint {
   font-size: 12.944px;
@@ -848,17 +854,17 @@ tbody tr:nth-child(odd) {
     margin-top: 97.08000000000001px;
   }
   footer {
-    padding: 80.9px 5% 32.36px;
+    padding: 80.9px 10% 32.36px;
   }
   article .columns {
     -webkit-column-count: 3;
-    -webkit-column-gap: 1%;
+    -webkit-column-gap: 32.36px;
 /* Saf3, Chrome*/
     -moz-column-count: 3;
-    -moz-column-gap: 1%;
+    -moz-column-gap: 32.36px;
 /* FF3.5+ */
     column-count: 3;
-    column-gap: 1%;
+    column-gap: 32.36px;
 /* Opera 11+*/
   }
   article > div {
@@ -1039,7 +1045,7 @@ figure figcaption p {
 }
 @media screen and (min-width: 125em) {
   .main {
-    min-height: 50em;
+    min-height: 57em;
   }
 }
 input[type="text"],

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-08-14 15:58+0300\n"
+"POT-Creation-Date: 2014-09-09 12:27+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -156,7 +156,7 @@ msgid ""
 msgstr ""
 
 #: templates/about.html:116
-msgid "Launch of S 540"
+msgid "Launch of Navette S 540"
 msgstr ""
 
 #: templates/about.html:118
@@ -187,9 +187,7 @@ msgstr ""
 #: templates/about.html:142
 msgid ""
 "In cooperation with Ebil Norge, Navette produces fiberglass bodies for a "
-"city electric car <a "
-"href='http://en.wikipedia.org/wiki/Buddy_(electric_car)' "
-"rel='nofollow'>Buddy</a>, the sixth generation of the Kewet electric "
+"city electric car - Buddy, the sixth generation of the Kewet electric "
 "vehicle."
 msgstr ""
 
@@ -198,7 +196,7 @@ msgid "Year 2007-2010"
 msgstr ""
 
 #: templates/about.html:152
-msgid "Hard to top"
+msgid "Production of hardtops"
 msgstr ""
 
 #: templates/about.html:154
@@ -298,9 +296,11 @@ msgid "Rear breaklight"
 msgstr ""
 
 #: templates/amarok.html:61
-msgid ""
-"Central locking on rear hatch. <span class='smallprint'>(Only for cars "
-"with central locking on fuel hatch.)</span>"
+msgid "Central locking on rear hatch."
+msgstr ""
+
+#: templates/amarok.html:61
+msgid "Only for cars with central locking on fuel hatch."
 msgstr ""
 
 #: templates/amarok.html:62
@@ -415,7 +415,7 @@ msgid "VW Amarok Hardtop"
 msgstr ""
 
 #: templates/automotive.html:22
-msgid "Lightweight but durable"
+msgid "Lightweight and durable"
 msgstr ""
 
 #: templates/automotive.html:25 templates/automotive.html:43
@@ -429,7 +429,7 @@ msgid "Toyota Hilux Hardtop"
 msgstr ""
 
 #: templates/automotive.html:40
-msgid "Exclusive hardtop for sale only in Norway"
+msgid "In collaboration with Loyds Industry"
 msgstr ""
 
 #: templates/base.html:40 templates/base.html:80 templates/home.html:22
