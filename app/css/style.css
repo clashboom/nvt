@@ -147,9 +147,6 @@ h1 {
   min-height: 4.854px;
   background: #293b47;
 }
-header {
-  background: #f7f7f7;
-}
 .main {
   background: #f7f7f7;
 }
@@ -177,8 +174,7 @@ header {
   text-align: justify;
   letter-spacing: 1px;
   text-transform: uppercase;
-  height: 8em;
-  padding: 16.18px 10% 16.18px;
+  background: #f7f7f7;
 }
 header h1 {
   font-size: 32.36px;
@@ -290,12 +286,6 @@ header::after {
   -moz-box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
   box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
 }
-.menu__section img,
-.product img {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-}
 .menu__section .product__description,
 .product .product__description,
 .menu__section .menu__section__description,
@@ -325,6 +315,8 @@ header::after {
 .menu__section picture,
 .product picture {
   display: block;
+  width: 100%;
+  height: 100%;
 }
 .menu__section h2,
 .product h2 {
@@ -847,8 +839,14 @@ tbody tr:nth-child(odd) {
   }
 }
 @media screen and (min-width: 64em) {
+  header {
+    height: 129.44px;
+    padding: 16.18px 10% 16.18px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #eceff1;
+  }
   .main {
-    padding: 32.36px 10% 64.72px;
+    padding: 56.63px 10% 64.72px;
   }
   .cta {
     margin-top: 97.08000000000001px;
