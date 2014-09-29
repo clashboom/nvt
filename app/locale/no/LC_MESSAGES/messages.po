@@ -91,7 +91,7 @@ msgid ""
 msgstr ""
 "Vi gjør alt fra design og konstruksjon til formbygging og produksjon som "
 "en del av både våre egne løsninger og partnerskap. For å produsere våre "
-"produkter, bruker vi hånd lå eller vakuum infusjon teknologi. Høy "
+"produkter, bruker vi håndopplegg eller vakuum infusjon teknologi. Høy "
 "kvalitet og oppmerksomhet på detaljer er våre kjerneverdier i alle ledd "
 "av produksjon."
 
@@ -479,12 +479,12 @@ msgid "In collaboration with Loyds Industry"
 msgstr "I samarbeid med Loyds Industri"
 
 #: templates/base.html:40 templates/base.html:80 templates/home.html:22
-msgid "Automotive"
-msgstr "Automotive"
+msgid "Land"
+msgstr ""
 
 #: templates/base.html:41 templates/base.html:81 templates/home.html:41
-msgid "Boats"
-msgstr "Båter"
+msgid "Water"
+msgstr "Vann"
 
 #: templates/base.html:42 templates/base.html:82
 msgid "About"
@@ -609,11 +609,11 @@ msgid ""
 " transportation. And much more."
 msgstr ""
 "Påbygget er laget slik at det kan inkludere en rekke alternative "
-"innredningerfra Loyds - dobbelt uttrekkbart gulv, skuffer for lagring av "
-"verktøy, ogmuligheter for reoler på en eller begge sider. Tre låsbare "
+"innredninger fra Loyds - dobbelt uttrekkbart gulv, skuffer for lagring av "
+"verktøy, og muligheter for reoler på en eller begge sider. Tre låsbare "
 "luker, en bak ogen på hver side. Både sideluker og bakluke har "
-"gassdempere for enkel adkomst.Spesialtilpasset og vann og støvtett påbygg"
-" gjør at varerommet blir lukket.Solide takrails for utvendig "
+"gassdempere for enkel adkomst. Spesialtilpasset og vann og støvtett påbygg"
+" gjør at varerommet blir lukket. Solide takrails for utvendig "
 "taktransport."
 
 #: templates/hilux.html:35
@@ -624,8 +624,8 @@ msgid ""
 "older cars. For more details please contact your Toyota dealer."
 msgstr ""
 "Hilux Cargo er en spesialmodell utviklet av Toyota Norge, og som følgelig"
-" kuselges her i landet. Har du allerede en Hilux, men ønsker påbygget, så"
-" kandette selvfølgelig ettermonteres på eldre biler. Ta kontakt med din "
+" kun selges her i landet. Har du allerede en Hilux, men ønsker påbygget, så"
+" kan dette selvfølgelig ettermonteres på eldre biler. Ta kontakt med din "
 "Toyotaforhandler for nærmere detaljer"
 
 #: templates/hilux.html:47
@@ -754,19 +754,19 @@ msgid ""
 "console there is spacious storage room, while under the stern bench seat "
 "is located battery, fuel meter and a large storage locker."
 msgstr ""
-"S540 er en sportslig styrekonsollbåt med sportslige og sikre "
+"S540 er en sportslig styrekonsollbåt med sikre "
 "sjøegenskaper. Under utviklingen av båten er det lagt særlig vekt på "
 "ergonometri. Det er enkelt å bevege seg i båten og sitteplassene er "
 "behagelige. Førerplassen er blant markedets desidert beste. Føreren kan "
 "sitte, halvt stå eller stå og likevel ha god oversikt over instrumenter "
 "og farvann. Ratt og gass/trim sitter akkurat der de skal være. Der er god"
-" plass til beina under styrekonsollen og knær kommer ikke i konflikt med "
-"noen kanter. Cocpitdybden er 62 cm på det laveste. Vindskjermen gir god "
-"beskyttelse bak styrekonsollen. Skroget har en relativ dyp V-bunn med "
-"21,5 grader I senter vannlinje. Hekken er spesielt kraftig da "
+" plass til beina under styrekonsollen. "
+"Cocpitdybden er 62 cm på det laveste. Vindskjermen gir god "
+"beskyttelse bak styrekonsollen. Skroget har en relativ dyp V-bunn - "
+"22 grader. Hekken er spesielt kraftig da "
 "motorfundamentet er trukket noe bak hekken og forsterket direkte i "
-"langsgående stringere. Båten lander mykt i sjøen, hekken slipper ikke og "
-"det er bortimot umulig å kavitere propellen."
+"langsgående stringere. Båten lander mykt i sjøen, hekken slipper ikke "
+"i svinge og det er bortimot umulig å kavitere propellen."
 
 #: templates/s540.html:28 templates/s565.html:34
 msgid "Quality - Security"
@@ -810,8 +810,8 @@ msgid "Battery housing with main switch"
 msgstr "Batterikasse m/hovedstrømbryter"
 
 #: templates/s540.html:43 templates/s565.html:51
-msgid "Manual bilge pump"
-msgstr "Manuell lensepumpe"
+msgid "Electric bilge pump"
+msgstr "Elektrisk lensepumpe"
 
 #: templates/s540.html:44
 msgid "Lockable room for equipment"
@@ -824,10 +824,6 @@ msgstr "Fastmontert brennstofftank m/måler"
 #: templates/s540.html:46 templates/s565.html:54
 msgid "Large windshield well suited for Nordic conditions"
 msgstr "Stor vindskjerm for Nordiske forhold"
-
-#: templates/s540.html:47 templates/s565.html:55
-msgid "Exclusive dashboard"
-msgstr "Eksklusivt instrumentpanel"
 
 #: templates/s540.html:48
 msgid "Switch panel with 12V outlet"
@@ -1076,7 +1072,7 @@ msgid ""
 "there is a spacious storage compartment and under the control console - "
 "room for fish box, cooler, life jackets, etc. There is also a storage "
 "compartment for long items such as fishing rods or water skis. The boat "
-"is naturally self-bailing, even with seven persons on board. The "
+"is naturally self-bailing. The "
 "windshield provides good protection behind the control console. The hull "
 "has a relatively deep V-bottom that ensures comfortable ride even in "
 "rough waters."
@@ -1091,7 +1087,7 @@ msgstr ""
 "over instrumenter og farvann. Ratt og gass/trim sitter akkurat der de "
 "skal være. Der er god plass til beina under styrekonsollen og knær kommer"
 " ikke i konflikt med noen kanter. Cocpiten er dyp med gode håndrekker. "
-"Båten er naturligvis selvlensende, også med 7 personer ombord. "
+"Båten er naturligvis selvlensende."
 
 #: templates/s565.html:31
 msgid ""
@@ -1112,8 +1108,7 @@ msgstr ""
 "motorfundamentet er trukket noe bak hekken og forsterket direkte i "
 "langsgående forsterkninger. Under benken foran er det rom til alle løse "
 "puter. Under styrekonsollen er der plass til fiskekasse eller kjøleboks, "
-"samt redningsvester o.l.. Der er også eget rom for lange gjenstander slik"
-" som fiskestang og vannski."
+"samt redningsvester o.l.. "
 
 #: templates/s565.html:35
 msgid ""

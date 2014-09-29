@@ -37,8 +37,8 @@
             </div>
 
             {% set navigation_bar = [
-            ('/automotive', 'automotive', _('Automotive')),
-            ('/boats', 'boats', _('Boats')),
+            ('/land', 'land', _('Land')),
+            ('/water', 'water', _('Water')),
             ('/about', 'about', _('About')),
             ('/contact', 'contact', _('Contact'))
             ] -%}
@@ -77,8 +77,8 @@
               <ul>
                 <li class="list__title">{{ _("Navigation") }}</li>
                 <li><hr /></li>
-                <li><a href="{{ '/' + locale if locale else '' }}/automotive">{{ _("Automotive") }}</a></li>
-                <li><a href="{{ '/' + locale if locale else '' }}/boats">{{ _("Boats") }}</a></li>
+                <li><a href="{{ '/' + locale if locale else '' }}/land">{{ _("Land") }}</a></li>
+                <li><a href="{{ '/' + locale if locale else '' }}/water">{{ _("Water") }}</a></li>
                 <li><a href="{{ '/' + locale if locale else '' }}/about">{{ _("About") }}</a></li>
                 <li><a href="{{ '/' + locale if locale else '' }}/contact">{{ _("Contact") }}</a></li>
                 <!-- <li><a href="{{ '/' + locale if locale else '' }}/sitemap">{{ _("Sitemap") }}</a></li> -->
