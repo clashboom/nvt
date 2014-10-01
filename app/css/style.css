@@ -410,7 +410,10 @@ article p {
 .contact__form,
 article > div,
 .about > div,
-.about__section {
+.about__section,
+.persons,
+.facilities,
+.contact__row {
   *zoom: 1;
 }
 .products:before,
@@ -421,6 +424,9 @@ article > div,
 article > div:before,
 .about > div:before,
 .about__section:before,
+.persons:before,
+.facilities:before,
+.contact__row:before,
 .products:after,
 .menu:after,
 .main:after,
@@ -428,7 +434,10 @@ article > div:before,
 .contact__form:after,
 article > div:after,
 .about > div:after,
-.about__section:after {
+.about__section:after,
+.persons:after,
+.facilities:after,
+.contact__row:after {
   content: '';
   display: table;
 }
@@ -439,7 +448,10 @@ article > div:after,
 .contact__form:after,
 article > div:after,
 .about > div:after,
-.about__section:after {
+.about__section:after,
+.persons:after,
+.facilities:after,
+.contact__row:after {
   clear: both;
 }
 blockquote {
@@ -685,6 +697,12 @@ article img {
   line-height: 24.270000000000003px;
   text-transform: uppercase;
 }
+.contact .profile_picture {
+  max-height: 161.8px;
+}
+.contact .contact__row {
+  margin-top: 32.36px;
+}
 .smallprint {
   font-size: 12.944px;
   color: #666;
@@ -876,7 +894,7 @@ tbody tr:nth-child(odd) {
   .review blockquote {
     margin: 0 10%;
   }
-  .contact__entry {
+  .person {
     *zoom: 1;
     float: left;
     display: inline;
@@ -888,16 +906,43 @@ tbody tr:nth-child(odd) {
     margin-left: 0%;
     margin-right: 3%;
   }
-  .contact__entry:before,
-  .contact__entry:after {
+  .person:before,
+  .person:after {
     content: '';
     display: table;
   }
-  .contact__entry:after {
+  .person:after {
     clear: both;
   }
-  .contact__entry:last-child {
+  .person:last-child {
     margin-right: 0%;
+  }
+  .facility {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 48.5%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  .facility:before,
+  .facility:after {
+    content: '';
+    display: table;
+  }
+  .facility:after {
+    clear: both;
+  }
+  .facility:last-child {
+    margin-right: 0%;
+  }
+  .persons {
+    display: block;
+    margin-top: 48.540000000000006px;
   }
   .gallery__img {
     margin-right: 16.18px;

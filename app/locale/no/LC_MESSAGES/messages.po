@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-09-09 16:48+0300\n"
+"POT-Creation-Date: 2014-09-30 12:21+0300\n"
 "PO-Revision-Date: 2014-07-31 14:02+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: nb_NO <LL@li.org>\n"
@@ -85,7 +85,7 @@ msgstr ""
 msgid ""
 "We do everything from engineering and design to tooling and production as"
 " a part of both our own solutions and partnerships. Our production "
-"methods are mainly wet layup and resin infusion. High quality and "
+"methods are mainly hand layup and resin infusion. High quality and "
 "attention to detail are our core values at every stage of the production "
 "process."
 msgstr ""
@@ -261,188 +261,188 @@ msgstr ""
 msgid "Hardtop for VW Amarok"
 msgstr "Hardtop til VW Amarok"
 
-#: templates/amarok.html:36
+#: templates/amarok.html:37
 msgid ""
 "This durable and lightweight VW Amarok hardtop uses the exact design "
 "elements from the car. The hardtop is made to be flush with the car, "
 "giving it a continous appearance and two-box form of a station wagon. "
 "Roofshape of the hardtop is styled the same way as car's. It is also the "
 "same width as the car itself. Bottom of the hardtop follows the A-line "
-"from headlight to taillight, tracing the car's silhouette. The shape of "
-"the side panels adds nicely to the look of the whole car. An integrated "
-"spoiler can optionally be equipped with a high level brake light. The "
-"hardtop is ready for roof bars by Thule."
+"from headlight to taillight, tracing the car's silhouette. "
 msgstr ""
 "Denne slitesterke og lette VW Amarok hardtop bruker de nøyaktige "
 "designelementene fra bilen. Hardtopen er lagd for å være i et med bilen "
 "for å gi den en gjennomgående utseende og den kjente formen til en "
 "stasjonsvogn. Takformen av hardtopen er i samme stil som bilens. Den har "
-"også samme bredde som bilen selv. Bunnen av hardtopen følger A-linjen fra"
-" frontlykt til baklykt og følger hele bilens silhuett. Formen på "
-"sidepanelet legger seg lekkert til utseende av hele bilen. En integrert "
-"spoiler kan eventuelt bli utstyrt med et høyt bremselys. Hardtopen er "
-"klar for takstativ av Thule."
+"også samme bredde som bilen selv. Bunnen av hardtopen følger skyggelinjen"
+" fra frontlykt til baklykt og følger hele bilens silhuett. "
 
-#: templates/amarok.html:39
+#: templates/amarok.html:40
 msgid ""
-"Navette hardtops are constructed using multi-layered laminated glass "
-"fiber mats. The UV-resistant surface is made of durable, very robust "
-"Gelcoat. The paint is color coded to the VW Amarok paint codes. The "
-"painting process uses the most modern knowledge of surface treatment and "
-"confirms to the latest European regulations."
+"The shape of the side panels adds nicely to the look of the whole car. An"
+" integrated spoiler can optionally be equipped with a high level brake "
+"light. The hardtop is ready for roof bars by Thule. Navette hardtops are "
+"constructed using multi-layered laminated glass fiber mats. The UV-"
+"resistant surface is made of durable, very robust Gelcoat. The paint is "
+"color coded to the VW Amarok paint codes."
 msgstr ""
-"Navette hardtoper er konstruert av mange lag laminerte glassfiber matter."
-" Det UV resistente overlaget er lagd av slitesterkt og veldig robust "
-"Gelcoat. Malingen er fargekodet etter VW Amarok malingskoder. "
-"Malingprosessen bruker den mest moderne kunnskapen av overflatebehandling"
-" og forholder seg til de seneste europeiske reglementene."
+"Formen på sidepanelet legger seg lekkert til utseende av hele bilen. En "
+"integrert spoiler kan eventuelt bli utstyrt med et høyt bremselys. "
+"Hardtopen er klar for takstativ fra Thule.Navette hardtoper er konstruert"
+" av mange lag laminerte glassfiber matter. Det UV resistente overlaget er"
+" lagd av slitesterkt og veldig robust Gelcoat. Lakken er fargekodet etter"
+" VW Amarok fargekoder. "
 
-#: templates/amarok.html:44 templates/s540.html:34 templates/s565.html:40
+#: templates/amarok.html:45 templates/s540.html:34 templates/s565.html:40
 msgid "Features"
 msgstr "Utstyr"
 
-#: templates/amarok.html:47 templates/s540.html:37 templates/s565.html:43
+#: templates/amarok.html:48 templates/s540.html:37 templates/s565.html:43
 msgid "Standard Features"
 msgstr "Standard utstyr"
 
-#: templates/amarok.html:48
+#: templates/amarok.html:49
 msgid "Inside sprayed with durable PVC"
 msgstr "Holdbar PVC belegg på innsiden"
 
-#: templates/amarok.html:49
+#: templates/amarok.html:50
 msgid "Integrated spoiler"
 msgstr "Integrert spoiler"
 
-#: templates/amarok.html:50
+#: templates/amarok.html:51
 msgid "Rear hatch with gas struts"
 msgstr "Bakre luke med gassfjærer"
 
-#: templates/amarok.html:51
+#: templates/amarok.html:52
 msgid "Complete fitting instructions"
 msgstr "Komplett monteringsanvisning"
 
-#: templates/amarok.html:52
+#: templates/amarok.html:53
 msgid "Ready for Thule roof bars"
-msgstr "Klar for takstativ av Thule"
+msgstr "Klar for takstativ fra Thule"
 
-#: templates/amarok.html:56
+#: templates/amarok.html:54
+msgid "Color according to customers needs"
+msgstr "Lakkering etter kundens ønske"
+
+#: templates/amarok.html:58
 msgid "Extra features"
 msgstr "Ekstrautstyr"
 
-#: templates/amarok.html:57
+#: templates/amarok.html:59
 msgid "Tinted side windows"
 msgstr "Fargede sidevinduer"
 
-#: templates/amarok.html:58
+#: templates/amarok.html:60
 msgid "LED interior lighting"
 msgstr "Innvendig belysning LED"
 
-#: templates/amarok.html:59
+#: templates/amarok.html:61
 msgid "Rear breaklight"
 msgstr "Bremselys. "
 
-#: templates/amarok.html:60
+#: templates/amarok.html:62
 msgid "Central locking on rear hatch."
 msgstr "Sentrallås bakluke."
 
-#: templates/amarok.html:60
+#: templates/amarok.html:62
 msgid "Only for cars with central locking on fuel hatch."
 msgstr "Bare for biler med sentrallås på drivstoff luke."
 
-#: templates/amarok.html:61
+#: templates/amarok.html:63
 msgid "Roof bars from Thule"
-msgstr "Takstativ av Thule"
+msgstr "Takstativ fra Thule"
 
-#: templates/amarok.html:66 templates/hilux.html:42 templates/s540.html:70
-#: templates/s565.html:79
+#: templates/amarok.html:68 templates/hilux.html:43 templates/s540.html:67
+#: templates/s565.html:75
 msgid "Specification"
 msgstr "Spesifikasjon"
 
-#: templates/amarok.html:70 templates/s540.html:97 templates/s565.html:108
+#: templates/amarok.html:72 templates/s540.html:94 templates/s565.html:104
 msgid "Width"
 msgstr "Bredde"
 
-#: templates/amarok.html:71
+#: templates/amarok.html:73
 msgid "1760 mm"
 msgstr ""
 
-#: templates/amarok.html:74 templates/s540.html:93 templates/s565.html:104
+#: templates/amarok.html:76 templates/s540.html:90 templates/s565.html:100
 msgid "Length"
 msgstr "Lengde"
 
-#: templates/amarok.html:75
+#: templates/amarok.html:77
 msgid "1590 mm"
 msgstr ""
 
-#: templates/amarok.html:78
+#: templates/amarok.html:80
 msgid "Height"
 msgstr "Høyde"
 
-#: templates/amarok.html:79
+#: templates/amarok.html:81
 msgid "640 mm"
 msgstr ""
 
-#: templates/amarok.html:82
+#: templates/amarok.html:84
 msgid "Loading height"
 msgstr "Innvendig høyde"
 
-#: templates/amarok.html:83
+#: templates/amarok.html:85
 msgid "1040 mm"
 msgstr ""
 
-#: templates/amarok.html:86
+#: templates/amarok.html:88
 msgid "Loading width"
 msgstr "Innvendig bredde"
 
-#: templates/amarok.html:87
+#: templates/amarok.html:89
 msgid "1350 mm"
 msgstr ""
 
-#: templates/amarok.html:90
+#: templates/amarok.html:92
 msgid "Weight"
 msgstr "Vekt topp"
 
-#: templates/amarok.html:91
+#: templates/amarok.html:93
 msgid "60 kg"
 msgstr ""
 
-#: templates/amarok.html:94
+#: templates/amarok.html:96
 msgid "Maximum roof load"
 msgstr "Maks tillatte taklast "
 
-#: templates/amarok.html:95
+#: templates/amarok.html:97
 msgid "50 kg"
 msgstr ""
 
-#: templates/amarok.html:98
+#: templates/amarok.html:100
 msgid "Width of the side hatch"
 msgstr "Bredde på sideluke"
 
-#: templates/amarok.html:99
+#: templates/amarok.html:101
 msgid "1200 - 1000 mm"
 msgstr ""
 
-#: templates/amarok.html:102
+#: templates/amarok.html:104
 msgid "Height of the side hatch"
 msgstr "Høyde på sideluke"
 
-#: templates/amarok.html:103
+#: templates/amarok.html:105
 msgid "760 - 720 mm"
 msgstr ""
 
-#: templates/amarok.html:106
+#: templates/amarok.html:108
 msgid "Max box size through aft hatch"
 msgstr "Maks størrelse gjennom akter luke "
 
-#: templates/amarok.html:107
+#: templates/amarok.html:109
 msgid "1300 x 1050 x 920 mm"
 msgstr ""
 
-#: templates/amarok.html:110
+#: templates/amarok.html:112
 msgid "Max box size inside compartment"
 msgstr "Maks størrelse i topp/innstikk"
 
-#: templates/amarok.html:111
+#: templates/amarok.html:113
 msgid "1300 x 1200 x 1040 mm"
 msgstr ""
 
@@ -596,7 +596,7 @@ msgstr ""
 msgid "Toyota Hilux SR5 Cargo Hardtop"
 msgstr "Toyota Hilux SR5 Cargo Hardtop"
 
-#: templates/hilux.html:31
+#: templates/hilux.html:32
 msgid ""
 "We are proud to have been given an opportunity by Loyds Industri to take "
 "part in manufacturing of this exclusive hardtop. The hardtop is designed "
@@ -609,14 +609,14 @@ msgid ""
 " transportation. And much more."
 msgstr ""
 "Påbygget er laget slik at det kan inkludere en rekke alternative "
-"innredninger fra Loyds - dobbelt uttrekkbart gulv, skuffer for lagring av "
-"verktøy, og muligheter for reoler på en eller begge sider. Tre låsbare "
-"luker, en bak ogen på hver side. Både sideluker og bakluke har "
-"gassdempere for enkel adkomst. Spesialtilpasset og vann og støvtett påbygg"
-" gjør at varerommet blir lukket. Solide takrails for utvendig "
+"innredninger fra Loyds - dobbelt uttrekkbart gulv, skuffer for lagring av"
+" verktøy, og muligheter for reoler på en eller begge sider. Tre låsbare "
+"luker, en bak og en på hver side. Både sideluker og bakluke har "
+"gassdempere for enkel adkomst. Spesialtilpasset og vann og støvtett "
+"påbygg gjør at varerommet blir lukket. Solide takrails for utvendig "
 "taktransport."
 
-#: templates/hilux.html:35
+#: templates/hilux.html:36
 msgid ""
 "Please note that Hilux Cargo is a special model developed by Toyota "
 "Norway, and is therefore only sold in Norway. If you are located in "
@@ -624,47 +624,47 @@ msgid ""
 "older cars. For more details please contact your Toyota dealer."
 msgstr ""
 "Hilux Cargo er en spesialmodell utviklet av Toyota Norge, og som følgelig"
-" kun selges her i landet. Har du allerede en Hilux, men ønsker påbygget, så"
-" kan dette selvfølgelig ettermonteres på eldre biler. Ta kontakt med din "
-"Toyotaforhandler for nærmere detaljer"
+" kun selges her i landet. Har du allerede en Hilux, men ønsker påbygget, "
+"så kan dette selvfølgelig ettermonteres på eldre biler. Ta kontakt med "
+"din Toyotaforhandler for nærmere detaljer"
 
-#: templates/hilux.html:47
+#: templates/hilux.html:48
 msgid "Load compartment floor length"
 msgstr "Lengde vareromsgulv"
 
-#: templates/hilux.html:48
+#: templates/hilux.html:49
 msgid "1800 mm"
 msgstr ""
 
-#: templates/hilux.html:51
+#: templates/hilux.html:52
 msgid "Load compartment floor width"
 msgstr "Bredde vareromsgulv"
 
-#: templates/hilux.html:52
+#: templates/hilux.html:53
 msgid "1470 mm"
 msgstr ""
 
-#: templates/hilux.html:54
+#: templates/hilux.html:55
 msgid "Max length in load compartment"
 msgstr "Lenge i topp/innstikk"
 
-#: templates/hilux.html:55
+#: templates/hilux.html:56
 msgid "2850 mm"
 msgstr ""
 
-#: templates/hilux.html:58
+#: templates/hilux.html:59
 msgid "Side hatch opening size"
 msgstr "Sideluke størrelse"
 
-#: templates/hilux.html:59
+#: templates/hilux.html:60
 msgid "1400x400 mm"
 msgstr ""
 
-#: templates/hilux.html:62
+#: templates/hilux.html:63
 msgid "Hardtop weight"
 msgstr "Vekt topp"
 
-#: templates/hilux.html:63
+#: templates/hilux.html:64
 msgid "108 kg"
 msgstr ""
 
@@ -754,19 +754,18 @@ msgid ""
 "console there is spacious storage room, while under the stern bench seat "
 "is located battery, fuel meter and a large storage locker."
 msgstr ""
-"S540 er en sportslig styrekonsollbåt med sikre "
-"sjøegenskaper. Under utviklingen av båten er det lagt særlig vekt på "
-"ergonometri. Det er enkelt å bevege seg i båten og sitteplassene er "
-"behagelige. Førerplassen er blant markedets desidert beste. Føreren kan "
-"sitte, halvt stå eller stå og likevel ha god oversikt over instrumenter "
-"og farvann. Ratt og gass/trim sitter akkurat der de skal være. Der er god"
-" plass til beina under styrekonsollen. "
-"Cocpitdybden er 62 cm på det laveste. Vindskjermen gir god "
-"beskyttelse bak styrekonsollen. Skroget har en relativ dyp V-bunn - "
-"22 grader. Hekken er spesielt kraftig da "
-"motorfundamentet er trukket noe bak hekken og forsterket direkte i "
-"langsgående stringere. Båten lander mykt i sjøen, hekken slipper ikke "
-"i svinge og det er bortimot umulig å kavitere propellen."
+"S540 er en sportslig styrekonsollbåt med sikre sjøegenskaper. Under "
+"utviklingen av båten er det lagt særlig vekt på ergonometri. Det er "
+"enkelt å bevege seg i båten og sitteplassene er behagelige. Førerplassen "
+"er blant markedets desidert beste. Føreren kan sitte, halvt stå eller stå"
+" og likevel ha god oversikt over instrumenter og farvann. Ratt og "
+"gass/trim sitter akkurat der de skal være. Der er god plass til beina "
+"under styrekonsollen. Cocpitdybden er 62 cm på det laveste. Vindskjermen "
+"gir god beskyttelse bak styrekonsollen. Skroget har en relativ dyp V-bunn"
+" - 22 grader. Hekken er spesielt kraftig da motorfundamentet er trukket "
+"noe bak hekken og forsterket direkte i langsgående stringere. Båten "
+"lander mykt i sjøen, hekken slipper ikke i svinge og det er bortimot "
+"umulig å kavitere propellen."
 
 #: templates/s540.html:28 templates/s565.html:34
 msgid "Quality - Security"
@@ -825,222 +824,214 @@ msgstr "Fastmontert brennstofftank m/måler"
 msgid "Large windshield well suited for Nordic conditions"
 msgstr "Stor vindskjerm for Nordiske forhold"
 
-#: templates/s540.html:48
+#: templates/s540.html:47
 msgid "Switch panel with 12V outlet"
 msgstr "Bryterpanel m/12 V uttak"
 
-#: templates/s540.html:49 templates/s565.html:58
+#: templates/s540.html:48 templates/s565.html:56
 msgid "Fire extinguisher"
 msgstr "Brannslukningsapparat"
 
-#: templates/s540.html:50
+#: templates/s540.html:49
 msgid "Console cover"
 msgstr "Konsolltrekk"
 
-#: templates/s540.html:54 templates/s565.html:63
+#: templates/s540.html:53 templates/s565.html:61
 msgid "Extra Features"
 msgstr "Ekstrautstyr"
 
-#: templates/s540.html:55
+#: templates/s540.html:54
 msgid "Blue/White hull"
 msgstr "Blått/hvitt skrog"
 
-#: templates/s540.html:56 templates/s565.html:65
+#: templates/s540.html:55 templates/s565.html:63
 msgid "Flexiteek deck"
 msgstr "Flexiteek dørk"
 
-#: templates/s540.html:57 templates/s565.html:66
+#: templates/s540.html:56 templates/s565.html:64
 msgid "Canopy"
 msgstr "Kalesje"
 
-#: templates/s540.html:58 templates/s565.html:67
+#: templates/s540.html:57 templates/s565.html:65
 msgid "Pillows for front seats"
 msgstr "Puter på frontbenk"
 
-#: templates/s540.html:59 templates/s565.html:68
+#: templates/s540.html:58 templates/s565.html:66
 msgid "Pillows for rear seats"
 msgstr "Puter på akterbenk"
 
-#: templates/s540.html:60 templates/s565.html:69
+#: templates/s540.html:59 templates/s565.html:67
 msgid "Cocktail table"
 msgstr "Coctailbord foran"
 
-#: templates/s540.html:61
+#: templates/s540.html:60
 msgid "Radio/CD player"
 msgstr "Radio/CD spiller"
 
-#: templates/s540.html:62 templates/s565.html:72
-msgid "Sonar"
-msgstr "Montering av ekkolodd"
-
-#: templates/s540.html:63 templates/s565.html:73
+#: templates/s540.html:61 templates/s565.html:70
 msgid "Anti-fouling paint"
 msgstr "Bunnsmøring"
 
-#: templates/s540.html:64
-msgid "Suzuki mounting kit"
-msgstr "Monteringspakke for Suzuki"
-
-#: templates/s540.html:74 templates/s565.html:82
+#: templates/s540.html:71 templates/s565.html:78
 msgid "Drainage"
 msgstr "Drenering"
 
-#: templates/s540.html:75 templates/s565.html:83
+#: templates/s540.html:72 templates/s565.html:79
 msgid "Manual pump"
 msgstr "Manuell pumpe"
 
-#: templates/s540.html:76 templates/s565.html:84
+#: templates/s540.html:73 templates/s565.html:80
 msgid "Bollard"
 msgstr "Pullert"
 
-#: templates/s540.html:77 templates/s565.html:85
+#: templates/s540.html:74 templates/s565.html:81
 msgid "Boarding ladder"
 msgstr "Badetrapp"
 
-#: templates/s540.html:78 templates/s565.html:86
+#: templates/s540.html:75 templates/s565.html:82
 msgid "Fuel tank"
 msgstr "Bensintank"
 
-#: templates/s540.html:82 templates/s540.html:145 templates/s565.html:87
-#: templates/s565.html:156
+#: templates/s540.html:79 templates/s540.html:142 templates/s565.html:83
+#: templates/s565.html:152
 msgid "Anchor compartment"
 msgstr "Ankerbrønn"
 
-#: templates/s540.html:83 templates/s565.html:91
+#: templates/s540.html:80 templates/s565.html:87
 msgid "Cockpit storage"
 msgstr "Stuverom cocpit"
 
-#: templates/s540.html:84 templates/s565.html:92
+#: templates/s540.html:81 templates/s565.html:88
 msgid "Aft storage"
 msgstr "Stuverom skrog"
 
-#: templates/s540.html:85 templates/s565.html:93
+#: templates/s540.html:82 templates/s565.html:89
 msgid "Glove compartment"
 msgstr "Hanskerom"
 
-#: templates/s540.html:94
+#: templates/s540.html:91
 msgid "538 cm"
 msgstr ""
 
-#: templates/s540.html:98
+#: templates/s540.html:95
 msgid "208 cm"
 msgstr ""
 
-#: templates/s540.html:101 templates/s565.html:112
+#: templates/s540.html:98 templates/s565.html:108
 msgid "Depth"
 msgstr "Dybde"
 
-#: templates/s540.html:102
+#: templates/s540.html:99
 msgid "27 cm"
 msgstr ""
 
-#: templates/s540.html:105 templates/s565.html:116
+#: templates/s540.html:102 templates/s565.html:112
 msgid "Freeboard center"
 msgstr "Fribord senter"
 
-#: templates/s540.html:106
+#: templates/s540.html:103
 msgid "73 cm"
 msgstr ""
 
-#: templates/s540.html:109
+#: templates/s540.html:106
 msgid "Height above waterline w/ windshield "
 msgstr "Høyde over vannlinje m/vindskjerm "
 
-#: templates/s540.html:110
+#: templates/s540.html:107
 msgid "130 cm"
 msgstr ""
 
-#: templates/s540.html:113 templates/s565.html:124
+#: templates/s540.html:110 templates/s565.html:120
 msgid "Weight without motor"
 msgstr "Vekt uten motor"
 
-#: templates/s540.html:114
+#: templates/s540.html:111
 msgid "520 cm"
 msgstr ""
 
-#: templates/s540.html:117 templates/s565.html:128
+#: templates/s540.html:114 templates/s565.html:124
 msgid "Max payload"
 msgstr "Nyttelast"
 
-#: templates/s540.html:118
+#: templates/s540.html:115
 msgid "520 kg"
 msgstr ""
 
-#: templates/s540.html:121 templates/s565.html:132
+#: templates/s540.html:118 templates/s565.html:128
 msgid "Max persons"
 msgstr "Bæreevne personer"
 
-#: templates/s540.html:125 templates/s565.html:136
+#: templates/s540.html:122 templates/s565.html:132
 msgid "Min motor power"
 msgstr "Motor effekt min"
 
-#: templates/s540.html:126 templates/s565.html:137
+#: templates/s540.html:123 templates/s565.html:133
 msgid "52/70 kW/HP"
 msgstr ""
 
-#: templates/s540.html:129 templates/s565.html:140
+#: templates/s540.html:126 templates/s565.html:136
 msgid "Max motor power"
 msgstr "Motor effekt max"
 
-#: templates/s540.html:130 templates/s565.html:141
+#: templates/s540.html:127 templates/s565.html:137
 msgid "103/140 kW/HP"
 msgstr ""
 
-#: templates/s540.html:133 templates/s565.html:144
+#: templates/s540.html:130 templates/s565.html:140
 msgid "Category"
 msgstr "Konstruksjonskategori"
 
-#: templates/s540.html:134 templates/s565.html:145
+#: templates/s540.html:131 templates/s565.html:141
 msgid "CE C"
 msgstr ""
 
-#: templates/s540.html:137 templates/s565.html:148
+#: templates/s540.html:134 templates/s565.html:144
 msgid "Bailing system"
 msgstr "Lensesystem"
 
-#: templates/s540.html:138 templates/s565.html:149
+#: templates/s540.html:135 templates/s565.html:145
 msgid "Self-bailing"
 msgstr "Selvlenser"
 
-#: templates/s540.html:141 templates/s565.html:152
+#: templates/s540.html:138 templates/s565.html:148
 msgid "Fuel capacity"
 msgstr "Tank"
 
-#: templates/s540.html:142
+#: templates/s540.html:139
 msgid "75 liter"
 msgstr ""
 
-#: templates/s540.html:149 templates/s565.html:160
+#: templates/s540.html:146 templates/s565.html:156
 msgid "Storage compartments"
 msgstr "Stuerom antall"
 
-#: templates/s540.html:153 templates/s565.html:164
+#: templates/s540.html:150 templates/s565.html:160
 msgid "Speed test results"
 msgstr "Fartsprøver"
 
-#: templates/s540.html:157 templates/s540.html:165 templates/s565.html:168
-#: templates/s565.html:176
+#: templates/s540.html:154 templates/s540.html:162 templates/s565.html:164
+#: templates/s565.html:172
 msgid "Motor model"
 msgstr "Motor"
 
-#: templates/s540.html:158 templates/s565.html:169
+#: templates/s540.html:155 templates/s565.html:165
 msgid "Suzuki DF90"
 msgstr ""
 
-#: templates/s540.html:161 templates/s540.html:169 templates/s565.html:172
-#: templates/s565.html:180
+#: templates/s540.html:158 templates/s540.html:166 templates/s565.html:168
+#: templates/s565.html:176
 msgid "Speed 2 pers."
 msgstr "Hastighet knop 2 pers"
 
-#: templates/s540.html:162
+#: templates/s540.html:159
 msgid "38 knots"
 msgstr ""
 
-#: templates/s540.html:166 templates/s565.html:177
+#: templates/s540.html:163 templates/s565.html:173
 msgid "Suzuki DF115"
 msgstr ""
 
-#: templates/s540.html:170
+#: templates/s540.html:167
 msgid "43 knots"
 msgstr ""
 
@@ -1072,10 +1063,9 @@ msgid ""
 "there is a spacious storage compartment and under the control console - "
 "room for fish box, cooler, life jackets, etc. There is also a storage "
 "compartment for long items such as fishing rods or water skis. The boat "
-"is naturally self-bailing. The "
-"windshield provides good protection behind the control console. The hull "
-"has a relatively deep V-bottom that ensures comfortable ride even in "
-"rough waters."
+"is naturally self-bailing. The windshield provides good protection behind"
+" the control console. The hull has a relatively deep V-bottom that "
+"ensures comfortable ride even in rough waters."
 msgstr ""
 "S565 kombinerer fordelene med en Jeep og en bowrider. Den har Jeepens "
 "enkle bruksegenskaper og bowriderens beskyttelse mot vær og vind. Under "
@@ -1143,91 +1133,83 @@ msgstr "Selvdrenerende cockpit"
 msgid "Lockable compartments for equipment"
 msgstr "Låsbare rom til baggasje/utstyr"
 
-#: templates/s565.html:56
-msgid "Exclusive steering wheel"
-msgstr "Eksklusivt instrumentpanel"
-
-#: templates/s565.html:57
+#: templates/s565.html:55
 msgid "Switch panel with automatic breakers"
 msgstr "Bryterpanel m/automatsikringer"
 
-#: templates/s565.html:64
+#: templates/s565.html:62
 msgid "Blue hull"
 msgstr "Blått skrog"
 
-#: templates/s565.html:70
+#: templates/s565.html:68
 msgid "Sunbed"
 msgstr "Solseng"
 
-#: templates/s565.html:71
+#: templates/s565.html:69
 msgid "Radio/CD player with 2 speakers"
 msgstr "Radio/CD spiller med 2 høytalere"
 
-#: templates/s565.html:74
-msgid "Mounting kit for motor"
-msgstr "Monteringspakke for motor"
-
-#: templates/s565.html:94
+#: templates/s565.html:90
 msgid "Fender compartment"
 msgstr "Drenert stuverom"
 
-#: templates/s565.html:95
+#: templates/s565.html:91
 msgid "Side gate"
 msgstr "Sideport"
 
-#: templates/s565.html:96
+#: templates/s565.html:92
 msgid "Rear gate"
 msgstr "Hekkport"
 
-#: templates/s565.html:105
+#: templates/s565.html:101
 msgid "565 cm"
 msgstr ""
 
-#: templates/s565.html:109
+#: templates/s565.html:105
 msgid "225 cm"
 msgstr ""
 
-#: templates/s565.html:113
+#: templates/s565.html:109
 msgid "31 cm"
 msgstr ""
 
-#: templates/s565.html:117
+#: templates/s565.html:113
 msgid "90 cm"
 msgstr ""
 
-#: templates/s565.html:120
+#: templates/s565.html:116
 msgid "Height above waterline /w windshield "
 msgstr "Høyde over vannlinje m/vindskjerm"
 
-#: templates/s565.html:121
+#: templates/s565.html:117
 msgid "166 cm"
 msgstr ""
 
-#: templates/s565.html:125
+#: templates/s565.html:121
 msgid "640 kg"
 msgstr ""
 
-#: templates/s565.html:129
+#: templates/s565.html:125
 msgid "580 kg"
 msgstr ""
 
-#: templates/s565.html:153
+#: templates/s565.html:149
 msgid "95 liter"
 msgstr ""
 
-#: templates/s565.html:173
+#: templates/s565.html:169
 msgid "36 knots"
 msgstr ""
 
-#: templates/s565.html:181
+#: templates/s565.html:177
 msgid "41 knots"
 msgstr ""
 
-#: templates/s565.html:193
+#: templates/s565.html:189
 msgid "Reviews"
 msgstr "Anmeldelser"
 
-#: templates/s565.html:196
+#: templates/s565.html:192
 msgid ""
 "It is still possible to innovate when it comes to console boat, for which"
 " Navette S 565 serves as a good example. Ålesund company has in our "
@@ -1239,7 +1221,7 @@ msgstr ""
 "mening laget noe av det mest spennende og nytenkende på jeepfronten på "
 "lang tid.”"
 
-#: templates/s565.html:198
+#: templates/s565.html:194
 msgid "Review from Båtliv (1.0MB .pdf)"
 msgstr "Anmeldelse i Båtliv (1.0MB .pdf)"
 

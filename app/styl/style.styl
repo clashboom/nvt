@@ -249,7 +249,10 @@ article
 .contact__form,
 article > div,
 .about > div,
-.about__section
+.about__section,
+.persons,
+.facilities,
+.contact__row
   cf()
 
 blockquote
@@ -377,6 +380,12 @@ article
     font-size ms(15)
     line-height ms(15)
     text-transform uppercase
+  .profile_picture
+    max-height ms(100)
+  .contact__row
+    margin-top ms(20)
+
+
 
 .smallprint
   font-size ms(8)
@@ -497,8 +506,13 @@ tbody
   .review
     blockquote
       margin 0 10%
-  .contact__entry
+  .person
     col(1/3)
+  .facility
+    col(1/2)
+  .persons
+    display block
+    margin-top ms(30)
   .gallery__img
     margin-right ms(10)
   .menu__section,
