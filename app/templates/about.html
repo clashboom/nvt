@@ -9,48 +9,52 @@
 <div class="about space-wrapper">
 
   <div class="about__section">
+
     <h2>{{ _("Who we are?") }}</h2>
     <span class="about__subtitle">&amp; {{ _("what we do") }}</span>
 
-    <div class="about__text third">
-      <picture>
-      <!--[if IE 9]><video style="display: none;"><![endif]-->
-      <source srcset="/img/buddy_body_l.jpg" media="(min-width: 2500px)">
-      <source srcset="/img/buddy_body_m.jpg" media="(min-width: 480px)">
-      <source srcset="/img/buddy_body_s.jpg">
-      <!--[if IE 9]></video><![endif]-->
-      <img srcset="/img/buddy_body_s.jpg" alt="">
-      </picture>
-      <p>
-     {{ _("We offer more than 12 years of experience in the composite industry. We have designed and produced a wide variety of composite solutions for maritime and automotive industries as well as for individuals - from boats and auto bodywork to swimming pools and storage products.") }}
-      </p>
-    </div>
+    <ul class="rslides">
 
-    <div class="about__text third">
-      <picture>
-      <!--[if IE 9]><video style="display: none;"><![endif]-->
-      <source srcset="/img/boat_sanding_l.jpg" media="(min-width: 2500px)">
-      <source srcset="/img/boat_sanding_m.jpg" media="(min-width: 480px)">
-      <source srcset="/img/boat_sanding_s.jpg">
-      <!--[if IE 9]></video><![endif]-->
-      <img srcset="/img/boat_sanding_s.jpg" alt="">
-      </picture>
-      <p>
-      {{ _("We do everything from engineering and design to tooling and production as a part of both our own solutions and partnerships. Our production methods are mainly hand layup and resin infusion. High quality and attention to detail are our core values at every stage of the production process.") }}
-      </p>
-    </div>
+      <li class="about__text">
+        <picture>
+        <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="/img/buddy_body_l.jpg" media="(min-width: 2500px)">
+          <source srcset="/img/buddy_body_m.jpg" media="(min-width: 480px)">
+          <source srcset="/img/buddy_body_s.jpg">
+          <!--[if IE 9]></video><![endif]-->
+        <img srcset="/img/buddy_body_s.jpg" alt="">
+        </picture>
+        <p class="caption">
+          {{ _("We offer more than 12 years of experience in the composite industry. We have designed and produced a wide variety of composite solutions for maritime and automotive industries as well as for individuals - from boats and auto bodywork to swimming pools and storage products.") }}
+        </p>
+      </li>
 
-    <div class="about__text third">
-      <picture>
-      <!--[if IE 9]><video style="display: none;"><![endif]-->
-      <source srcset="/img/navette_pleasure_boats_l.jpg" media="(min-width: 2500px)">
-      <source srcset="/img/navette_pleasure_boats_m.jpg" media="(min-width: 480px)">
-      <source srcset="/img/navette_pleasure_boats_s.jpg">
-      <!--[if IE 9]></video><![endif]-->
-      <img srcset="/img/navette_pleasure_boats_s.jpg" alt="">
-      </picture>
-      <p> {{ _("We truly believe that good design not only looks good, but more importantly, works well for the user. A lot of thought has been put into design of each one of our products, to make sure that they are both practical and easy to use.") }}</p>
-    </div>
+      <li class="about__text">
+        <picture>
+        <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="/img/boat_sanding_l.jpg" media="(min-width: 2500px)">
+          <source srcset="/img/boat_sanding_m.jpg" media="(min-width: 480px)">
+          <source srcset="/img/boat_sanding_s.jpg">
+          <!--[if IE 9]></video><![endif]-->
+        <img srcset="/img/boat_sanding_s.jpg" alt="">
+        </picture>
+        <p class="caption">
+          {{ _("We do everything from engineering and design to tooling and production as a part of both our own solutions and partnerships. Our production methods are mainly hand layup and resin infusion. High quality and attention to detail are our core values at every stage of the production process.") }}
+        </p>
+      </li>
+
+      <li class="about__text">
+        <picture>
+        <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="/img/navette_pleasure_boats_l.jpg" media="(min-width: 2500px)">
+          <source srcset="/img/navette_pleasure_boats_m.jpg" media="(min-width: 480px)">
+          <source srcset="/img/navette_pleasure_boats_s.jpg">
+          <!--[if IE 9]></video><![endif]-->
+        <img srcset="/img/navette_pleasure_boats_s.jpg" alt="">
+        </picture>
+        <p class="caption"> {{ _("We truly believe that good design not only looks good, but more importantly, works well for the user. A lot of thought has been put into design of each one of our products, to make sure that they are both practical and easy to use.") }}</p>
+      </li>
+    </ul>
   </div>
 
   <div class="about__section">

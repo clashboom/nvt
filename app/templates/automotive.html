@@ -9,13 +9,31 @@
 
   <figure class="product effect-bubba">
     <picture>
+      <!--[if IE 9]><video style="display: none;"><![endif]-->
+      <source srcset="http://www.mustang-trailers.dk/Images/74f637c4-f285-40b2-a5ca-4fcb3acf0ea6.jpg" media="(min-width: 600px)">
+      <source srcset="http://www.mustang-trailers.dk/Images/74f637c4-f285-40b2-a5ca-4fcb3acf0ea6.jpg" media="(min-width: 400px)">
+      <source srcset="http://www.mustang-trailers.dk/Images/74f637c4-f285-40b2-a5ca-4fcb3acf0ea6.jpg">
+      <!--[if IE 9]></video><![endif]-->
+      <img srcset="http://www.mustang-trailers.dk/Images/74f637c4-f285-40b2-a5ca-4fcb3acf0ea6.jpg" alt="Toyota Hilux Hardtop">
+    </picture>
+    <figcaption class="product__description">
+      <h2>{{ _("Monarch Trailer") }}</h2>
+      <p>{{ _("In collaboration with Mustang Trailers") }}</p>
+    </figcaption>
+    <a href="{{ '/' + locale if locale else '' }}/monarch">
+      {{ _("View category") }}
+    </a>
+  </figure>
+
+  <figure class="product effect-bubba">
+    <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
       <source srcset="/img/amarok/amarok_hardtop_featured_xl.jpg" media="(min-width: 2000px)">
       <source srcset="/img/amarok/amarok_hardtop_featured_l.jpg" media="(min-width: 600px)">
       <source srcset="/img/amarok/amarok_hardtop_featured_m.jpg" media="(min-width: 400px)">
       <source srcset="/img/amarok/amarok_hardtop_featured_s.jpg">
       <!--[if IE 9]></video><![endif]-->
-      <img srcset="/img/amarok/amarok_hardtop_featured_s.jpg" alt="Automotive">
+      <img srcset="/img/amarok/amarok_hardtop_featured_s.jpg" alt="VW Amarok Hardtop">
     </picture>
     <figcaption class="product__description">
       <h2>{{ _("VW Amarok Hardtop") }}</h2>
@@ -33,7 +51,7 @@
       <source srcset="/img/hilux/hilux_hardtop_featured_m.jpg" media="(min-width: 400px)">
       <source srcset="/img/hilux/hilux_hardtop_featured_s.jpg">
       <!--[if IE 9]></video><![endif]-->
-      <img srcset="/img/hilux/hilux_hardtop_featured_s.jpg" alt="Automotive">
+      <img srcset="/img/hilux/hilux_hardtop_featured_s.jpg" alt="Toyota Hilux Hardtop">
     </picture>
     <figcaption class="product__description">
       <h2>{{ _("Toyota Hilux Hardtop") }}</h2>
@@ -43,6 +61,7 @@
       {{ _("View category") }}
     </a>
   </figure>
+
 
 </section>
 

@@ -207,6 +207,11 @@ class HiluxHandler(Handler):
         self.render("hilux.html", locale=locale)
 
 
+class MonarchHandler(Handler):
+    def get(self, locale):
+        self.render("monarch.html", locale=locale)
+
+
 class SiteMapHandler(Handler):
     def get(self):
         self.render('sitemap.html')
@@ -261,6 +266,7 @@ app = webapp2.WSGIApplication([
     (l + '/s565' + ts, S565Handler),
     (l + '/amarok' + ts, AmarokHandler),
     (l + '/hilux' + ts, HiluxHandler),
+    (l + '/monarch' + ts, MonarchHandler),
     (l + '/water' + ts, BoatHandler),
     (l + '/land' + ts, AutoHandler),
     (l + '/contact' + ts, ContactHandler),

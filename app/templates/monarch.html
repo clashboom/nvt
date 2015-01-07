@@ -1,0 +1,124 @@
+{% extends("base.html") %}
+{% set active_page="automotive" %}
+
+{% set page_title = _("Monarch Trailer - Navette Automotive") %}
+{% set meta_description = _("First class transportation for you and your horses") %}
+
+{% block main %}
+
+<div class="page__wrapper">
+<article class="post__article">
+
+  <div class="post__header">
+    <h1 class="post__heading">{{ _("Monarch Trailer") }}</h1>
+    <a class="gallery__img th" href="/img/amarok/amarok_hardtop_featured_xl.jpg">
+    <picture>
+    <!--[if IE 9]><video style="display: none;"><![endif]-->
+      <source srcset="/img/amarok/marok_hardtop_featured_xl.jpg" media="(min-width: 2000px)">
+      <source srcset="/img/amarok/marok_hardtop_featured_l.jpg" media="(min-width: 600px)">
+      <source srcset="/img/amarok/marok_hardtop_featured_m.jpg" media="(min-width: 400px)">
+      <source srcset="/img/amarok/marok_hardtop_featured_s.jpg">
+      <!--[if IE 9]></video><![endif]-->
+      <img srcset="/img/amarok/marok_hardtop_featured_s.jpg" alt="Automotive">
+    </picture>
+    </a>
+  </div>
+
+  <div class="gallery">
+    <a class="gallery__img th" href="/img/amarok/marok_hardtop_front_angled.jpg"><img src="/img/amarok/th/amarok_hardtop_front_angled_th.jpg" alt=""></a>
+    <a class="gallery__img th" href="/img/amarok/marok_hardtop_side.jpg"><img src="/img/amarok/th/amarok_hardtop_side_th.jpg" alt=""></a>
+    <a class="gallery__img th" href="/img/amarok/marok_hardtop_side_angled.jpg"><img src="/img/amarok/th/amarok_hardtop_side_angled_th.jpg" alt=""></a>
+    <a class="gallery__img th" href="/img/amarok/marok_hardtop_rear.jpg"><img src="/img/amarok/th/amarok_hardtop_rear_th.jpg" alt=""></a>
+    <a class="gallery__img th" href="/img/amarok/marok_hardtop_front.jpg"><img src="/img/amarok/th/amarok_hardtop_front_th.jpg" alt=""></a>
+  </div>
+
+  <div class="description">
+    <div class="half-col">
+      <p>{{ _("This durable and lightweight VW Amarok hardtop uses the exact design elements from the car. The hardtop is made to be flush with the car, giving it a continous appearance and two-box form of a station wagon. Roofshape of the hardtop is styled the same way as car's. It is also the same width as the car itself. Bottom of the hardtop follows the A-line from headlight to taillight, tracing the car's silhouette. ") }}</p>
+    </div>
+    <div class="half-col">
+      <p>{{ _("The shape of the side panels adds nicely to the look of the whole car. An integrated spoiler can optionally be equipped with a high level brake light. The hardtop is ready for roof bars by Thule. Navette hardtops are constructed using multi-layered laminated glass fiber mats. The UV-resistant surface is made of durable, very robust Gelcoat. The paint is color coded to the VW Amarok paint codes.") }}</p>
+    </div>
+  </div>
+
+  <div class="equipment">
+    <h2>{{ _("Features") }}</h2>
+
+    <ul>
+      <h5>{{ _("Standard Features") }}</h5>
+      <li>{{ _("Inside sprayed with durable PVC") }}</li>
+      <li>{{ _("Integrated spoiler") }}</li>
+      <li>{{ _("Rear hatch with gas struts") }}</li>
+      <li>{{ _("Complete fitting instructions") }}</li>
+      <li>{{ _("Ready for Thule roof bars") }}</li>
+      <li>{{ _("Color according to customers needs") }}</li>
+    </ul>
+
+    <ul>
+      <h5>{{ _("Extra features") }}</h5>
+      <li>{{ _("Tinted side windows") }}</li>
+      <li>{{ _("LED interior lighting") }}</li>
+      <li>{{ _("Rear breaklight") }}</li>
+      <li>{{ _("Central locking on rear hatch.") }} <span class='smallprint'> ({{ _("Only for cars with central locking on fuel hatch.") }})</li>
+      <li>{{ _("Roof bars from Thule") }}</li>
+    </ul>
+  </div>
+
+  <div class="specification">
+    <h2>{{ _("Specification") }}</h2>
+    <table>
+      <tbody>
+        <tr>
+          <td>{{ _("Width") }}</td>
+          <td>{{ _("1760 mm") }}</td>
+        </tr>
+        <tr>
+          <td>{{ _("Length") }}</td>
+          <td>{{ _("1590 mm") }}</td>
+        </tr>
+        <tr>
+          <td>{{ _("Height") }}</td>
+          <td>{{ _("640 mm") }}</td>
+        </tr>
+        <tr>
+          <td>{{ _("Loading height") }}</td>
+          <td>{{ _("1040 mm") }}</td>
+        </tr>
+        <tr>
+          <td>{{ _("Loading width") }}</td>
+          <td>{{ _("1350 mm") }}</td>
+        </tr>
+        <tr>
+          <td>{{ _("Weight") }}</td>
+          <td>{{ _("60 kg") }}</td>
+        </tr>
+        <tr>
+          <td>{{ _("Maximum roof load") }}</td>
+          <td>{{ _("50 kg") }}</td>
+        </tr>
+        <tr>
+          <td>{{ _("Width of the side hatch") }}</td>
+          <td>{{ _("1200 - 1000 mm") }}</td>
+        </tr>
+        <tr>
+          <td>{{ _("Height of the side hatch") }}</td>
+          <td>{{ _("760 - 720 mm") }}</td>
+        </tr>
+        <tr>
+          <td>{{ _("Max box size through aft hatch") }}</td>
+          <td>{{ _("1300 x 1050 x 920 mm") }}</td>
+        </tr>
+        <tr>
+          <td>{{ _("Max box size inside compartment") }}</td>
+          <td>{{ _("1300 x 1200 x 1040 mm") }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</article>
+</div>
+
+{% import 'macros.html' as macros %}
+{{ macros.product_cta("VW Amarok Hardtop") }}
+
+{% endblock %}
